@@ -32,3 +32,5 @@ npm-debug.log*
 
 # Test coverage
 coverage/
+# Embedded reference repo (not part of CredVault)
+step0-hello/
