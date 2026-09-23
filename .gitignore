@@ -6,10 +6,18 @@
 **/output/
 **/contracts/managed/
 
+# Generated artifacts (reproducible from schema + cohort)
+generated-*/
+!generated-college/.gitkeep
+
 # Runtime data
 data/deployment.json
 data/manifest.json
 packages/*.package.json
+presentations/*.presentation.json
+
+# LevelDB state
+midnight-level-db/
 
 # Environment
 .env
