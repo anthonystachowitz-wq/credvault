@@ -20,9 +20,10 @@ export interface IssuerConfig {
   premint: Array<{ field: string; op: string; value: number }>;
   revocation: { cadence: 'batch' | 'prompt' };
   delivery: { packageLinks: boolean };
+  sampleCsvPath?: string;
 }
 
-export function emitIssuerConfig(descriptor: AppDescriptor, descriptorHash: string, opts?: { network?: string }): IssuerConfig {
+export function emitIssuerConfig(descriptor: AppDescriptor, descriptorHash: string, opts?: { network?: string; sampleCsvPath?: string }): IssuerConfig {
   const fields: Record<string, string> = {};
   const valueChecks: Record<string, string> = {};
   for (const f of descriptor.fields) {
@@ -57,5 +58,6 @@ export function emitIssuerConfig(descriptor: AppDescriptor, descriptorHash: stri
     premint,
     revocation: { cadence: descriptor.issuerRuntime.revocationCadence },
     delivery: { packageLinks: true },
+    sampleCsvPath: opts?.sampleCsvPath,
   };
 }

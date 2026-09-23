@@ -9,6 +9,7 @@ import { emitDescriptor, canonicalJson } from '../schemas/descriptor.js';
 import { yamlToAst } from '../schemas/yaml-adapter.js';
 import { emitIssuerConfig } from '../runtime/issuer-config.js';
 import { generatePackages } from '../runtime/package.js';
+import { generateCsvSample } from '../runtime/csv-sample.js';
 import { createHash } from 'node:crypto';
 import { pad32 } from '../runtime/canonical.js';
 
@@ -49,7 +50,13 @@ async function main() {
   const schema = loadSchema(schemaPath);
   const descriptor = emitDescriptor(schema);
   const descriptorHash = sha256Hex(canonicalJson(descriptor));
-  const issuerConfig = emitIssuerConfig(descriptor, descriptorHash, { network });
+
+  // Generate sample CSV upload file
+  const { csv: sampleCsv, readme: csvReadme } = generateCsvSample(descriptor, { holderRef: 'SAMPLE-HOLDER-001' });
+  fs.writeFileSync(path.join(outDir, 'sample-upload.csv'), sampleCsv);
+  fs.writeFileSync(path.join(outDir, 'CSV_UPLOAD_README.md'), csvReadme);
+  const issuerConfig = emitIssuerConfig(descriptor, descriptorHash, { network, sampleCsvPath: 'sample-upload.csv' });
+
 
   fs.mkdirSync(outDir, { recursive: true });
   fs.writeFileSync(path.join(outDir, 'descriptor.json'), JSON.stringify(descriptor, null, 2));

@@ -32,6 +32,16 @@ During development, run the Vite dev server with hot reload:
 
 The dev server proxies `/api` to the generator web server on port 4051.
 
+Generated artifacts include:
+
+- `descriptor.json` — app descriptor
+- `issuer-config.json` — issuer console configuration
+- `schema.ast.json` — canonical schema AST
+- `sample-upload.csv` — example CSV upload row for the issuer console
+- `CSV_UPLOAD_README.md` — explains the upload format and set column JSON syntax
+- `managed/anchor-core/` — compiled Compact contract
+- `packages/` — per-holder packages (when cohort data is supplied)
+
 ### Option B: JSON file
 
 See [docs/JSON_SCHEMA_GUIDE.md](docs/JSON_SCHEMA_GUIDE.md) for the full schema format.

@@ -8,6 +8,7 @@ import { parseSchema } from '../schemas/parser.js';
 import { assertValid } from '../schemas/validator.js';
 import { emitDescriptor, canonicalJson } from '../schemas/descriptor.js';
 import { emitIssuerConfig } from '../runtime/issuer-config.js';
+import { generateCsvSample } from '../runtime/csv-sample.js';
 import { generatePackages } from '../runtime/package.js';
 import { createHash } from 'node:crypto';
 import { execSync } from 'node:child_process';
@@ -60,10 +61,15 @@ app.post('/api/generate', (req, res) => {
     assertValid(schema);
     const descriptor = emitDescriptor(schema);
     const hash = createHash('sha256').update(canonicalJson(descriptor)).digest('hex');
-    const issuerConfig = emitIssuerConfig(descriptor, hash, { network: 'undeployed' });
 
     const outDir = path.join(projectRoot, 'output', schema.name);
     fs.mkdirSync(outDir, { recursive: true });
+
+    // Generate sample CSV upload file
+    const { csv: sampleCsv, readme: csvReadme } = generateCsvSample(descriptor, { holderRef: 'SAMPLE-HOLDER-001' });
+    fs.writeFileSync(path.join(outDir, 'sample-upload.csv'), sampleCsv);
+    fs.writeFileSync(path.join(outDir, 'CSV_UPLOAD_README.md'), csvReadme);
+    const issuerConfig = emitIssuerConfig(descriptor, hash, { network: 'undeployed', sampleCsvPath: 'sample-upload.csv' });
     fs.writeFileSync(path.join(outDir, 'descriptor.json'), JSON.stringify(descriptor, null, 2));
     fs.writeFileSync(path.join(outDir, 'issuer-config.json'), JSON.stringify(issuerConfig, null, 2));
     fs.writeFileSync(path.join(outDir, 'schema.ast.json'), JSON.stringify(schema, null, 2));
