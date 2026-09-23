@@ -1,0 +1,127 @@
+{
+  "schemaVersion": "0.3",
+  "name": "college-degree",
+  "displayName": "Penn State University",
+  "issuerType": "university",
+  "domainPrefix": "credvault:",
+  "packageFormat": "credvault-degree/0.3",
+  "privateStateId": "credvaultDegreeState",
+  "fields": [
+    {
+      "kind": "directMatch",
+      "name": "fullName",
+      "type": "string",
+      "disclosure": [
+        "reveal"
+      ]
+    },
+    {
+      "kind": "directMatch",
+      "name": "degree",
+      "type": "string",
+      "disclosure": [
+        "reveal",
+        "equality"
+      ]
+    },
+    {
+      "kind": "conditional",
+      "name": "gpa",
+      "type": "uint",
+      "scale": 100,
+      "uintBits": 64,
+      "disclosure": [
+        "reveal"
+      ],
+      "conditional": {
+        "operators": [
+          "gte"
+        ],
+        "criteria": [
+          {
+            "op": "gte",
+            "value": "3.00"
+          },
+          {
+            "op": "gte",
+            "value": "3.50"
+          }
+        ],
+        "novelThresholds": "on-request"
+      },
+      "predicateNames": {
+        "gte": "verifyMinGPA"
+      }
+    },
+    {
+      "kind": "matchSet",
+      "name": "courseGrades",
+      "maxItems": 40,
+      "domainTag": "course",
+      "itemFields": [
+        {
+          "name": "code",
+          "type": "string"
+        },
+        {
+          "name": "title",
+          "type": "string"
+        },
+        {
+          "name": "credits",
+          "type": "uint",
+          "scale": 1
+        },
+        {
+          "name": "grade",
+          "type": "string"
+        }
+      ],
+      "verification": {
+        "individual": true,
+        "group": true,
+        "selected": "individual"
+      },
+      "disclosure": [
+        "reveal",
+        "subset"
+      ]
+    }
+  ],
+  "revocation": {
+    "enabled": true,
+    "cadence": "batch"
+  },
+  "issuerRuntime": {
+    "mode": "batch",
+    "batchTriggers": [
+      "graduation-cohort",
+      "registrar-correction"
+    ],
+    "preMint": [
+      "L1",
+      "L2"
+    ],
+    "novelProofs": "on-request"
+  },
+  "compliance": {
+    "ferpa": {
+      "role": "school-official"
+    },
+    "fcra": {
+      "consent": "naturally-captured"
+    },
+    "gdpr": {
+      "credvaultHoldsNoPII": true,
+      "deletion": "break-link",
+      "dpia": "issuer-obligation"
+    },
+    "auditLog": {
+      "immutable": true,
+      "records": "hashes-and-ids-only"
+    }
+  },
+  "fees": {
+    "enabled": false
+  }
+}

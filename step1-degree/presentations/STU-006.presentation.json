@@ -1,0 +1,39 @@
+{
+  "presentationType": "L3-full-reveal",
+  "schema": "credvault-degree/0.2",
+  "issuer": "Penn State University (mock)",
+  "cohort": "2027-spring-r2",
+  "studentId": "STU-006",
+  "values": {
+    "fullName": "Frank Torres",
+    "degree": "B.S. Physics",
+    "gpa": 392
+  },
+  "salts": {
+    "fullName": "031701ac351f9972b0cae67a4f3f6bda9310feb19478c22cce3e324195646662",
+    "degree": "0b6c6af63f5df0b2d230bcf1e2af70aac98b7b1c838b5be33f2917b2337dd2a5",
+    "gpa": "45355a2570b73992b48df9ba4bdf41260291d34fda00177a5c2a63c4bf19123d",
+    "master": "21b1990c5ca8997a101e3ba526bb2642754093becf0d59490b66c5a0fb11c359"
+  },
+  "gpaCommit": "f649f6895f720989f460792ceeee713a7c59bdaa2e7f37d7bec307a1b8791104",
+  "masterLeaf": "ecd32079932696d74f72c556a6aeec12f616ace5257c8a383178a66fb538719c",
+  "credId": "d9a92eb67371f6d8ac3ff49077b6981a1b1e63c5fbcb3bcf405dd67b1342ae2a",
+  "path": [
+    {
+      "sibling": "e80b3b65f7436ed196513fa24c41f8d48c62db8a60f16dc809f0434c0252434b",
+      "goesLeft": false
+    },
+    {
+      "sibling": "f6e27afafd7da41a755a7cf3b4cc95eb9dd4fb32c0badd18106636788c1c83e6",
+      "goesLeft": true
+    },
+    {
+      "sibling": "c72f3dc3baa585415805a48edfcf58044425fd4c293bd78eb72812fb165c76a8",
+      "goesLeft": false
+    }
+  ],
+  "cohortRoot": "eaf1fcf4154dbb628a4718a5ba10cfb7323e4b9062bb37ec663d17c81186de26",
+  "contractAddress": "c3b82a86c2b4fe3b2414caef250008731c79b45e93ec0edcca7faf2867325d92",
+  "l2Proofs": [],
+  "presentedAt": "2026-09-03T21:55:25.781Z"
+}

@@ -1,0 +1,114 @@
+{
+  "schema": "credvault-degree/0.3",
+  "issuer": "Penn State University (mock)",
+  "cohort": "console-upload-2026-09-05",
+  "studentId": "MONO-017",
+  "values": {
+    "fullName": "Luna Osborne",
+    "degree": "B.S. Mechanical Engineering",
+    "gpa": 290
+  },
+  "transcriptMode": "monolithic",
+  "courses": [
+    {
+      "code": "PHYS121",
+      "title": "Physics I",
+      "credits": 4,
+      "grade": "A"
+    },
+    {
+      "code": "ME330",
+      "title": "Machine Design",
+      "credits": 3,
+      "grade": "C+"
+    },
+    {
+      "code": "ME310",
+      "title": "Fluid Mechanics",
+      "credits": 3,
+      "grade": "A-"
+    },
+    {
+      "code": "ME230",
+      "title": "Materials Science",
+      "credits": 3,
+      "grade": "B+"
+    },
+    {
+      "code": "ME210",
+      "title": "Thermodynamics",
+      "credits": 4,
+      "grade": "B+"
+    },
+    {
+      "code": "MATH251",
+      "title": "Differential Equations",
+      "credits": 3,
+      "grade": "A-"
+    },
+    {
+      "code": "ME101",
+      "title": "Engineering Mechanics",
+      "credits": 4,
+      "grade": "A-"
+    },
+    {
+      "code": "ENGR300",
+      "title": "Engineering Ethics",
+      "credits": 3,
+      "grade": "A"
+    },
+    {
+      "code": "ME410",
+      "title": "Heat Transfer",
+      "credits": 3,
+      "grade": "C+"
+    },
+    {
+      "code": "ME420",
+      "title": "Control Systems",
+      "credits": 4,
+      "grade": "A"
+    }
+  ],
+  "docSalt": "8f62fd8bfdaa6844280c38c26df1a8c8f3e8316f64bab66aeed3ca2c61e723b7",
+  "docCommit": "152428210b2aecb4a4eaddd3917765ab1508f7d0ba33d50c96ed7708d7fb2c62",
+  "salts": {
+    "fullName": "aeaacdec8d8691f85911dbfdc1a0ef36e937b1eaaf3d0282d068a0feaafbae24",
+    "degree": "c5ef6f918e66e7561220e1b73a7c91b9ed8b71ff49a110060a3338a7e6192cfd",
+    "gpa": "6551ae3c69be6731109b4efa6299be1797447c289b045a93d847c11b9da7fac9",
+    "master": "6b05c07b52fca6226b53aaea9acc5f0781249fed27877d390dcca36439d3fc39"
+  },
+  "gpaCommit": "1b444ef8fa66f6610dbaed36062ab4257371849d8460b761223e839bf2a68f10",
+  "masterLeaf": "be6f7b3fad2dd82e4810efd2311a765c0be3a5a5fb28feb3c6f7f23a07e04d92",
+  "credId": "dc9120927adc13d98e7e0174cfaa7bf07d7c33fa5d28c38eed1352f00aa2df01",
+  "path": [
+    {
+      "sibling": "5eddcd9021ec8c0f47aa4f6fca8ab1800bdab4f00ad58830a67ddce140466665",
+      "goesLeft": true
+    },
+    {
+      "sibling": "e0d9c4dacd8d567887eae829febf8b6026465eb9196da7348ceaad7a90478adf",
+      "goesLeft": true
+    },
+    {
+      "sibling": "e07b546dc18a08c3e7de45b660532c22d10ff2faab294a0ffeb8a94b6e16b6c5",
+      "goesLeft": true
+    },
+    {
+      "sibling": "82ae462efade829084942e469f6b748e774891e8d91ffdc072ec9ba174629bad",
+      "goesLeft": true
+    },
+    {
+      "sibling": "06f42b0dd2c08e60e956307508ffaf05eca0cd015c67b29636a5a7cb6f7af0c2",
+      "goesLeft": false
+    },
+    {
+      "sibling": "9fd5d67d2b09058676e8e56505aa8fe12d808c851a2a88d7d47e6200e4946e1e",
+      "goesLeft": true
+    }
+  ],
+  "cohortRoot": "f02d63b2c130f1d28a2ba1094d542ed04d8f7f395c05b77ad1476c4153b3ba35",
+  "contractAddress": "c3b82a86c2b4fe3b2414caef250008731c79b45e93ec0edcca7faf2867325d92",
+  "l2Proofs": []
+}

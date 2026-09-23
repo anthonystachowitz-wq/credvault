@@ -1,0 +1,114 @@
+{
+  "schema": "credvault-degree/0.3",
+  "issuer": "Penn State University (mock)",
+  "cohort": "console-upload-2026-09-05",
+  "studentId": "MONO-002",
+  "values": {
+    "fullName": "Vera Xiong",
+    "degree": "B.A. Psychology",
+    "gpa": 298
+  },
+  "transcriptMode": "monolithic",
+  "courses": [
+    {
+      "code": "PHIL220",
+      "title": "Ethics",
+      "credits": 4,
+      "grade": "C+"
+    },
+    {
+      "code": "SOC210",
+      "title": "Sociology",
+      "credits": 3,
+      "grade": "C+"
+    },
+    {
+      "code": "BIO150",
+      "title": "Neuroscience",
+      "credits": 3,
+      "grade": "A"
+    },
+    {
+      "code": "STAT205",
+      "title": "Behavioral Statistics",
+      "credits": 3,
+      "grade": "B+"
+    },
+    {
+      "code": "PSY410",
+      "title": "Research Methods",
+      "credits": 4,
+      "grade": "B+"
+    },
+    {
+      "code": "PSY330",
+      "title": "Social Psychology",
+      "credits": 3,
+      "grade": "C+"
+    },
+    {
+      "code": "PSY310",
+      "title": "Abnormal Psychology",
+      "credits": 3,
+      "grade": "C+"
+    },
+    {
+      "code": "PSY230",
+      "title": "Developmental Psychology",
+      "credits": 4,
+      "grade": "A-"
+    },
+    {
+      "code": "PSY210",
+      "title": "Cognitive Psychology",
+      "credits": 3,
+      "grade": "A-"
+    },
+    {
+      "code": "PSY101",
+      "title": "Intro to Psychology",
+      "credits": 3,
+      "grade": "B"
+    }
+  ],
+  "docSalt": "85d39cf1f554c44df2fae7f195f3dd1eef859f23ff76f6c1e3012b8c4ca9fea5",
+  "docCommit": "428b5ef30f63417b198da630fe6ac83f0f77d2f1dadf0974ab73c74154a08105",
+  "salts": {
+    "fullName": "c92b0d40ccafbf347474c0f54891fb204b54a167db1b004220b2cb588fc33a93",
+    "degree": "0fe67da597b31dc1306987002a65a8765b76a2431eae54bb386b049f0355a6d7",
+    "gpa": "11348eb68aaed55b99afa8d4b504fd143687dc52e5895e251f293c1066a0c5ff",
+    "master": "173049ece89bd21d512297349812093d01c7f17c0f8c89846cbca90d5ccd5d9d"
+  },
+  "gpaCommit": "0bfdc15579f6cc8a683a2dda5ba103e593ffe9d3c8b2e1047496da1c161a73b3",
+  "masterLeaf": "00a512376ddb00d4871d23e11991d6e7f7ff78f0a0fbf5a453a359519be2a863",
+  "credId": "79a837b120586b7868ae1c448f844a2cb8e0762e15ec5920ed5f83eed414ca3c",
+  "path": [
+    {
+      "sibling": "2b899913003de47c42551fe222171e161583498613f88b7a6dad7cef7d008af2",
+      "goesLeft": false
+    },
+    {
+      "sibling": "c4febc028730babf6eb9064ef1a349e57d98f9c8560ebd194ab00a6bc13d2d38",
+      "goesLeft": true
+    },
+    {
+      "sibling": "47e4daa5ff23934595765e51633d6519b909a47033857ec4f2538332a2d0ffcb",
+      "goesLeft": true
+    },
+    {
+      "sibling": "2dd77b5328c59649578b3c32479d2e3b42903f2fb5acba2db1681aa58ce41eb5",
+      "goesLeft": true
+    },
+    {
+      "sibling": "663cc0823e3c2e638011e4419cff9f68a18261bc85ffb5fb61fdbc86405c0b43",
+      "goesLeft": true
+    },
+    {
+      "sibling": "9fd5d67d2b09058676e8e56505aa8fe12d808c851a2a88d7d47e6200e4946e1e",
+      "goesLeft": true
+    }
+  ],
+  "cohortRoot": "f02d63b2c130f1d28a2ba1094d542ed04d8f7f395c05b77ad1476c4153b3ba35",
+  "contractAddress": "c3b82a86c2b4fe3b2414caef250008731c79b45e93ec0edcca7faf2867325d92",
+  "l2Proofs": []
+}

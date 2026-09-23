@@ -1,0 +1,76 @@
+// ═══════════════════════════════════════════════════════════════════════════
+// CredVault Step 1 — degree.compact
+// Degree issuance + revocation anchors: membership ∧ non-membership.
+//
+// Design (apps/credvault/ARCHITECTURE.md §3, §11):
+//   • The chain stores ONLY opaque 32-byte anchors — never personal data.
+//   • validRoots: every cohort Merkle root ever anchored (historic roots stay
+//     valid, so old proof packages survive later batches).
+//   • revoked: credential IDs (hashes) of revoked credentials.
+//   • Authority is proven IN-CIRCUIT from a witness-held secret, so no
+//     off-chain hash matching is needed anywhere in this contract.
+//   • Holders generate ZERO transactions — verification happens off-chain by
+//     recomputation against these anchors. The only on-chain writes are the
+//     issuer's: anchor a cohort, revoke a credential.
+// ═══════════════════════════════════════════════════════════════════════════
+
+pragma language_version >= 0.18;
+
+import CompactStandardLibrary;
+
+// Issuer authority key — sealed at construction, never changes.
+export sealed ledger authority: Bytes<32>;
+
+// All valid cohort roots (one per graduation batch).
+export ledger validRoots: Set<Bytes<32>>;
+
+// Revoked credential IDs.
+export ledger revoked: Set<Bytes<32>>;
+
+// The issuer's secret, supplied by the issuer runtime at call time.
+witness issuerSecretKey(): Bytes<32>;
+
+// Derive the authority key from the secret. In-circuit, so the constructor
+// and the guard always agree — no off-chain hashing to match.
+circuit authorityKey(): Bytes<32> {
+  // The authority key is a PUBLIC key: disclosing the hash reveals nothing
+  // about the secret (same reasoning as publishing a nullifier).
+  return disclose(persistentHash<Vector<2, Bytes<32>>>([pad(32, "credvault:authority:"), issuerSecretKey()]));
+}
+
+constructor() {
+  authority = authorityKey();
+}
+
+// Guard: only the issuer may proceed.
+circuit assertAuthority(): [] {
+  assert(authorityKey() == authority, "Caller is not the issuer");
+}
+
+// Anchor a new cohort root (one call per graduation batch).
+export circuit addCohortRoot(root: Bytes<32>): [] {
+  assertAuthority();
+  validRoots.insert(disclose(root));
+}
+
+// Revoke a credential by its credential ID.
+export circuit revokeCredential(credId: Bytes<32>): [] {
+  assertAuthority();
+  revoked.insert(disclose(credId));
+}
+
+// ═══ L2: ZK predicate — prove GPA >= min WITHOUT revealing the GPA ═════════
+// The holder (or pre-minting issuer) supplies the private GPA + salt via
+// witnesses; the circuit asserts they reproduce the presented commitment and
+// that the GPA clears the verifier's minimum. The revocation read both binds
+// the proof to a live credential AND makes the circuit provable (pure
+// computation circuits are not provable).
+witness gpaValue(): Uint<64>;
+witness gpaSalt(): Bytes<32>;
+
+export circuit verifyMinGPA(credId: Bytes<32>, gpaCommit: Bytes<32>, minGpa: Uint<64>): [] {
+  const gpa = gpaValue();
+  assert(persistentCommit<Uint<64>>(gpa, gpaSalt()) == gpaCommit, "GPA/salt do not match the credential commitment");
+  assert(gpa >= minGpa, "GPA below the required minimum");
+  assert(!revoked.member(disclose(credId)), "credential is revoked");
+}

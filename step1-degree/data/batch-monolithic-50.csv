@@ -1,0 +1,501 @@
+studentId,fullName,degree,gpa,courseCode,courseTitle,credits,grade
+MONO-001,Jack Khan,B.S. Biology,302,MATH130,Calculus I,3,C
+MONO-001,Jack Khan,B.S. Biology,302,CHEM110,General Chemistry,3,A
+MONO-001,Jack Khan,B.S. Biology,302,BIO101,General Biology,3,A-
+MONO-001,Jack Khan,B.S. Biology,302,BIO305,Genetics,3,C+
+MONO-001,Jack Khan,B.S. Biology,302,STAT215,Biostatistics,3,B
+MONO-001,Jack Khan,B.S. Biology,302,CHEM210,Organic Chemistry,3,A
+MONO-001,Jack Khan,B.S. Biology,302,BIO210,Cell Biology,3,B+
+MONO-001,Jack Khan,B.S. Biology,302,BIO320,Ecology,3,C+
+MONO-001,Jack Khan,B.S. Biology,302,BCHM310,Biochemistry,3,C+
+MONO-001,Jack Khan,B.S. Biology,302,BIO410,Microbiology,3,B-
+MONO-002,Vera Xiong,B.A. Psychology,298,PHIL220,Ethics,4,C+
+MONO-002,Vera Xiong,B.A. Psychology,298,SOC210,Sociology,3,C+
+MONO-002,Vera Xiong,B.A. Psychology,298,BIO150,Neuroscience,3,A
+MONO-002,Vera Xiong,B.A. Psychology,298,STAT205,Behavioral Statistics,3,B+
+MONO-002,Vera Xiong,B.A. Psychology,298,PSY410,Research Methods,4,B+
+MONO-002,Vera Xiong,B.A. Psychology,298,PSY330,Social Psychology,3,C+
+MONO-002,Vera Xiong,B.A. Psychology,298,PSY310,Abnormal Psychology,3,C+
+MONO-002,Vera Xiong,B.A. Psychology,298,PSY230,Developmental Psychology,4,A-
+MONO-002,Vera Xiong,B.A. Psychology,298,PSY210,Cognitive Psychology,3,A-
+MONO-002,Vera Xiong,B.A. Psychology,298,PSY101,Intro to Psychology,3,B
+MONO-003,Reed Nolan,B.S. Biology,362,BIO410,Microbiology,3,A
+MONO-003,Reed Nolan,B.S. Biology,362,BCHM310,Biochemistry,3,B-
+MONO-003,Reed Nolan,B.S. Biology,362,BIO101,General Biology,3,A-
+MONO-003,Reed Nolan,B.S. Biology,362,CHEM210,Organic Chemistry,4,A
+MONO-003,Reed Nolan,B.S. Biology,362,STAT215,Biostatistics,3,B-
+MONO-003,Reed Nolan,B.S. Biology,362,BIO210,Cell Biology,3,C
+MONO-003,Reed Nolan,B.S. Biology,362,MATH130,Calculus I,3,A-
+MONO-003,Reed Nolan,B.S. Biology,362,BIO305,Genetics,3,B-
+MONO-003,Reed Nolan,B.S. Biology,362,BIO320,Ecology,4,B+
+MONO-003,Reed Nolan,B.S. Biology,362,CHEM110,General Chemistry,3,B-
+MONO-004,Wade Gupta,B.A. Economics,372,ECON210,Macroeconomics,3,A-
+MONO-004,Wade Gupta,B.A. Economics,372,ECON340,Econometrics,3,B+
+MONO-004,Wade Gupta,B.A. Economics,372,ECON310,Game Theory,3,C
+MONO-004,Wade Gupta,B.A. Economics,372,HIST240,Economic History,3,A-
+MONO-004,Wade Gupta,B.A. Economics,372,ECON410,Public Economics,3,A-
+MONO-004,Wade Gupta,B.A. Economics,372,FIN220,Corporate Finance,4,B+
+MONO-004,Wade Gupta,B.A. Economics,372,STAT200,Statistics,3,A
+MONO-004,Wade Gupta,B.A. Economics,372,ECON101,Microeconomics,4,C
+MONO-004,Wade Gupta,B.A. Economics,372,MATH210,Linear Algebra,3,C+
+MONO-004,Wade Gupta,B.A. Economics,372,ECON240,International Trade,3,A
+MONO-005,Vera Valdez,B.S. Computer Science,306,CS330,Computer Architecture,3,A
+MONO-005,Vera Valdez,B.S. Computer Science,306,CS470,Software Engineering,3,C+
+MONO-005,Vera Valdez,B.S. Computer Science,306,CS320,Algorithms,3,A-
+MONO-005,Vera Valdez,B.S. Computer Science,306,CS410,Databases,3,B
+MONO-005,Vera Valdez,B.S. Computer Science,306,CS460,Machine Learning,4,B+
+MONO-005,Vera Valdez,B.S. Computer Science,306,CS360,Operating Systems,3,A
+MONO-005,Vera Valdez,B.S. Computer Science,306,MATH420,Cryptography,4,B+
+MONO-005,Vera Valdez,B.S. Computer Science,306,CS420,Networks,3,A-
+MONO-005,Vera Valdez,B.S. Computer Science,306,STAT310,Probability,3,B
+MONO-005,Vera Valdez,B.S. Computer Science,306,CS240,Data Structures,4,C
+MONO-006,Lara Diaz,B.S. Mechanical Engineering,345,ENGR300,Engineering Ethics,3,B+
+MONO-006,Lara Diaz,B.S. Mechanical Engineering,345,ME101,Engineering Mechanics,3,A
+MONO-006,Lara Diaz,B.S. Mechanical Engineering,345,ME310,Fluid Mechanics,4,B+
+MONO-006,Lara Diaz,B.S. Mechanical Engineering,345,ME330,Machine Design,3,A
+MONO-006,Lara Diaz,B.S. Mechanical Engineering,345,ME410,Heat Transfer,3,A
+MONO-006,Lara Diaz,B.S. Mechanical Engineering,345,ME420,Control Systems,3,C
+MONO-006,Lara Diaz,B.S. Mechanical Engineering,345,ME210,Thermodynamics,3,B+
+MONO-006,Lara Diaz,B.S. Mechanical Engineering,345,PHYS121,Physics I,3,B+
+MONO-006,Lara Diaz,B.S. Mechanical Engineering,345,ME230,Materials Science,3,A-
+MONO-006,Lara Diaz,B.S. Mechanical Engineering,345,MATH251,Differential Equations,4,C
+MONO-007,June Diaz,B.S. Mechanical Engineering,294,ME101,Engineering Mechanics,3,A
+MONO-007,June Diaz,B.S. Mechanical Engineering,294,ME330,Machine Design,3,A-
+MONO-007,June Diaz,B.S. Mechanical Engineering,294,MATH251,Differential Equations,3,B-
+MONO-007,June Diaz,B.S. Mechanical Engineering,294,ME210,Thermodynamics,3,A-
+MONO-007,June Diaz,B.S. Mechanical Engineering,294,ENGR300,Engineering Ethics,3,B-
+MONO-007,June Diaz,B.S. Mechanical Engineering,294,PHYS121,Physics I,3,B-
+MONO-007,June Diaz,B.S. Mechanical Engineering,294,ME410,Heat Transfer,3,B
+MONO-007,June Diaz,B.S. Mechanical Engineering,294,ME310,Fluid Mechanics,4,A-
+MONO-007,June Diaz,B.S. Mechanical Engineering,294,ME420,Control Systems,4,A-
+MONO-007,June Diaz,B.S. Mechanical Engineering,294,ME230,Materials Science,3,B
+MONO-008,Milo Khan,B.S. Computer Science,322,CS330,Computer Architecture,3,C+
+MONO-008,Milo Khan,B.S. Computer Science,322,CS470,Software Engineering,4,A-
+MONO-008,Milo Khan,B.S. Computer Science,322,CS410,Databases,3,C+
+MONO-008,Milo Khan,B.S. Computer Science,322,CS320,Algorithms,3,B
+MONO-008,Milo Khan,B.S. Computer Science,322,CS360,Operating Systems,3,B+
+MONO-008,Milo Khan,B.S. Computer Science,322,CS460,Machine Learning,4,B+
+MONO-008,Milo Khan,B.S. Computer Science,322,STAT310,Probability,3,B-
+MONO-008,Milo Khan,B.S. Computer Science,322,CS101,Intro to Computer Science,3,B+
+MONO-008,Milo Khan,B.S. Computer Science,322,CS240,Data Structures,3,B
+MONO-008,Milo Khan,B.S. Computer Science,322,CS420,Networks,3,A
+MONO-009,Leo Emery,B.A. Economics,382,ECON101,Microeconomics,4,A-
+MONO-009,Leo Emery,B.A. Economics,382,HIST240,Economic History,3,B+
+MONO-009,Leo Emery,B.A. Economics,382,STAT200,Statistics,3,C
+MONO-009,Leo Emery,B.A. Economics,382,ECON310,Game Theory,3,A
+MONO-009,Leo Emery,B.A. Economics,382,MATH210,Linear Algebra,4,B
+MONO-009,Leo Emery,B.A. Economics,382,ECON210,Macroeconomics,3,A
+MONO-009,Leo Emery,B.A. Economics,382,ECON340,Econometrics,4,B-
+MONO-009,Leo Emery,B.A. Economics,382,ECON240,International Trade,4,C
+MONO-009,Leo Emery,B.A. Economics,382,ECON410,Public Economics,4,A
+MONO-009,Leo Emery,B.A. Economics,382,FIN220,Corporate Finance,4,C+
+MONO-010,Ava Xu,B.S. Biology,375,BCHM310,Biochemistry,3,C+
+MONO-010,Ava Xu,B.S. Biology,375,BIO101,General Biology,3,B+
+MONO-010,Ava Xu,B.S. Biology,375,CHEM210,Organic Chemistry,4,C
+MONO-010,Ava Xu,B.S. Biology,375,BIO210,Cell Biology,3,A-
+MONO-010,Ava Xu,B.S. Biology,375,BIO305,Genetics,3,C
+MONO-010,Ava Xu,B.S. Biology,375,STAT215,Biostatistics,3,B
+MONO-010,Ava Xu,B.S. Biology,375,MATH130,Calculus I,4,B+
+MONO-010,Ava Xu,B.S. Biology,375,BIO320,Ecology,3,B
+MONO-010,Ava Xu,B.S. Biology,375,BIO410,Microbiology,4,B+
+MONO-010,Ava Xu,B.S. Biology,375,CHEM110,General Chemistry,3,C
+MONO-011,Ruby Yates,B.S. Mechanical Engineering,310,ME310,Fluid Mechanics,3,B+
+MONO-011,Ruby Yates,B.S. Mechanical Engineering,310,ME420,Control Systems,3,C
+MONO-011,Ruby Yates,B.S. Mechanical Engineering,310,ME230,Materials Science,4,A
+MONO-011,Ruby Yates,B.S. Mechanical Engineering,310,ME410,Heat Transfer,3,C
+MONO-011,Ruby Yates,B.S. Mechanical Engineering,310,ME330,Machine Design,3,A
+MONO-011,Ruby Yates,B.S. Mechanical Engineering,310,ME210,Thermodynamics,3,B
+MONO-011,Ruby Yates,B.S. Mechanical Engineering,310,ENGR300,Engineering Ethics,3,A
+MONO-011,Ruby Yates,B.S. Mechanical Engineering,310,ME101,Engineering Mechanics,3,A-
+MONO-011,Ruby Yates,B.S. Mechanical Engineering,310,PHYS121,Physics I,4,A-
+MONO-011,Ruby Yates,B.S. Mechanical Engineering,310,MATH251,Differential Equations,4,A
+MONO-012,Noah Ito,B.S. Mechanical Engineering,349,ME230,Materials Science,3,B+
+MONO-012,Noah Ito,B.S. Mechanical Engineering,349,ME310,Fluid Mechanics,3,A-
+MONO-012,Noah Ito,B.S. Mechanical Engineering,349,ME330,Machine Design,3,B+
+MONO-012,Noah Ito,B.S. Mechanical Engineering,349,PHYS121,Physics I,3,C+
+MONO-012,Noah Ito,B.S. Mechanical Engineering,349,ME420,Control Systems,3,B+
+MONO-012,Noah Ito,B.S. Mechanical Engineering,349,ENGR300,Engineering Ethics,4,B+
+MONO-012,Noah Ito,B.S. Mechanical Engineering,349,ME210,Thermodynamics,3,A
+MONO-012,Noah Ito,B.S. Mechanical Engineering,349,ME410,Heat Transfer,4,B+
+MONO-012,Noah Ito,B.S. Mechanical Engineering,349,MATH251,Differential Equations,4,A
+MONO-012,Noah Ito,B.S. Mechanical Engineering,349,ME101,Engineering Mechanics,4,B-
+MONO-013,Vera Chen,B.S. Biology,381,CHEM210,Organic Chemistry,3,B+
+MONO-013,Vera Chen,B.S. Biology,381,STAT215,Biostatistics,3,B+
+MONO-013,Vera Chen,B.S. Biology,381,BIO320,Ecology,3,A-
+MONO-013,Vera Chen,B.S. Biology,381,BCHM310,Biochemistry,3,C+
+MONO-013,Vera Chen,B.S. Biology,381,MATH130,Calculus I,3,B-
+MONO-013,Vera Chen,B.S. Biology,381,CHEM110,General Chemistry,3,A-
+MONO-013,Vera Chen,B.S. Biology,381,BIO305,Genetics,4,A
+MONO-013,Vera Chen,B.S. Biology,381,BIO210,Cell Biology,3,C+
+MONO-013,Vera Chen,B.S. Biology,381,BIO410,Microbiology,4,B+
+MONO-013,Vera Chen,B.S. Biology,381,BIO101,General Biology,4,A
+MONO-014,June Nolan,B.S. Computer Science,315,CS420,Networks,3,A
+MONO-014,June Nolan,B.S. Computer Science,315,CS410,Databases,3,A
+MONO-014,June Nolan,B.S. Computer Science,315,CS101,Intro to Computer Science,4,B+
+MONO-014,June Nolan,B.S. Computer Science,315,CS460,Machine Learning,3,C
+MONO-014,June Nolan,B.S. Computer Science,315,CS201,Programming Languages,3,B+
+MONO-014,June Nolan,B.S. Computer Science,315,CS360,Operating Systems,3,A
+MONO-014,June Nolan,B.S. Computer Science,315,STAT310,Probability,3,B-
+MONO-014,June Nolan,B.S. Computer Science,315,CS240,Data Structures,4,B+
+MONO-014,June Nolan,B.S. Computer Science,315,CS470,Software Engineering,3,A-
+MONO-014,June Nolan,B.S. Computer Science,315,CS320,Algorithms,3,A
+MONO-015,Opal Ito,B.A. Psychology,339,PSY101,Intro to Psychology,3,A
+MONO-015,Opal Ito,B.A. Psychology,339,PSY210,Cognitive Psychology,3,C+
+MONO-015,Opal Ito,B.A. Psychology,339,PSY230,Developmental Psychology,4,B-
+MONO-015,Opal Ito,B.A. Psychology,339,PSY310,Abnormal Psychology,3,A
+MONO-015,Opal Ito,B.A. Psychology,339,PSY330,Social Psychology,3,C
+MONO-015,Opal Ito,B.A. Psychology,339,BIO150,Neuroscience,3,B-
+MONO-015,Opal Ito,B.A. Psychology,339,SOC210,Sociology,3,A
+MONO-015,Opal Ito,B.A. Psychology,339,STAT205,Behavioral Statistics,4,C+
+MONO-015,Opal Ito,B.A. Psychology,339,PHIL220,Ethics,4,A-
+MONO-015,Opal Ito,B.A. Psychology,339,PSY410,Research Methods,3,B+
+MONO-016,Nora Emery,B.S. Computer Science,381,CS240,Data Structures,3,A-
+MONO-016,Nora Emery,B.S. Computer Science,381,CS420,Networks,3,A-
+MONO-016,Nora Emery,B.S. Computer Science,381,CS460,Machine Learning,4,C
+MONO-016,Nora Emery,B.S. Computer Science,381,CS101,Intro to Computer Science,3,C+
+MONO-016,Nora Emery,B.S. Computer Science,381,CS470,Software Engineering,4,A-
+MONO-016,Nora Emery,B.S. Computer Science,381,MATH420,Cryptography,4,A-
+MONO-016,Nora Emery,B.S. Computer Science,381,CS320,Algorithms,4,A
+MONO-016,Nora Emery,B.S. Computer Science,381,CS201,Programming Languages,4,B+
+MONO-016,Nora Emery,B.S. Computer Science,381,STAT310,Probability,4,A-
+MONO-016,Nora Emery,B.S. Computer Science,381,CS360,Operating Systems,3,A
+MONO-017,Luna Osborne,B.S. Mechanical Engineering,290,PHYS121,Physics I,4,A
+MONO-017,Luna Osborne,B.S. Mechanical Engineering,290,ME330,Machine Design,3,C+
+MONO-017,Luna Osborne,B.S. Mechanical Engineering,290,ME310,Fluid Mechanics,3,A-
+MONO-017,Luna Osborne,B.S. Mechanical Engineering,290,ME230,Materials Science,3,B+
+MONO-017,Luna Osborne,B.S. Mechanical Engineering,290,ME210,Thermodynamics,4,B+
+MONO-017,Luna Osborne,B.S. Mechanical Engineering,290,MATH251,Differential Equations,3,A-
+MONO-017,Luna Osborne,B.S. Mechanical Engineering,290,ME101,Engineering Mechanics,4,A-
+MONO-017,Luna Osborne,B.S. Mechanical Engineering,290,ENGR300,Engineering Ethics,3,A
+MONO-017,Luna Osborne,B.S. Mechanical Engineering,290,ME410,Heat Transfer,3,C+
+MONO-017,Luna Osborne,B.S. Mechanical Engineering,290,ME420,Control Systems,4,A
+MONO-018,Sara Gray,B.S. Computer Science,320,CS320,Algorithms,4,B+
+MONO-018,Sara Gray,B.S. Computer Science,320,CS420,Networks,3,A-
+MONO-018,Sara Gray,B.S. Computer Science,320,CS360,Operating Systems,4,C
+MONO-018,Sara Gray,B.S. Computer Science,320,STAT310,Probability,3,A-
+MONO-018,Sara Gray,B.S. Computer Science,320,CS470,Software Engineering,3,B+
+MONO-018,Sara Gray,B.S. Computer Science,320,CS101,Intro to Computer Science,3,A
+MONO-018,Sara Gray,B.S. Computer Science,320,CS201,Programming Languages,3,A-
+MONO-018,Sara Gray,B.S. Computer Science,320,CS410,Databases,3,C+
+MONO-018,Sara Gray,B.S. Computer Science,320,CS240,Data Structures,3,C+
+MONO-018,Sara Gray,B.S. Computer Science,320,MATH420,Cryptography,3,B-
+MONO-019,Bret Costa,B.A. Economics,309,FIN220,Corporate Finance,4,C+
+MONO-019,Bret Costa,B.A. Economics,309,ECON101,Microeconomics,3,B+
+MONO-019,Bret Costa,B.A. Economics,309,ECON340,Econometrics,3,A
+MONO-019,Bret Costa,B.A. Economics,309,MATH210,Linear Algebra,3,A-
+MONO-019,Bret Costa,B.A. Economics,309,HIST240,Economic History,3,B+
+MONO-019,Bret Costa,B.A. Economics,309,ECON210,Macroeconomics,4,A
+MONO-019,Bret Costa,B.A. Economics,309,ECON410,Public Economics,4,B
+MONO-019,Bret Costa,B.A. Economics,309,ECON240,International Trade,4,C+
+MONO-019,Bret Costa,B.A. Economics,309,ECON310,Game Theory,3,A-
+MONO-019,Bret Costa,B.A. Economics,309,STAT200,Statistics,3,B-
+MONO-020,Gail Khan,B.S. Computer Science,292,CS240,Data Structures,3,A
+MONO-020,Gail Khan,B.S. Computer Science,292,CS470,Software Engineering,4,C+
+MONO-020,Gail Khan,B.S. Computer Science,292,CS330,Computer Architecture,4,A
+MONO-020,Gail Khan,B.S. Computer Science,292,CS360,Operating Systems,3,B+
+MONO-020,Gail Khan,B.S. Computer Science,292,CS460,Machine Learning,3,A
+MONO-020,Gail Khan,B.S. Computer Science,292,STAT310,Probability,4,B+
+MONO-020,Gail Khan,B.S. Computer Science,292,CS101,Intro to Computer Science,3,C
+MONO-020,Gail Khan,B.S. Computer Science,292,CS410,Databases,4,A
+MONO-020,Gail Khan,B.S. Computer Science,292,MATH420,Cryptography,3,A-
+MONO-020,Gail Khan,B.S. Computer Science,292,CS320,Algorithms,3,A-
+MONO-021,Cole Xiong,B.S. Biology,349,MATH130,Calculus I,3,B+
+MONO-021,Cole Xiong,B.S. Biology,349,BCHM310,Biochemistry,3,A
+MONO-021,Cole Xiong,B.S. Biology,349,CHEM210,Organic Chemistry,3,A
+MONO-021,Cole Xiong,B.S. Biology,349,CHEM110,General Chemistry,3,B+
+MONO-021,Cole Xiong,B.S. Biology,349,STAT215,Biostatistics,3,B-
+MONO-021,Cole Xiong,B.S. Biology,349,BIO410,Microbiology,4,B+
+MONO-021,Cole Xiong,B.S. Biology,349,BIO320,Ecology,3,A-
+MONO-021,Cole Xiong,B.S. Biology,349,BIO305,Genetics,3,A-
+MONO-021,Cole Xiong,B.S. Biology,349,BIO210,Cell Biology,3,A
+MONO-021,Cole Xiong,B.S. Biology,349,BIO101,General Biology,3,B+
+MONO-022,Reed Gray,B.A. Economics,314,FIN220,Corporate Finance,4,B-
+MONO-022,Reed Gray,B.A. Economics,314,ECON410,Public Economics,4,B-
+MONO-022,Reed Gray,B.A. Economics,314,HIST240,Economic History,3,B
+MONO-022,Reed Gray,B.A. Economics,314,MATH210,Linear Algebra,3,C+
+MONO-022,Reed Gray,B.A. Economics,314,ECON340,Econometrics,3,B
+MONO-022,Reed Gray,B.A. Economics,314,ECON310,Game Theory,3,A
+MONO-022,Reed Gray,B.A. Economics,314,STAT200,Statistics,3,B+
+MONO-022,Reed Gray,B.A. Economics,314,ECON240,International Trade,3,A
+MONO-022,Reed Gray,B.A. Economics,314,ECON210,Macroeconomics,3,B
+MONO-022,Reed Gray,B.A. Economics,314,ECON101,Microeconomics,4,B+
+MONO-023,Abby Underwood,B.A. Psychology,310,PSY230,Developmental Psychology,4,A
+MONO-023,Abby Underwood,B.A. Psychology,310,PHIL220,Ethics,3,B-
+MONO-023,Abby Underwood,B.A. Psychology,310,PSY410,Research Methods,4,C
+MONO-023,Abby Underwood,B.A. Psychology,310,SOC210,Sociology,3,B+
+MONO-023,Abby Underwood,B.A. Psychology,310,STAT205,Behavioral Statistics,4,B-
+MONO-023,Abby Underwood,B.A. Psychology,310,BIO150,Neuroscience,3,B+
+MONO-023,Abby Underwood,B.A. Psychology,310,PSY210,Cognitive Psychology,3,C
+MONO-023,Abby Underwood,B.A. Psychology,310,PSY101,Intro to Psychology,3,B
+MONO-023,Abby Underwood,B.A. Psychology,310,PSY330,Social Psychology,3,A-
+MONO-023,Abby Underwood,B.A. Psychology,310,PSY310,Abnormal Psychology,3,B+
+MONO-024,Burt Webb,B.A. Economics,348,ECON240,International Trade,3,A
+MONO-024,Burt Webb,B.A. Economics,348,ECON101,Microeconomics,3,B+
+MONO-024,Burt Webb,B.A. Economics,348,ECON210,Macroeconomics,3,B
+MONO-024,Burt Webb,B.A. Economics,348,HIST240,Economic History,3,C+
+MONO-024,Burt Webb,B.A. Economics,348,STAT200,Statistics,3,A-
+MONO-024,Burt Webb,B.A. Economics,348,MATH210,Linear Algebra,3,B
+MONO-024,Burt Webb,B.A. Economics,348,FIN220,Corporate Finance,3,C+
+MONO-024,Burt Webb,B.A. Economics,348,ECON410,Public Economics,3,A-
+MONO-024,Burt Webb,B.A. Economics,348,ECON340,Econometrics,3,C
+MONO-024,Burt Webb,B.A. Economics,348,ECON310,Game Theory,3,A-
+MONO-025,Finn Gray,B.A. Economics,345,FIN220,Corporate Finance,4,B+
+MONO-025,Finn Gray,B.A. Economics,345,ECON340,Econometrics,3,A
+MONO-025,Finn Gray,B.A. Economics,345,STAT200,Statistics,3,B
+MONO-025,Finn Gray,B.A. Economics,345,ECON310,Game Theory,4,A-
+MONO-025,Finn Gray,B.A. Economics,345,ECON240,International Trade,3,B+
+MONO-025,Finn Gray,B.A. Economics,345,ECON210,Macroeconomics,3,C
+MONO-025,Finn Gray,B.A. Economics,345,ECON101,Microeconomics,3,C
+MONO-025,Finn Gray,B.A. Economics,345,MATH210,Linear Algebra,3,B+
+MONO-025,Finn Gray,B.A. Economics,345,ECON410,Public Economics,3,A
+MONO-025,Finn Gray,B.A. Economics,345,HIST240,Economic History,3,C
+MONO-026,Nora Klein,B.A. Psychology,398,STAT205,Behavioral Statistics,3,B+
+MONO-026,Nora Klein,B.A. Psychology,398,PSY230,Developmental Psychology,3,C
+MONO-026,Nora Klein,B.A. Psychology,398,SOC210,Sociology,4,B+
+MONO-026,Nora Klein,B.A. Psychology,398,PSY101,Intro to Psychology,3,C
+MONO-026,Nora Klein,B.A. Psychology,398,PSY410,Research Methods,3,B+
+MONO-026,Nora Klein,B.A. Psychology,398,PSY310,Abnormal Psychology,3,C
+MONO-026,Nora Klein,B.A. Psychology,398,BIO150,Neuroscience,3,A
+MONO-026,Nora Klein,B.A. Psychology,398,PHIL220,Ethics,3,C+
+MONO-026,Nora Klein,B.A. Psychology,398,PSY330,Social Psychology,4,A
+MONO-026,Nora Klein,B.A. Psychology,398,PSY210,Cognitive Psychology,3,B+
+MONO-027,Nora Ali,B.S. Biology,385,CHEM210,Organic Chemistry,4,B
+MONO-027,Nora Ali,B.S. Biology,385,BCHM310,Biochemistry,3,C+
+MONO-027,Nora Ali,B.S. Biology,385,BIO101,General Biology,3,B+
+MONO-027,Nora Ali,B.S. Biology,385,MATH130,Calculus I,3,A-
+MONO-027,Nora Ali,B.S. Biology,385,BIO305,Genetics,3,B+
+MONO-027,Nora Ali,B.S. Biology,385,CHEM110,General Chemistry,3,B+
+MONO-027,Nora Ali,B.S. Biology,385,STAT215,Biostatistics,3,B+
+MONO-027,Nora Ali,B.S. Biology,385,BIO210,Cell Biology,3,B+
+MONO-027,Nora Ali,B.S. Biology,385,BIO410,Microbiology,3,B+
+MONO-027,Nora Ali,B.S. Biology,385,BIO320,Ecology,3,B-
+MONO-028,Hugo Farrell,B.S. Biology,330,STAT215,Biostatistics,3,A
+MONO-028,Hugo Farrell,B.S. Biology,330,BIO320,Ecology,3,A-
+MONO-028,Hugo Farrell,B.S. Biology,330,BCHM310,Biochemistry,3,B+
+MONO-028,Hugo Farrell,B.S. Biology,330,BIO305,Genetics,3,A
+MONO-028,Hugo Farrell,B.S. Biology,330,CHEM210,Organic Chemistry,3,C
+MONO-028,Hugo Farrell,B.S. Biology,330,BIO210,Cell Biology,3,A
+MONO-028,Hugo Farrell,B.S. Biology,330,BIO101,General Biology,4,B-
+MONO-028,Hugo Farrell,B.S. Biology,330,BIO410,Microbiology,3,B-
+MONO-028,Hugo Farrell,B.S. Biology,330,MATH130,Calculus I,3,C
+MONO-028,Hugo Farrell,B.S. Biology,330,CHEM110,General Chemistry,3,B+
+MONO-029,Ella Farrell,B.A. Economics,282,ECON310,Game Theory,3,B-
+MONO-029,Ella Farrell,B.A. Economics,282,ECON101,Microeconomics,3,A
+MONO-029,Ella Farrell,B.A. Economics,282,ECON410,Public Economics,3,A
+MONO-029,Ella Farrell,B.A. Economics,282,FIN220,Corporate Finance,4,C
+MONO-029,Ella Farrell,B.A. Economics,282,ECON210,Macroeconomics,4,C
+MONO-029,Ella Farrell,B.A. Economics,282,STAT200,Statistics,3,A
+MONO-029,Ella Farrell,B.A. Economics,282,ECON340,Econometrics,3,B
+MONO-029,Ella Farrell,B.A. Economics,282,MATH210,Linear Algebra,4,A
+MONO-029,Ella Farrell,B.A. Economics,282,HIST240,Economic History,3,B
+MONO-029,Ella Farrell,B.A. Economics,282,ECON240,International Trade,3,B
+MONO-030,Tara Park,B.A. Economics,329,MATH210,Linear Algebra,4,B+
+MONO-030,Tara Park,B.A. Economics,329,STAT200,Statistics,3,A-
+MONO-030,Tara Park,B.A. Economics,329,FIN220,Corporate Finance,3,C+
+MONO-030,Tara Park,B.A. Economics,329,ECON310,Game Theory,3,B-
+MONO-030,Tara Park,B.A. Economics,329,ECON101,Microeconomics,3,B-
+MONO-030,Tara Park,B.A. Economics,329,ECON340,Econometrics,3,B
+MONO-030,Tara Park,B.A. Economics,329,ECON210,Macroeconomics,3,A
+MONO-030,Tara Park,B.A. Economics,329,HIST240,Economic History,3,C+
+MONO-030,Tara Park,B.A. Economics,329,ECON410,Public Economics,3,B+
+MONO-030,Tara Park,B.A. Economics,329,ECON240,International Trade,3,A
+MONO-031,Nora Nguyen,B.S. Mechanical Engineering,305,PHYS121,Physics I,3,A-
+MONO-031,Nora Nguyen,B.S. Mechanical Engineering,305,MATH251,Differential Equations,3,A-
+MONO-031,Nora Nguyen,B.S. Mechanical Engineering,305,ME101,Engineering Mechanics,3,B
+MONO-031,Nora Nguyen,B.S. Mechanical Engineering,305,ENGR300,Engineering Ethics,4,A-
+MONO-031,Nora Nguyen,B.S. Mechanical Engineering,305,ME420,Control Systems,3,B
+MONO-031,Nora Nguyen,B.S. Mechanical Engineering,305,ME210,Thermodynamics,3,B
+MONO-031,Nora Nguyen,B.S. Mechanical Engineering,305,ME330,Machine Design,4,A-
+MONO-031,Nora Nguyen,B.S. Mechanical Engineering,305,ME310,Fluid Mechanics,3,B+
+MONO-031,Nora Nguyen,B.S. Mechanical Engineering,305,ME230,Materials Science,3,B+
+MONO-031,Nora Nguyen,B.S. Mechanical Engineering,305,ME410,Heat Transfer,3,A-
+MONO-032,Cole Wang,B.S. Mechanical Engineering,388,PHYS121,Physics I,3,B+
+MONO-032,Cole Wang,B.S. Mechanical Engineering,388,ME420,Control Systems,3,B
+MONO-032,Cole Wang,B.S. Mechanical Engineering,388,ME230,Materials Science,3,C+
+MONO-032,Cole Wang,B.S. Mechanical Engineering,388,ME330,Machine Design,3,A
+MONO-032,Cole Wang,B.S. Mechanical Engineering,388,ME210,Thermodynamics,3,B+
+MONO-032,Cole Wang,B.S. Mechanical Engineering,388,ME310,Fluid Mechanics,3,A-
+MONO-032,Cole Wang,B.S. Mechanical Engineering,388,MATH251,Differential Equations,4,C
+MONO-032,Cole Wang,B.S. Mechanical Engineering,388,ENGR300,Engineering Ethics,3,A
+MONO-032,Cole Wang,B.S. Mechanical Engineering,388,ME101,Engineering Mechanics,3,B-
+MONO-032,Cole Wang,B.S. Mechanical Engineering,388,ME410,Heat Transfer,3,B+
+MONO-033,Jack Emery,B.S. Computer Science,281,CS420,Networks,4,A
+MONO-033,Jack Emery,B.S. Computer Science,281,CS460,Machine Learning,3,C+
+MONO-033,Jack Emery,B.S. Computer Science,281,CS201,Programming Languages,3,B-
+MONO-033,Jack Emery,B.S. Computer Science,281,CS240,Data Structures,3,A-
+MONO-033,Jack Emery,B.S. Computer Science,281,CS410,Databases,3,B
+MONO-033,Jack Emery,B.S. Computer Science,281,CS330,Computer Architecture,4,A
+MONO-033,Jack Emery,B.S. Computer Science,281,CS360,Operating Systems,4,B
+MONO-033,Jack Emery,B.S. Computer Science,281,CS470,Software Engineering,3,A
+MONO-033,Jack Emery,B.S. Computer Science,281,STAT310,Probability,3,A
+MONO-033,Jack Emery,B.S. Computer Science,281,MATH420,Cryptography,3,A
+MONO-034,Lara James,B.S. Computer Science,361,CS240,Data Structures,3,A-
+MONO-034,Lara James,B.S. Computer Science,361,CS330,Computer Architecture,4,A-
+MONO-034,Lara James,B.S. Computer Science,361,CS420,Networks,3,A-
+MONO-034,Lara James,B.S. Computer Science,361,CS470,Software Engineering,3,A-
+MONO-034,Lara James,B.S. Computer Science,361,CS101,Intro to Computer Science,3,B-
+MONO-034,Lara James,B.S. Computer Science,361,CS410,Databases,3,B+
+MONO-034,Lara James,B.S. Computer Science,361,CS360,Operating Systems,3,A-
+MONO-034,Lara James,B.S. Computer Science,361,STAT310,Probability,3,A
+MONO-034,Lara James,B.S. Computer Science,361,CS320,Algorithms,4,A
+MONO-034,Lara James,B.S. Computer Science,361,CS201,Programming Languages,4,C
+MONO-035,Seth Nguyen,B.A. Economics,315,ECON410,Public Economics,3,A-
+MONO-035,Seth Nguyen,B.A. Economics,315,ECON310,Game Theory,3,A
+MONO-035,Seth Nguyen,B.A. Economics,315,ECON210,Macroeconomics,3,C
+MONO-035,Seth Nguyen,B.A. Economics,315,HIST240,Economic History,3,A-
+MONO-035,Seth Nguyen,B.A. Economics,315,ECON340,Econometrics,3,A-
+MONO-035,Seth Nguyen,B.A. Economics,315,ECON101,Microeconomics,3,C
+MONO-035,Seth Nguyen,B.A. Economics,315,FIN220,Corporate Finance,3,B+
+MONO-035,Seth Nguyen,B.A. Economics,315,ECON240,International Trade,4,B
+MONO-035,Seth Nguyen,B.A. Economics,315,STAT200,Statistics,4,B+
+MONO-035,Seth Nguyen,B.A. Economics,315,MATH210,Linear Algebra,3,C
+MONO-036,Seth Klein,B.S. Mechanical Engineering,349,ME210,Thermodynamics,4,A-
+MONO-036,Seth Klein,B.S. Mechanical Engineering,349,ENGR300,Engineering Ethics,3,C
+MONO-036,Seth Klein,B.S. Mechanical Engineering,349,ME310,Fluid Mechanics,3,B
+MONO-036,Seth Klein,B.S. Mechanical Engineering,349,ME420,Control Systems,3,C+
+MONO-036,Seth Klein,B.S. Mechanical Engineering,349,ME410,Heat Transfer,4,A-
+MONO-036,Seth Klein,B.S. Mechanical Engineering,349,ME101,Engineering Mechanics,3,B+
+MONO-036,Seth Klein,B.S. Mechanical Engineering,349,ME230,Materials Science,3,B
+MONO-036,Seth Klein,B.S. Mechanical Engineering,349,MATH251,Differential Equations,3,B+
+MONO-036,Seth Klein,B.S. Mechanical Engineering,349,ME330,Machine Design,4,A-
+MONO-036,Seth Klein,B.S. Mechanical Engineering,349,PHYS121,Physics I,3,A-
+MONO-037,Xena Reyes,B.S. Mechanical Engineering,396,ME210,Thermodynamics,3,B+
+MONO-037,Xena Reyes,B.S. Mechanical Engineering,396,ME310,Fluid Mechanics,3,B-
+MONO-037,Xena Reyes,B.S. Mechanical Engineering,396,ME420,Control Systems,4,B-
+MONO-037,Xena Reyes,B.S. Mechanical Engineering,396,ME230,Materials Science,3,A
+MONO-037,Xena Reyes,B.S. Mechanical Engineering,396,ME330,Machine Design,3,B
+MONO-037,Xena Reyes,B.S. Mechanical Engineering,396,ME101,Engineering Mechanics,4,B+
+MONO-037,Xena Reyes,B.S. Mechanical Engineering,396,ENGR300,Engineering Ethics,4,C+
+MONO-037,Xena Reyes,B.S. Mechanical Engineering,396,MATH251,Differential Equations,3,A
+MONO-037,Xena Reyes,B.S. Mechanical Engineering,396,ME410,Heat Transfer,3,A
+MONO-037,Xena Reyes,B.S. Mechanical Engineering,396,PHYS121,Physics I,3,A-
+MONO-038,Sam Larsen,B.A. Psychology,381,PSY330,Social Psychology,3,B+
+MONO-038,Sam Larsen,B.A. Psychology,381,PSY310,Abnormal Psychology,3,A
+MONO-038,Sam Larsen,B.A. Psychology,381,SOC210,Sociology,3,A
+MONO-038,Sam Larsen,B.A. Psychology,381,PSY230,Developmental Psychology,3,C+
+MONO-038,Sam Larsen,B.A. Psychology,381,PSY101,Intro to Psychology,3,A
+MONO-038,Sam Larsen,B.A. Psychology,381,BIO150,Neuroscience,3,B+
+MONO-038,Sam Larsen,B.A. Psychology,381,PHIL220,Ethics,3,A
+MONO-038,Sam Larsen,B.A. Psychology,381,STAT205,Behavioral Statistics,3,A
+MONO-038,Sam Larsen,B.A. Psychology,381,PSY210,Cognitive Psychology,3,C+
+MONO-038,Sam Larsen,B.A. Psychology,381,PSY410,Research Methods,3,B-
+MONO-039,Lara Stewart,B.A. Economics,319,ECON410,Public Economics,3,B+
+MONO-039,Lara Stewart,B.A. Economics,319,ECON340,Econometrics,3,B-
+MONO-039,Lara Stewart,B.A. Economics,319,ECON101,Microeconomics,3,C
+MONO-039,Lara Stewart,B.A. Economics,319,ECON310,Game Theory,3,A-
+MONO-039,Lara Stewart,B.A. Economics,319,ECON210,Macroeconomics,3,B-
+MONO-039,Lara Stewart,B.A. Economics,319,HIST240,Economic History,3,A-
+MONO-039,Lara Stewart,B.A. Economics,319,STAT200,Statistics,4,C+
+MONO-039,Lara Stewart,B.A. Economics,319,ECON240,International Trade,4,A-
+MONO-039,Lara Stewart,B.A. Economics,319,MATH210,Linear Algebra,3,B-
+MONO-039,Lara Stewart,B.A. Economics,319,FIN220,Corporate Finance,3,A
+MONO-040,Mia Holt,B.A. Psychology,351,PSY310,Abnormal Psychology,3,B-
+MONO-040,Mia Holt,B.A. Psychology,351,PSY330,Social Psychology,3,B+
+MONO-040,Mia Holt,B.A. Psychology,351,SOC210,Sociology,3,A
+MONO-040,Mia Holt,B.A. Psychology,351,PSY230,Developmental Psychology,3,A-
+MONO-040,Mia Holt,B.A. Psychology,351,PSY210,Cognitive Psychology,3,B
+MONO-040,Mia Holt,B.A. Psychology,351,PSY101,Intro to Psychology,3,A-
+MONO-040,Mia Holt,B.A. Psychology,351,BIO150,Neuroscience,3,A-
+MONO-040,Mia Holt,B.A. Psychology,351,STAT205,Behavioral Statistics,3,A
+MONO-040,Mia Holt,B.A. Psychology,351,PHIL220,Ethics,3,B
+MONO-040,Mia Holt,B.A. Psychology,351,PSY410,Research Methods,4,C+
+MONO-041,Owen Lopez,B.S. Computer Science,384,CS330,Computer Architecture,3,C+
+MONO-041,Owen Lopez,B.S. Computer Science,384,STAT310,Probability,3,C
+MONO-041,Owen Lopez,B.S. Computer Science,384,CS101,Intro to Computer Science,4,B-
+MONO-041,Owen Lopez,B.S. Computer Science,384,CS201,Programming Languages,3,A-
+MONO-041,Owen Lopez,B.S. Computer Science,384,CS410,Databases,3,B+
+MONO-041,Owen Lopez,B.S. Computer Science,384,MATH420,Cryptography,3,B
+MONO-041,Owen Lopez,B.S. Computer Science,384,CS420,Networks,4,C
+MONO-041,Owen Lopez,B.S. Computer Science,384,CS470,Software Engineering,3,B-
+MONO-041,Owen Lopez,B.S. Computer Science,384,CS360,Operating Systems,3,A-
+MONO-041,Owen Lopez,B.S. Computer Science,384,CS240,Data Structures,3,A
+MONO-042,Abby Singh,B.S. Computer Science,301,CS320,Algorithms,3,A-
+MONO-042,Abby Singh,B.S. Computer Science,301,STAT310,Probability,4,B-
+MONO-042,Abby Singh,B.S. Computer Science,301,CS240,Data Structures,3,A
+MONO-042,Abby Singh,B.S. Computer Science,301,CS410,Databases,3,A
+MONO-042,Abby Singh,B.S. Computer Science,301,CS201,Programming Languages,3,C+
+MONO-042,Abby Singh,B.S. Computer Science,301,CS360,Operating Systems,3,A
+MONO-042,Abby Singh,B.S. Computer Science,301,CS330,Computer Architecture,4,C+
+MONO-042,Abby Singh,B.S. Computer Science,301,CS470,Software Engineering,3,C+
+MONO-042,Abby Singh,B.S. Computer Science,301,MATH420,Cryptography,3,A
+MONO-042,Abby Singh,B.S. Computer Science,301,CS420,Networks,3,A
+MONO-043,Ella Ellis,B.S. Mechanical Engineering,312,ME410,Heat Transfer,3,B+
+MONO-043,Ella Ellis,B.S. Mechanical Engineering,312,ME230,Materials Science,4,A
+MONO-043,Ella Ellis,B.S. Mechanical Engineering,312,ME210,Thermodynamics,4,A-
+MONO-043,Ella Ellis,B.S. Mechanical Engineering,312,ME330,Machine Design,3,A
+MONO-043,Ella Ellis,B.S. Mechanical Engineering,312,ME420,Control Systems,4,A-
+MONO-043,Ella Ellis,B.S. Mechanical Engineering,312,ME310,Fluid Mechanics,4,A
+MONO-043,Ella Ellis,B.S. Mechanical Engineering,312,PHYS121,Physics I,3,B-
+MONO-043,Ella Ellis,B.S. Mechanical Engineering,312,ENGR300,Engineering Ethics,4,C+
+MONO-043,Ella Ellis,B.S. Mechanical Engineering,312,MATH251,Differential Equations,3,B+
+MONO-043,Ella Ellis,B.S. Mechanical Engineering,312,ME101,Engineering Mechanics,3,B-
+MONO-044,Zoe Khan,B.A. Psychology,286,PSY101,Intro to Psychology,3,B+
+MONO-044,Zoe Khan,B.A. Psychology,286,PSY410,Research Methods,3,B+
+MONO-044,Zoe Khan,B.A. Psychology,286,PHIL220,Ethics,3,A-
+MONO-044,Zoe Khan,B.A. Psychology,286,PSY210,Cognitive Psychology,3,B
+MONO-044,Zoe Khan,B.A. Psychology,286,STAT205,Behavioral Statistics,3,B+
+MONO-044,Zoe Khan,B.A. Psychology,286,BIO150,Neuroscience,3,B-
+MONO-044,Zoe Khan,B.A. Psychology,286,PSY330,Social Psychology,3,A-
+MONO-044,Zoe Khan,B.A. Psychology,286,PSY310,Abnormal Psychology,3,B+
+MONO-044,Zoe Khan,B.A. Psychology,286,PSY230,Developmental Psychology,3,A-
+MONO-044,Zoe Khan,B.A. Psychology,286,SOC210,Sociology,4,C+
+MONO-045,Hugo Hayes,B.S. Biology,317,BIO410,Microbiology,3,A-
+MONO-045,Hugo Hayes,B.S. Biology,317,BIO305,Genetics,3,A-
+MONO-045,Hugo Hayes,B.S. Biology,317,BIO320,Ecology,3,B-
+MONO-045,Hugo Hayes,B.S. Biology,317,BIO210,Cell Biology,3,A
+MONO-045,Hugo Hayes,B.S. Biology,317,BCHM310,Biochemistry,3,B+
+MONO-045,Hugo Hayes,B.S. Biology,317,BIO101,General Biology,4,A
+MONO-045,Hugo Hayes,B.S. Biology,317,CHEM110,General Chemistry,4,B-
+MONO-045,Hugo Hayes,B.S. Biology,317,CHEM210,Organic Chemistry,3,A
+MONO-045,Hugo Hayes,B.S. Biology,317,MATH130,Calculus I,3,A-
+MONO-045,Hugo Hayes,B.S. Biology,317,STAT215,Biostatistics,3,B+
+MONO-046,Faye Price,B.S. Computer Science,332,MATH420,Cryptography,3,C+
+MONO-046,Faye Price,B.S. Computer Science,332,CS320,Algorithms,3,A
+MONO-046,Faye Price,B.S. Computer Science,332,CS201,Programming Languages,4,A
+MONO-046,Faye Price,B.S. Computer Science,332,CS101,Intro to Computer Science,3,A
+MONO-046,Faye Price,B.S. Computer Science,332,CS470,Software Engineering,3,A
+MONO-046,Faye Price,B.S. Computer Science,332,CS410,Databases,4,B-
+MONO-046,Faye Price,B.S. Computer Science,332,CS420,Networks,3,B
+MONO-046,Faye Price,B.S. Computer Science,332,CS360,Operating Systems,4,C+
+MONO-046,Faye Price,B.S. Computer Science,332,STAT310,Probability,3,B-
+MONO-046,Faye Price,B.S. Computer Science,332,CS240,Data Structures,4,B+
+MONO-047,Sara Zhao,B.S. Computer Science,324,CS101,Intro to Computer Science,4,A-
+MONO-047,Sara Zhao,B.S. Computer Science,324,CS420,Networks,3,B-
+MONO-047,Sara Zhao,B.S. Computer Science,324,CS201,Programming Languages,3,B+
+MONO-047,Sara Zhao,B.S. Computer Science,324,CS240,Data Structures,3,A-
+MONO-047,Sara Zhao,B.S. Computer Science,324,CS460,Machine Learning,3,A
+MONO-047,Sara Zhao,B.S. Computer Science,324,CS320,Algorithms,3,A-
+MONO-047,Sara Zhao,B.S. Computer Science,324,CS330,Computer Architecture,3,A
+MONO-047,Sara Zhao,B.S. Computer Science,324,CS470,Software Engineering,4,B
+MONO-047,Sara Zhao,B.S. Computer Science,324,MATH420,Cryptography,3,B+
+MONO-047,Sara Zhao,B.S. Computer Science,324,CS360,Operating Systems,4,C
+MONO-048,Jade Gupta,B.S. Mechanical Engineering,357,ME330,Machine Design,3,A-
+MONO-048,Jade Gupta,B.S. Mechanical Engineering,357,ME230,Materials Science,3,C+
+MONO-048,Jade Gupta,B.S. Mechanical Engineering,357,MATH251,Differential Equations,3,C
+MONO-048,Jade Gupta,B.S. Mechanical Engineering,357,PHYS121,Physics I,4,A-
+MONO-048,Jade Gupta,B.S. Mechanical Engineering,357,ME310,Fluid Mechanics,4,B+
+MONO-048,Jade Gupta,B.S. Mechanical Engineering,357,ME210,Thermodynamics,4,B-
+MONO-048,Jade Gupta,B.S. Mechanical Engineering,357,ME101,Engineering Mechanics,3,C
+MONO-048,Jade Gupta,B.S. Mechanical Engineering,357,ENGR300,Engineering Ethics,3,A-
+MONO-048,Jade Gupta,B.S. Mechanical Engineering,357,ME410,Heat Transfer,3,A
+MONO-048,Jade Gupta,B.S. Mechanical Engineering,357,ME420,Control Systems,4,A
+MONO-049,Ethan James,B.S. Computer Science,386,CS420,Networks,3,B+
+MONO-049,Ethan James,B.S. Computer Science,386,CS201,Programming Languages,4,A-
+MONO-049,Ethan James,B.S. Computer Science,386,STAT310,Probability,3,A
+MONO-049,Ethan James,B.S. Computer Science,386,CS101,Intro to Computer Science,3,B+
+MONO-049,Ethan James,B.S. Computer Science,386,CS320,Algorithms,3,A-
+MONO-049,Ethan James,B.S. Computer Science,386,CS360,Operating Systems,4,A-
+MONO-049,Ethan James,B.S. Computer Science,386,CS240,Data Structures,3,A-
+MONO-049,Ethan James,B.S. Computer Science,386,CS330,Computer Architecture,4,C+
+MONO-049,Ethan James,B.S. Computer Science,386,CS410,Databases,3,B+
+MONO-049,Ethan James,B.S. Computer Science,386,CS460,Machine Learning,3,C
+MONO-050,Cody Dunn,B.A. Psychology,340,BIO150,Neuroscience,3,B+
+MONO-050,Cody Dunn,B.A. Psychology,340,SOC210,Sociology,3,C
+MONO-050,Cody Dunn,B.A. Psychology,340,PSY330,Social Psychology,4,B+
+MONO-050,Cody Dunn,B.A. Psychology,340,PHIL220,Ethics,3,A-
+MONO-050,Cody Dunn,B.A. Psychology,340,STAT205,Behavioral Statistics,3,C+
+MONO-050,Cody Dunn,B.A. Psychology,340,PSY101,Intro to Psychology,3,A
+MONO-050,Cody Dunn,B.A. Psychology,340,PSY210,Cognitive Psychology,4,C
+MONO-050,Cody Dunn,B.A. Psychology,340,PSY230,Developmental Psychology,4,B
+MONO-050,Cody Dunn,B.A. Psychology,340,PSY310,Abnormal Psychology,3,A
+MONO-050,Cody Dunn,B.A. Psychology,340,PSY410,Research Methods,3,C+

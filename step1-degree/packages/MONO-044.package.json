@@ -1,0 +1,114 @@
+{
+  "schema": "credvault-degree/0.3",
+  "issuer": "Penn State University (mock)",
+  "cohort": "console-upload-2026-09-05",
+  "studentId": "MONO-044",
+  "values": {
+    "fullName": "Zoe Khan",
+    "degree": "B.A. Psychology",
+    "gpa": 286
+  },
+  "transcriptMode": "monolithic",
+  "courses": [
+    {
+      "code": "PSY101",
+      "title": "Intro to Psychology",
+      "credits": 3,
+      "grade": "B+"
+    },
+    {
+      "code": "PSY410",
+      "title": "Research Methods",
+      "credits": 3,
+      "grade": "B+"
+    },
+    {
+      "code": "PHIL220",
+      "title": "Ethics",
+      "credits": 3,
+      "grade": "A-"
+    },
+    {
+      "code": "PSY210",
+      "title": "Cognitive Psychology",
+      "credits": 3,
+      "grade": "B"
+    },
+    {
+      "code": "STAT205",
+      "title": "Behavioral Statistics",
+      "credits": 3,
+      "grade": "B+"
+    },
+    {
+      "code": "BIO150",
+      "title": "Neuroscience",
+      "credits": 3,
+      "grade": "B-"
+    },
+    {
+      "code": "PSY330",
+      "title": "Social Psychology",
+      "credits": 3,
+      "grade": "A-"
+    },
+    {
+      "code": "PSY310",
+      "title": "Abnormal Psychology",
+      "credits": 3,
+      "grade": "B+"
+    },
+    {
+      "code": "PSY230",
+      "title": "Developmental Psychology",
+      "credits": 3,
+      "grade": "A-"
+    },
+    {
+      "code": "SOC210",
+      "title": "Sociology",
+      "credits": 4,
+      "grade": "C+"
+    }
+  ],
+  "docSalt": "096b01c55a1867a9294a4f720ae43881040168694c679a0c8da3a94d569902ff",
+  "docCommit": "0b7b2af0d21fdd2644543e7198d61a139c13f5106ed1d7fb7bca07a24aa2d36c",
+  "salts": {
+    "fullName": "1f007044b61126c2801f7286575d0624641b854e9d6e54e512eb07e25909c034",
+    "degree": "794dd2d8ed61ca57cb1f69437c918a81290ee9aeeff22ef1ddf74eac31236f0c",
+    "gpa": "9b71a7c56df6aee3ef161cdcfa53fa968a090df29924983ef5bf7c4e54eb132a",
+    "master": "aa14fcf34e4b9e9bb220fd01f4fdfe20fee4cfa341f8ebce1a05ec42afd6684a"
+  },
+  "gpaCommit": "0075e533cb5ab5ff4d8c286582659b26bde23e99eb4785b1a7ad1b4fafcf685a",
+  "masterLeaf": "f8309d0897b7c04dc1dd21a8366d22a25ad88565d45297e8bc79fc079f3eaa1c",
+  "credId": "9975bbce5f7b22e3f671b387861e02be90cb54b4085229531d01c1d661c5353f",
+  "path": [
+    {
+      "sibling": "1b37c185f3b7991eac62c1545be5d24cd2e1276d14c8f5bc477d3078e9e52c4f",
+      "goesLeft": false
+    },
+    {
+      "sibling": "c0c267a94179cadfe5085da82da9c29b0b303fed8e47a7dfdd976113f8db3eef",
+      "goesLeft": false
+    },
+    {
+      "sibling": "378bad9c78253a8124e007966fd80aea8161748e8e37faf66ee2478d30153d07",
+      "goesLeft": true
+    },
+    {
+      "sibling": "3a7ff1c73e9759f3adf07c60fd9c295374243d2b174dcf4204c55f8c15f05b16",
+      "goesLeft": false
+    },
+    {
+      "sibling": "c116b32eae6654e03542a9783f5e9349ae84dc1cb00e77accd8153f9bf1c5ef7",
+      "goesLeft": true
+    },
+    {
+      "sibling": "e664895cf480488798be10d2516c3cd2d9e949fc7964a2f6eb2f7376df74a07b",
+      "goesLeft": false
+    }
+  ],
+  "cohortRoot": "f02d63b2c130f1d28a2ba1094d542ed04d8f7f395c05b77ad1476c4153b3ba35",
+  "contractAddress": "c3b82a86c2b4fe3b2414caef250008731c79b45e93ec0edcca7faf2867325d92",
+  "l2Proofs": []
+}

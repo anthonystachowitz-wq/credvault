@@ -1,0 +1,46 @@
+{
+  "name": "credvault-contract",
+  "version": "1.0.0",
+  "description": "CredVault Transcript Smart Contract for Midnight Network",
+  "type": "module",
+  "scripts": {
+    "compile": "compactc --skip-zk transcript.compact .",
+    "build": "tsc",
+    "build-tree": "tsx merkle-tree.ts",
+    "deploy": "tsx deploy.ts",
+    "invoke": "tsx invoke.ts",
+    "test": "vitest run",
+    "test:blockchain": "cd blockchain-tests && npx jest",
+    "start-proof-server": "docker run -p 6300:6300 midnightntwrk/proof-server:7.0.0 -- midnight-proof-server -v"
+  },
+  "devDependencies": {
+    "@types/jest": "^30.0.0",
+    "@types/node": "^22.0.0",
+    "@types/ws": "^8.18.1",
+    "jest": "^30.3.0",
+    "ts-jest": "^29.4.6",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3",
+    "vitest": "^1.0.0"
+  },
+  "dependencies": {
+    "@midnight-ntwrk/compact-js": "2.4.0",
+    "@midnight-ntwrk/compact-runtime": "^0.14.0",
+    "@midnight-ntwrk/ledger-v7": "7.0.0",
+    "@midnight-ntwrk/midnight-js-contracts": "3.1.0",
+    "@midnight-ntwrk/midnight-js-http-client-proof-provider": "3.1.0",
+    "@midnight-ntwrk/midnight-js-indexer-public-data-provider": "3.1.0",
+    "@midnight-ntwrk/midnight-js-level-private-state-provider": "3.1.0",
+    "@midnight-ntwrk/midnight-js-network-id": "3.1.0",
+    "@midnight-ntwrk/midnight-js-node-zk-config-provider": "3.1.0",
+    "@midnight-ntwrk/midnight-js-types": "3.1.0",
+    "@midnight-ntwrk/midnight-js-utils": "3.1.0",
+    "@midnight-ntwrk/wallet-sdk-address-format": "1.0.0",
+    "@midnight-ntwrk/wallet-sdk-dust-wallet": "1.0.0",
+    "@midnight-ntwrk/wallet-sdk-facade": "1.0.0",
+    "@midnight-ntwrk/wallet-sdk-shielded": "1.0.0",
+    "@midnight-ntwrk/wallet-sdk-unshielded-wallet": "1.0.0",
+    "rxjs": "^7.8.0",
+    "ws": "^8.19.0"
+  }
+}

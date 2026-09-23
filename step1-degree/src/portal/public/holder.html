@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>My Credentials — CredVault</title>
+<link rel="manifest" href="/holder.webmanifest">
+<meta name="theme-color" content="#0b0f1a">
+<link rel="stylesheet" href="/style.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+</head><body><div class="wrap">
+<div class="brand"><span class="moon">🌙</span><h1>My Credentials</h1></div>
+<p class="sub">Your credentials live here, on your device. You choose exactly what to share. No account, no wallet, no blockchain in sight.</p>
+
+<div class="card" id="importCard">
+  <h2>Add a credential package</h2>
+  <input type="text" id="importLink" placeholder="Paste your school\'s package link (…/api/packages/STU-001.json)">
+  <div style="height:10px"></div>
+  <input type="file" id="importFile" accept=".json">
+  <button class="ghost" id="importBtn">Import</button>
+  <p class="mut" id="importMsg"></p>
+</div>
+
+<div id="creds"></div>
+
+<div class="card hidden" id="shareCard">
+  <h2>Share: <span id="shareName"></span></h2>
+  <div id="coursePick"></div>
+  <p class="mut" style="margin-top:8px">GPA disclosure:</p>
+  <label class="chk"><input type="checkbox" id="showGpa" checked> Show GPA value (<span id="gpaVal"></span>)</label>
+  <div id="l2row">
+    <p class="mut">…or prove a threshold WITHOUT showing it:</p>
+    <select id="l2pick"><option value="">no threshold proof</option><option value="300">prove GPA ≥ 3.00</option><option value="350">prove GPA ≥ 3.50</option></select>
+  </div>
+  <button id="shareBtn">Create share QR</button>
+  <div id="qrOut" class="hidden">
+    <div id="qr"></div>
+    <p class="mut">Verifier scans this QR (or open <a id="shareLink" href="#"></a>) — if it expires, just tap Share again (re-sharing is instant and free).</p>
+    <button class="ghost" id="copyBtn">Copy link</button>
+  </div>
+</div>
+<p class="mut"><a href="/">← CredVault home</a></p>
+</div>
+<script>
+if ('serviceWorker' in navigator) navigator.serviceWorker.register('/sw.js').catch(()=>{});
+const $ = (id) => document.getElementById(id);
+const store = {
+  get() { try { return JSON.parse(localStorage.getItem('cv-creds') || '[]'); } catch { return []; } },
+  set(v) { localStorage.setItem('cv-creds', JSON.stringify(v)); },
+  add(pkg) { const l = store.get().filter(x => x.studentId !== pkg.studentId); l.push(pkg); store.set(l); },
+  remove(id) { store.set(store.get().filter(x => x.studentId !== id)); }
+};
+let sharing = null;
+
+function esc(s){ return String(s).replace(/[&<>"]/g, c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c])); }
+
+function render() {
+  const list = store.get();
+  $('creds').innerHTML = list.length ? '' : '<p class="mut">No credentials yet — import a package above.</p>';
+  for (const p of list) {
+    const mono = p.transcriptMode === 'monolithic';
+    $('creds').innerHTML += '<div class="card"><h2>' + esc(p.values.fullName) + ' <span class="pill ok">' + esc(p.studentId) + '</span></h2>' +
+      '<p>' + esc(p.degree) + ' · GPA ' + (p.values.gpa/100).toFixed(2) + '</p>' +
+      '<p class="mut">' + esc(p.issuer) + ' · ' + esc(p.cohort) + ' · ' + (p.courses||[]).length + ' courses' + (mono ? ' · monolithic' : '') + '</p>' +
+      '<div class="row"><button onclick="startShare(\'' + esc(p.studentId) + '\')">Share…</button>' +
+      '<button class="danger" onclick="del(\'' + esc(p.studentId) + '\')">Remove</button></div></div>';
+  }
+}
+window.del = (id) => { store.remove(id); render(); };
+
+$('importBtn').addEventListener('click', async () => {
+  $('importMsg').textContent = 'importing…';
+  try {
+    let pkg;
+    const link = $('importLink').value.trim();
+    if (link) {
+      const r = await fetch(link); if (!r.ok) throw new Error('fetch failed: ' + r.status);
+      pkg = await r.json();
+    } else if ($('importFile').files[0]) {
+      pkg = JSON.parse(await $('importFile').files[0].text());
+    } else { $('importMsg').textContent = 'paste a link or pick a file'; return; }
+    if (!pkg.masterLeaf || !pkg.studentId) throw new Error('not a CredVault package');
+    store.add(pkg); $('importMsg').textContent = '✓ imported ' + pkg.studentId;
+    $('importLink').value = ''; $('importFile').value = ''; render();
+  } catch (e) { $('importMsg').textContent = '✗ ' + (e.message||e); }
+});
+
+window.startShare = (id) => {
+  sharing = store.get().find(x => x.studentId === id);
+  if (!sharing) return;
+  $('shareCard').classList.remove('hidden');
+  $('qrOut').classList.add('hidden');
+  $('shareName').textContent = sharing.values.fullName + ' — ' + sharing.studentId;
+  $('gpaVal').textContent = (sharing.values.gpa / 100).toFixed(2);
+  $('showGpa').checked = true;
+  $('l2pick').value = '';
+  const mono = sharing.transcriptMode === 'monolithic';
+  const cs = sharing.courses || [];
+  $('coursePick').innerHTML = mono
+    ? '<p class="mut">This credential is whole-document only (issuer policy).</p>'
+    : '<p class="mut">Courses to include:</p>' + cs.map((c,i) =>
+        '<label class="chk"><input type="checkbox" class="cpick" data-i="'+i+'" checked> '+esc(c.code)+' — '+esc(c.title)+' ('+esc(c.grade)+')</label>').join('');
+  $('shareCard').scrollIntoView({behavior:'smooth'});
+};
+
+$('shareBtn').addEventListener('click', async () => {
+  $('shareBtn').disabled = true;
+  try {
+    const mono = sharing.transcriptMode === 'monolithic';
+    let courses = sharing.courses || [];
+    if (!mono) {
+      const picks = [...document.querySelectorAll('.cpick')].filter(x=>x.checked).map(x=>Number(x.dataset.i));
+      if (!picks.length) { alert('select at least one course'); return; }
+      courses = picks.map(i => courses[i]);
+    }
+    const presentation = { presentationType: mono ? 'full-reveal' : 'course-subset', ...sharing, courses, courseCount: (sharing.courses||[]).length, presentedAt: new Date().toISOString() };
+    if (!$('showGpa').checked) {
+      // GPA hidden: redact the VALUE; keep gpaCommit (a salted hash) so the
+      // anchor math still checks out. Only an L2 proof can speak for it.
+      presentation.values = { ...presentation.values };
+      delete presentation.values.gpa;
+      delete presentation.salts.gpa;
+      presentation.gpaRedacted = true;
+    }
+    const l2 = $('l2pick').value;
+    // include only the threshold proof the holder chose to share (if any)
+    if (l2) {
+      presentation.l2Proofs = (presentation.l2Proofs ?? []).filter(x => Number(x.minGpa) === Number(l2));
+    } else {
+      presentation.l2Proofs = [];
+    }
+    const r = await fetch('/api/presentations', { method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify({ presentation }) });
+    const { token } = await r.json();
+    const url = location.origin + '/verify.html?t=' + token;
+    $('qr').innerHTML = '';
+    new QRCode($('qr'), { text: url, width: 220, height: 220 });
+    $('shareLink').textContent = url; $('shareLink').href = url;
+    $('qrOut').classList.remove('hidden');
+    $('copyBtn').onclick = () => cvCopy(url, $('copyBtn'));
+  } finally { $('shareBtn').disabled = false; }
+});
+
+render();
+</script></body></html>

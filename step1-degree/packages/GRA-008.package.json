@@ -1,0 +1,303 @@
+{
+  "schema": "credvault-degree/0.3",
+  "issuer": "Penn State University (mock)",
+  "cohort": "console-upload-2026-09-05",
+  "studentId": "GRA-008",
+  "values": {
+    "fullName": "Luna Yates",
+    "degree": "B.S. Mechanical Engineering",
+    "gpa": 294
+  },
+  "transcriptMode": "granular",
+  "courses": [
+    {
+      "code": "ME420",
+      "title": "Control Systems",
+      "credits": 3,
+      "grade": "A-",
+      "salt": "3a8f7669413837157bed7521e7243c8247b3c62e9979225c78a00d42824f66dd",
+      "path": [
+        {
+          "sibling": "05543b75b7c89900933607a10fcc89aac12e348dbcaf01d8a644ed0039927d63",
+          "goesLeft": true
+        },
+        {
+          "sibling": "b02ef67a6870f7c52371d3046e2fb4fe408a16a6af5c0fc762b5b0747390e509",
+          "goesLeft": true
+        },
+        {
+          "sibling": "955049052de729883557ea20f1c735ec943cecf1a5253d09d62d4bc23845232a",
+          "goesLeft": true
+        },
+        {
+          "sibling": "9005b53bb7cabff9494909b662afc6a423c4b2a4f145baeb7e907e2c0e780559",
+          "goesLeft": true
+        }
+      ]
+    },
+    {
+      "code": "ME210",
+      "title": "Thermodynamics",
+      "credits": 4,
+      "grade": "C",
+      "salt": "214ea4ffb0e0302e5a89ca5cfd7c1039336c3b7bf4c9400d16448ba3d36b5188",
+      "path": [
+        {
+          "sibling": "f07d17965c6a02d53af320cc0431a9ee8c8a8b8db833f9db412a356a6ace133e",
+          "goesLeft": false
+        },
+        {
+          "sibling": "b02ef67a6870f7c52371d3046e2fb4fe408a16a6af5c0fc762b5b0747390e509",
+          "goesLeft": true
+        },
+        {
+          "sibling": "955049052de729883557ea20f1c735ec943cecf1a5253d09d62d4bc23845232a",
+          "goesLeft": true
+        },
+        {
+          "sibling": "9005b53bb7cabff9494909b662afc6a423c4b2a4f145baeb7e907e2c0e780559",
+          "goesLeft": true
+        }
+      ]
+    },
+    {
+      "code": "ME101",
+      "title": "Engineering Mechanics",
+      "credits": 3,
+      "grade": "A",
+      "salt": "38d81cb99ee58f700c91a784cf54f480588d7255c19e7f478c5e38da20183fed",
+      "path": [
+        {
+          "sibling": "99b94ff36922aeb408c4e8416737c3c6a8aeb5b507191f63275f21d4876dce0a",
+          "goesLeft": true
+        },
+        {
+          "sibling": "b1e625306ee4222d7f52a627c5a0a467147a417564ee72f99128835af43d0062",
+          "goesLeft": false
+        },
+        {
+          "sibling": "955049052de729883557ea20f1c735ec943cecf1a5253d09d62d4bc23845232a",
+          "goesLeft": true
+        },
+        {
+          "sibling": "9005b53bb7cabff9494909b662afc6a423c4b2a4f145baeb7e907e2c0e780559",
+          "goesLeft": true
+        }
+      ]
+    },
+    {
+      "code": "ME330",
+      "title": "Machine Design",
+      "credits": 3,
+      "grade": "A",
+      "salt": "99a3ec63dbe418344a6732f2f539127d07e96cfe83199a7117803708fb139689",
+      "path": [
+        {
+          "sibling": "119e0679b52353fa05bead9bd5db6cf4633071e7cb77e8aa8f6d6f15ce17e68f",
+          "goesLeft": false
+        },
+        {
+          "sibling": "b1e625306ee4222d7f52a627c5a0a467147a417564ee72f99128835af43d0062",
+          "goesLeft": false
+        },
+        {
+          "sibling": "955049052de729883557ea20f1c735ec943cecf1a5253d09d62d4bc23845232a",
+          "goesLeft": true
+        },
+        {
+          "sibling": "9005b53bb7cabff9494909b662afc6a423c4b2a4f145baeb7e907e2c0e780559",
+          "goesLeft": true
+        }
+      ]
+    },
+    {
+      "code": "PHYS121",
+      "title": "Physics I",
+      "credits": 3,
+      "grade": "A-",
+      "salt": "8e6a86f07fcae3a87cd017d0e9289bdf3c128ff843d2271dbcf49dcd87ee657f",
+      "path": [
+        {
+          "sibling": "57ce84fecf6732ed726339da4f5855e15736d21bf4bbaa0b88aa7733fed7e44d",
+          "goesLeft": true
+        },
+        {
+          "sibling": "79ca55acdbe609055db1e31f37f811c791b6fe66564f8487fd897dcaa38fe50a",
+          "goesLeft": true
+        },
+        {
+          "sibling": "52cab3d844be721a882ecdec9cb6a4bcfb86da1adaeb471e31aea7fa60ce9a57",
+          "goesLeft": false
+        },
+        {
+          "sibling": "9005b53bb7cabff9494909b662afc6a423c4b2a4f145baeb7e907e2c0e780559",
+          "goesLeft": true
+        }
+      ]
+    },
+    {
+      "code": "ENGR300",
+      "title": "Engineering Ethics",
+      "credits": 3,
+      "grade": "B+",
+      "salt": "52161a6987b13fed9f7206c9e2b43fac9dc59bc08b99b7dfcfc2e33a06b70f47",
+      "path": [
+        {
+          "sibling": "74be0722c6ffed369a353684c1416781018c70a0fc4e8726f08f344b3e522095",
+          "goesLeft": false
+        },
+        {
+          "sibling": "79ca55acdbe609055db1e31f37f811c791b6fe66564f8487fd897dcaa38fe50a",
+          "goesLeft": true
+        },
+        {
+          "sibling": "52cab3d844be721a882ecdec9cb6a4bcfb86da1adaeb471e31aea7fa60ce9a57",
+          "goesLeft": false
+        },
+        {
+          "sibling": "9005b53bb7cabff9494909b662afc6a423c4b2a4f145baeb7e907e2c0e780559",
+          "goesLeft": true
+        }
+      ]
+    },
+    {
+      "code": "ME230",
+      "title": "Materials Science",
+      "credits": 4,
+      "grade": "B",
+      "salt": "36ff50cd0e8a32e6e208a5aee9ee53356b788306cf68649d574bb57a7eaa69d9",
+      "path": [
+        {
+          "sibling": "31f5d86c5617e5a4403f7e200d91e9f452a9d4e576370e3e786acc2280292fa0",
+          "goesLeft": true
+        },
+        {
+          "sibling": "7f63bbd029df2386213e9f08f2c2be7f20ed4d61285d2aa3a9f17ef91d634587",
+          "goesLeft": false
+        },
+        {
+          "sibling": "52cab3d844be721a882ecdec9cb6a4bcfb86da1adaeb471e31aea7fa60ce9a57",
+          "goesLeft": false
+        },
+        {
+          "sibling": "9005b53bb7cabff9494909b662afc6a423c4b2a4f145baeb7e907e2c0e780559",
+          "goesLeft": true
+        }
+      ]
+    },
+    {
+      "code": "ME310",
+      "title": "Fluid Mechanics",
+      "credits": 3,
+      "grade": "C",
+      "salt": "04edf35ea85f6933073e6f607a2f8476373508212bd54230d366bbfdc9f839c5",
+      "path": [
+        {
+          "sibling": "0bc70dc66ce341b485c32a58d63e2df6a096b6da6adb5247d5f8950fee0848ea",
+          "goesLeft": false
+        },
+        {
+          "sibling": "7f63bbd029df2386213e9f08f2c2be7f20ed4d61285d2aa3a9f17ef91d634587",
+          "goesLeft": false
+        },
+        {
+          "sibling": "52cab3d844be721a882ecdec9cb6a4bcfb86da1adaeb471e31aea7fa60ce9a57",
+          "goesLeft": false
+        },
+        {
+          "sibling": "9005b53bb7cabff9494909b662afc6a423c4b2a4f145baeb7e907e2c0e780559",
+          "goesLeft": true
+        }
+      ]
+    },
+    {
+      "code": "MATH251",
+      "title": "Differential Equations",
+      "credits": 3,
+      "grade": "B-",
+      "salt": "bbcecbb6ce61196189a3e37fbe2925a45d92ef5a75958d7172fb6a95c2961b76",
+      "path": [
+        {
+          "sibling": "7882e63b790e66597a51f98e13fa9db2709441108b5f8175c81daa33985e5049",
+          "goesLeft": true
+        },
+        {
+          "sibling": "f6e27afafd7da41a755a7cf3b4cc95eb9dd4fb32c0badd18106636788c1c83e6",
+          "goesLeft": true
+        },
+        {
+          "sibling": "1c5f0b2e5d36cf968afe0182363b19c7fbc7b777a17552264394213607a74e2a",
+          "goesLeft": true
+        },
+        {
+          "sibling": "11262aeaf399d2f1eacb3578ff3b3dce82037608dc9e485ec924c8d39ebf912c",
+          "goesLeft": false
+        }
+      ]
+    },
+    {
+      "code": "ME410",
+      "title": "Heat Transfer",
+      "credits": 3,
+      "grade": "B+",
+      "salt": "0d9085bd94bcb2e1964cca661313bd887becc0ebae862c1f89bdb9adaf4601ec",
+      "path": [
+        {
+          "sibling": "29292a8380bd20a773c49e57e71ce09ac2b8ce79351659dc89ce6901eedb1cc5",
+          "goesLeft": false
+        },
+        {
+          "sibling": "f6e27afafd7da41a755a7cf3b4cc95eb9dd4fb32c0badd18106636788c1c83e6",
+          "goesLeft": true
+        },
+        {
+          "sibling": "1c5f0b2e5d36cf968afe0182363b19c7fbc7b777a17552264394213607a74e2a",
+          "goesLeft": true
+        },
+        {
+          "sibling": "11262aeaf399d2f1eacb3578ff3b3dce82037608dc9e485ec924c8d39ebf912c",
+          "goesLeft": false
+        }
+      ]
+    }
+  ],
+  "courseSubRoot": "51429b50c2b901d8a19c5cbc78320f640e4d5990bb9cd005d80b7f118b5d5855",
+  "salts": {
+    "fullName": "b939ab9e52b351d0da30dd82bb2e3eb812faa850492186b8a1767d8bb57fcf75",
+    "degree": "cc35efca359cab772ec93c642ce1df2461536810c8f33cc7766143610890c6e7",
+    "gpa": "589a4e45ad5596520e9cd97abcda19632a8c96a9f25c2ce8bff6a098bb28dd1d",
+    "master": "2e56ed83ecd1ab79b3d5ef9379c4311ea00439c9e03a59cc349f9a8e265ac482"
+  },
+  "gpaCommit": "2bae441f650d50ba205696554258b95908ee952e500f4b4c065ad1849b26edeb",
+  "masterLeaf": "a7e36fe77ecbf3307518e0bf38fc7827af528cf1863a4e1897c3c4bca7b0545d",
+  "credId": "50c2f93ca5b2c3f768b8d9be4166d061a693751d9419fef98552a7fc14f2538e",
+  "path": [
+    {
+      "sibling": "a901fa9c35b055d58a4cc6ee10d067f4b10bf4b966e9ba4f3fc71189d6f9ca11",
+      "goesLeft": false
+    },
+    {
+      "sibling": "a000a6a7f25c7963b7117e87ecd5448a42ca0c9bb26319060a95875663d44b64",
+      "goesLeft": false
+    },
+    {
+      "sibling": "b02e28e589d1c2c26d45a20159e486f561ea54c7d24915b305e539a803e338f4",
+      "goesLeft": false
+    },
+    {
+      "sibling": "c3bfce9ff3a7426b0c865cef7238e595d9cddbdf7477449e2de78e762c6038a1",
+      "goesLeft": true
+    },
+    {
+      "sibling": "c4638b7464277f82c0f5bf691c8a4e1e0ab3680ade5c232273062eefcaa54361",
+      "goesLeft": true
+    },
+    {
+      "sibling": "b0d77b7017087dfffd04eb0434c380b78c0ec414299aab9c37c660a0b6658aa4",
+      "goesLeft": true
+    }
+  ],
+  "cohortRoot": "b8fa26806f9587514149167291d00afad9d2f5711599f4ba791668e5811423b2",
+  "contractAddress": "c3b82a86c2b4fe3b2414caef250008731c79b45e93ec0edcca7faf2867325d92",
+  "l2Proofs": []
+}

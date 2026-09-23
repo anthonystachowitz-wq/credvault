@@ -1,0 +1,49 @@
+{
+  "name": "@credvault/generator",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "CredVault Step 3 — schema-driven contract + runtime generator",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "generate": "npx tsx src/cli/generate.ts",
+    "generate:college": "npx tsx src/cli/generate.ts --schema ../schemas/college-degree.yaml --out ../generated-college",
+    "test": "vitest run",
+    "lint": "tsc --noEmit",
+    "web:build": "cd web && npm run build",
+    "web:dev": "cd web && npm run dev",
+    "web:server": "npx tsx src/web/server.ts"
+  },
+  "dependencies": {
+    "@midnight-ntwrk/compact-runtime": "0.16.0",
+    "@midnight-ntwrk/midnight-js-contracts": "4.1.1",
+    "@midnight-ntwrk/midnight-js-http-client-proof-provider": "4.1.1",
+    "@midnight-ntwrk/midnight-js-indexer-public-data-provider": "4.1.1",
+    "@midnight-ntwrk/midnight-js-level-private-state-provider": "4.1.1",
+    "@midnight-ntwrk/midnight-js-network-id": "4.1.1",
+    "@midnight-ntwrk/midnight-js-node-zk-config-provider": "4.1.1",
+    "@midnight-ntwrk/midnight-js-protocol": "4.1.1",
+    "@midnight-ntwrk/midnight-js-types": "4.1.1",
+    "@midnight-ntwrk/midnight-js-utils": "4.1.1",
+    "@midnight-ntwrk/wallet-sdk": "1.2.0",
+    "rxjs": "^7.8.2",
+    "ws": "^8.21.1",
+    "js-yaml": "^4.1.0",
+    "express": "^4.21.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@types/ws": "^8.18.1",
+    "tsx": "^4.23.1",
+    "typescript": "^6.0.3",
+    "vitest": "^2.1.1",
+    "@types/js-yaml": "^4.0.9",
+    "@types/express": "^4.17.21"
+  },
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "overrides": {
+    "@midnight-ntwrk/onchain-runtime-v3": "3.0.0"
+  }
+}

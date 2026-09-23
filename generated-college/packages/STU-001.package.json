@@ -1,0 +1,165 @@
+{
+  "packageType": "credvault-package/1.0",
+  "schemaRef": {
+    "id": "college-degree",
+    "version": "0.3",
+    "hash": "8843596ae7b461e5fd5c2ca5d25e4de6d1f41c22948af6190ab579affdc6a89a"
+  },
+  "issuer": {
+    "id": "college-degree",
+    "displayName": "Penn State University"
+  },
+  "cohort": "2027-spring",
+  "holderRef": "STU-001",
+  "values": {
+    "fullName": "Alice Johnson",
+    "degree": "B.S. Computer Science",
+    "gpa": 3.85
+  },
+  "salts": {
+    "fullName": "34f7a722096430627916077a947dfa409e6115cb6c1205c2e91c3ae2742ebcb8",
+    "degree": "586b9c86ecf58ccff8bf2398748de0b46191a46dae981b8f1ce2e3f59ad85a25",
+    "gpa": "46bb58aa192b1862d1695cde40aa316a43b956fd9a9971e41eb3a29956046ede",
+    "master": "f4cf91961811af5d7b812f512fd11fdf8c54c052497f22052b8c56b86f1331ac"
+  },
+  "commitments": {
+    "fullName": "aca3d121a1ed8242bd8d86b22d4efb1757e3defaa4eec833c592fe1f56f1ed1b",
+    "degree": "e8046976991b186ab1fcfc368ae0b9cc90623216d38c2cfc9d0ddfc5715a0cb6",
+    "gpa": "779967ab2faf5473184e30d67f977b7a11ef5982016fbda08c62872454be18be",
+    "courseGrades": "e46db6abed7c95a2d9cbf79c7d047f6e7ced185395ce11fc0d3391e5cd52a21d"
+  },
+  "sets": {
+    "courseGrades": {
+      "mode": "granular",
+      "itemCount": 5,
+      "subRoot": "e46db6abed7c95a2d9cbf79c7d047f6e7ced185395ce11fc0d3391e5cd52a21d",
+      "items": [
+        {
+          "code": "CS101",
+          "title": "Intro to Computer Science",
+          "credits": 3,
+          "grade": "A",
+          "salt": "c21fcdbd1cd3b759d2396c5e40e23ba992e1b254147a7cb21b41e02c957a08d1",
+          "path": [
+            {
+              "sibling": "dd9377eacf9fe03b61447c7c846cb37db2101c70672b725ebb3131827ce50c33",
+              "goesLeft": true
+            },
+            {
+              "sibling": "1476a3080e53a57a055b447e9cf649fb493620ea42c912a1a373bb8f73483b4c",
+              "goesLeft": true
+            },
+            {
+              "sibling": "16d15e8a8f8b039e3097b2b574ade4958b924a2b814c3cc6e861491653cd4309",
+              "goesLeft": true
+            }
+          ]
+        },
+        {
+          "code": "CS240",
+          "title": "Data Structures",
+          "credits": 3,
+          "grade": "A",
+          "salt": "4fbb7651226f9ad7d1b1162093002d6831a810c960aec56dfbc5e58aa48cf71a",
+          "path": [
+            {
+              "sibling": "d8c4ae78b0ffb67065d92bd330906a7b6ffa0608c9e36e427e868bf39002d2d6",
+              "goesLeft": false
+            },
+            {
+              "sibling": "1476a3080e53a57a055b447e9cf649fb493620ea42c912a1a373bb8f73483b4c",
+              "goesLeft": true
+            },
+            {
+              "sibling": "16d15e8a8f8b039e3097b2b574ade4958b924a2b814c3cc6e861491653cd4309",
+              "goesLeft": true
+            }
+          ]
+        },
+        {
+          "code": "CS320",
+          "title": "Algorithms",
+          "credits": 3,
+          "grade": "A-",
+          "salt": "e5b0e1120f0bc9637564c6a2879feadf92a2c92ad48092f097b35a52161323db",
+          "path": [
+            {
+              "sibling": "f1529ab707f43a0b519e7e93710f443373ac4a0c07d2001265e268a35a05a481",
+              "goesLeft": true
+            },
+            {
+              "sibling": "b1c9a3fa843361d8acfe484444a4a846d5dc0175f68ed25a814bc0bbc24e4157",
+              "goesLeft": false
+            },
+            {
+              "sibling": "16d15e8a8f8b039e3097b2b574ade4958b924a2b814c3cc6e861491653cd4309",
+              "goesLeft": true
+            }
+          ]
+        },
+        {
+          "code": "MATH420",
+          "title": "Cryptography",
+          "credits": 3,
+          "grade": "A",
+          "salt": "65313bc3082435b8cc0e9e63ce2ea347ffaa09720f0ae485a74b25633fc6ffd8",
+          "path": [
+            {
+              "sibling": "d8b6ca39bcb080e8156f69bec3f0c366a12101b79597756a9dfce355b8f8d2e6",
+              "goesLeft": false
+            },
+            {
+              "sibling": "b1c9a3fa843361d8acfe484444a4a846d5dc0175f68ed25a814bc0bbc24e4157",
+              "goesLeft": false
+            },
+            {
+              "sibling": "16d15e8a8f8b039e3097b2b574ade4958b924a2b814c3cc6e861491653cd4309",
+              "goesLeft": true
+            }
+          ]
+        },
+        {
+          "code": "CS460",
+          "title": "Machine Learning",
+          "credits": 3,
+          "grade": "A-",
+          "salt": "36b76809b4549620b4c8735b8cf653e08e97be5b168c1be31c1907bc4bd60b7c",
+          "path": [
+            {
+              "sibling": "e2e12cc517b62ff2a6a46a6d3c7bd327c1fc8c497953dfb78818f5ce812f1622",
+              "goesLeft": true
+            },
+            {
+              "sibling": "f6e27afafd7da41a755a7cf3b4cc95eb9dd4fb32c0badd18106636788c1c83e6",
+              "goesLeft": true
+            },
+            {
+              "sibling": "f3654e05c697818c182335705fe359d0b18fa0f8e3bf372692f7db744f4ef15a",
+              "goesLeft": false
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "masterLeaf": "ba8d29a952e0eb40d44f61795aa7b8ca25f96c9774331b23f65f8e647beed485",
+  "credId": "a8d95db6c84772c3869edd3877ce126b9fa0fc7c727f1c895ecbfa1e7c08e5a6",
+  "path": [
+    {
+      "sibling": "669ce0c993f406193443d2967f9aec3b088aebe958d20f176ba4395218834524",
+      "goesLeft": true
+    },
+    {
+      "sibling": "eb3765038247d8a945e81aebf7ee63ac3c0c7b638b7ed132402af2f13a1a1b9f",
+      "goesLeft": true
+    },
+    {
+      "sibling": "d3255e3f3a8ed2189811fa87c68f303324ac6e4797d4c6e81ddb2cfaae9094c5",
+      "goesLeft": true
+    }
+  ],
+  "cohortRoot": "ef5ecbe47f36421872dce598471f0bccbea476731bfb76cb0c33b69daee29414",
+  "contractAddress": "c3b82a86c2b4fe3b2414caef250008731c79b45e93ec0edcca7faf2867325d92",
+  "network": "undeployed",
+  "predicateProofs": []
+}

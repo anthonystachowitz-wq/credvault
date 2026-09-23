@@ -1,0 +1,295 @@
+// ============================================================================
+// CredVault Compact Smart Contract
+// Auto-generated from DSL schema - DO NOT EDIT MANUALLY
+// ============================================================================
+// Schema: university/transcript
+// Version: 1.0.0
+// Description: Combined: All features including Case 16
+// Generated: 2026-03-14T02:30:11.246Z
+// ============================================================================
+
+pragma language_version >= 0.20;
+
+import CompactStandardLibrary;
+
+// ============================================================================
+// Credential Struct - Storage definition for credential fields
+// ============================================================================
+export struct Credential {
+  gpa: Uint<64>,
+  studentId: Bytes<256>,
+  studentName: Bytes<256>, // Storage only - no verification
+  graduationDate: Uint<64>, // Storage only - no verification
+}
+
+// ============================================================================
+// Sparse Merkle Proof Struct - For revocation (non-existence) verification
+// ============================================================================
+// Sparse Merkle proof structure for non-existence verification
+// Depth: 32 levels (supports 2^32 possible revocation entries)
+export struct SparseMerkleProof {
+  siblings: Vector<32, Bytes<32>>,
+  isRight: Vector<32, Boolean>,
+  leafIndex: Uint<248>
+}
+
+// ============================================================================
+// Ledger State - Public on-chain data
+// ============================================================================
+
+// Root of the Merkle tree containing all issued credentials
+export ledger merkleRoot: Bytes<32>;
+
+// SOT (Source of Truth) attestation hash - proves authority authenticity
+export ledger sotAttestation: Bytes<32>;
+
+// Sparse Merkle tree root for revocation checking
+// Used to prove a credential has NOT been revoked
+export ledger revocationRoot: Bytes<32>;
+
+// ============================================================================
+// Constructor - Initialize contract with Merkle root, SOT attestation, and revocation root
+// ============================================================================
+constructor(root: Bytes<32>, attestation: Bytes<32>, revokeRoot: Bytes<32>) {
+  merkleRoot = disclose(root);
+  sotAttestation = disclose(attestation);
+  revocationRoot = disclose(revokeRoot);
+}
+
+// ============================================================================
+// Hash Helper - Computes hash of two 32-byte values
+// Uses persistentHash for on-chain verifiability
+// ============================================================================
+circuit hashPair(left: Bytes<32>, right: Bytes<32>): Bytes<32> {
+  return persistentHash<[Bytes<32>, Bytes<32>]>([left, right]);
+}
+
+// ============================================================================
+// Merkle Proof Verification - 4-level proof
+// Verifies that a credential exists in the registry without revealing which one
+// 
+// @param leafHash - Hash of the credential leaf node (private)
+// @param siblings - Array of sibling hashes at each level (private)
+// @param isRight - Array indicating if leaf/sibling is right child at each level (private)
+// @returns Boolean - True if proof is valid (leaf exists in tree)
+// ============================================================================
+export circuit verifyMerkleProof4(
+  leafHash: Bytes<32>,
+  siblings: Vector<4, Bytes<32>>,
+  isRight: Vector<4, Boolean>
+): Boolean {
+  // Level 0: Hash with sibling0
+  const left0 = isRight[0] ? siblings[0] : leafHash;
+  const right0 = isRight[0] ? leafHash : siblings[0];
+  const hash0 = hashPair(left0, right0);
+
+  // Level 1: Hash with sibling1
+  const left1 = isRight[1] ? siblings[1] : hash0;
+  const right1 = isRight[1] ? hash0 : siblings[1];
+  const hash1 = hashPair(left1, right1);
+
+  // Level 2: Hash with sibling2
+  const left2 = isRight[2] ? siblings[2] : hash1;
+  const right2 = isRight[2] ? hash1 : siblings[2];
+  const hash2 = hashPair(left2, right2);
+
+  // Level 3: Hash with sibling3
+  const left3 = isRight[3] ? siblings[3] : hash2;
+  const right3 = isRight[3] ? hash2 : siblings[3];
+  const hash3 = hashPair(left3, right3);
+  // Final verification: computed root must match stored root
+  return hash3 == merkleRoot;
+}
+
+// ============================================================================
+// Range Proof Witness - gpa
+// ============================================================================
+// Witness: the actual gpa value (kept private, not revealed on-chain)
+// Note: gpa is stored as integer with scale 100
+// 0 = 0.00 GPA, 1000 = 10.00 GPA
+
+witness gpaValue(): Uint<64>;
+
+// ============================================================================
+// Minimum Value Proof - gpa
+// Proves that gpa >= minValue without revealing the actual value
+// ============================================================================
+export circuit verifyMinGpa(minValue: Uint<64>): [] {
+  const actualValue = gpaValue();
+  assert(actualValue >= minValue, "gpa below minimum");
+}
+
+// ============================================================================
+// Range Proof - gpa
+// Proves that minValue <= gpa <= maxValue without revealing the actual value
+// ============================================================================
+export circuit verifyGpaRange(minValue: Uint<64>, maxValue: Uint<64>): [] {
+  const actualValue = gpaValue();
+  assert(actualValue >= minValue, "gpa below minimum");
+  assert(actualValue <= maxValue, "gpa above maximum");
+}
+
+// ============================================================================
+// Equality Proof Witness - studentId
+// ============================================================================
+// Witness: the actual studentId value (kept private, not revealed on-chain)
+// Used for equality proofs to verify exact matches without revealing the value
+
+witness studentIdValue(): Bytes<256>;
+
+// ============================================================================
+// Equality Proof - studentId
+// Proves that hash(studentId) == expectedHash without revealing the actual value
+// Uses pedersen for on-chain verifiable hashing
+// ============================================================================
+export circuit verifyStudentIdEquals(expectedHash: Bytes<32>): [] {
+  const actualValue = studentIdValue();
+  // Hash the actual value and compare to expected
+  const actualHash = pedersen<[Bytes<256>]>([actualValue]);
+  assert(actualHash == expectedHash, "studentId value does not match");
+}
+
+// ============================================================================
+// Knowledge Proof - studentId
+// Proves knowledge of studentId without revealing the value
+// Returns a commitment/hash that can be verified off-chain
+// Uses disclose() to explicitly mark the hash as public output
+// ============================================================================
+export circuit proveStudentIdKnowledge(): Bytes<32> {
+  const actualValue = studentIdValue();
+  // Hash the witness value and explicitly disclose the result
+  const hashResult = pedersen<[Bytes<256>]>([actualValue]);
+  return disclose(hashResult);
+}
+
+// ============================================================================
+// Sparse Hash At Level - Computes hash at a specific level for sparse Merkle proof
+// ============================================================================
+circuit sparseHashAtLevel(
+  currentHash: Bytes<32>,
+  sibling: Bytes<32>,
+  isRight: Boolean
+): Bytes<32> {
+  const left = isRight ? sibling : currentHash;
+  const right = isRight ? currentHash : sibling;
+  return hashPair(left, right);
+}
+
+// ============================================================================
+// Sparse Merkle Non-Existence Verification - 32-level proof
+// Verifies that a credential is NOT in the revocation tree
+//
+// Non-existence is proven by showing the path leads to an empty/default hash
+// or a different leaf at the computed position
+//
+// @param credentialId - Hash of the credential ID being checked
+// @param proof - Sparse Merkle proof of non-membership
+// @param expectedRoot - The expected sparse Merkle root
+// @returns Boolean - True if credential is NOT in the tree (not revoked)
+// ============================================================================
+circuit verifySparseMerkleNonExistence(
+  credentialId: Bytes<32>,
+  proof: SparseMerkleProof,
+  expectedRoot: Bytes<32>
+): Boolean {
+  // Compute leaf hash from credentialId
+  const leafHash = persistentHash<[Bytes<32>, Uint<248>]>([credentialId, proof.leafIndex]);
+  
+  // Traverse up the tree level by level
+  // Level 0
+  const hash0 = sparseHashAtLevel(leafHash, proof.siblings[0], proof.isRight[0]);
+  // Level 1
+  const hash1 = sparseHashAtLevel(hash0, proof.siblings[1], proof.isRight[1]);
+  // Level 2
+  const hash2 = sparseHashAtLevel(hash1, proof.siblings[2], proof.isRight[2]);
+  // Level 3
+  const hash3 = sparseHashAtLevel(hash2, proof.siblings[3], proof.isRight[3]);
+  // Level 4
+  const hash4 = sparseHashAtLevel(hash3, proof.siblings[4], proof.isRight[4]);
+  // Level 5
+  const hash5 = sparseHashAtLevel(hash4, proof.siblings[5], proof.isRight[5]);
+  // Level 6
+  const hash6 = sparseHashAtLevel(hash5, proof.siblings[6], proof.isRight[6]);
+  // Level 7
+  const hash7 = sparseHashAtLevel(hash6, proof.siblings[7], proof.isRight[7]);
+  // Level 8
+  const hash8 = sparseHashAtLevel(hash7, proof.siblings[8], proof.isRight[8]);
+  // Level 9
+  const hash9 = sparseHashAtLevel(hash8, proof.siblings[9], proof.isRight[9]);
+  // Level 10
+  const hash10 = sparseHashAtLevel(hash9, proof.siblings[10], proof.isRight[10]);
+  // Level 11
+  const hash11 = sparseHashAtLevel(hash10, proof.siblings[11], proof.isRight[11]);
+  // Level 12
+  const hash12 = sparseHashAtLevel(hash11, proof.siblings[12], proof.isRight[12]);
+  // Level 13
+  const hash13 = sparseHashAtLevel(hash12, proof.siblings[13], proof.isRight[13]);
+  // Level 14
+  const hash14 = sparseHashAtLevel(hash13, proof.siblings[14], proof.isRight[14]);
+  // Level 15
+  const hash15 = sparseHashAtLevel(hash14, proof.siblings[15], proof.isRight[15]);
+  // Level 16
+  const hash16 = sparseHashAtLevel(hash15, proof.siblings[16], proof.isRight[16]);
+  // Level 17
+  const hash17 = sparseHashAtLevel(hash16, proof.siblings[17], proof.isRight[17]);
+  // Level 18
+  const hash18 = sparseHashAtLevel(hash17, proof.siblings[18], proof.isRight[18]);
+  // Level 19
+  const hash19 = sparseHashAtLevel(hash18, proof.siblings[19], proof.isRight[19]);
+  // Level 20
+  const hash20 = sparseHashAtLevel(hash19, proof.siblings[20], proof.isRight[20]);
+  // Level 21
+  const hash21 = sparseHashAtLevel(hash20, proof.siblings[21], proof.isRight[21]);
+  // Level 22
+  const hash22 = sparseHashAtLevel(hash21, proof.siblings[22], proof.isRight[22]);
+  // Level 23
+  const hash23 = sparseHashAtLevel(hash22, proof.siblings[23], proof.isRight[23]);
+  // Level 24
+  const hash24 = sparseHashAtLevel(hash23, proof.siblings[24], proof.isRight[24]);
+  // Level 25
+  const hash25 = sparseHashAtLevel(hash24, proof.siblings[25], proof.isRight[25]);
+  // Level 26
+  const hash26 = sparseHashAtLevel(hash25, proof.siblings[26], proof.isRight[26]);
+  // Level 27
+  const hash27 = sparseHashAtLevel(hash26, proof.siblings[27], proof.isRight[27]);
+  // Level 28
+  const hash28 = sparseHashAtLevel(hash27, proof.siblings[28], proof.isRight[28]);
+  // Level 29
+  const hash29 = sparseHashAtLevel(hash28, proof.siblings[29], proof.isRight[29]);
+  // Level 30
+  const hash30 = sparseHashAtLevel(hash29, proof.siblings[30], proof.isRight[30]);
+  // Level 31
+  const hash31 = sparseHashAtLevel(hash30, proof.siblings[31], proof.isRight[31]);
+  
+  // Final verification: computed root must match expected root
+  return hash31 == expectedRoot;
+}
+
+// ============================================================================
+// Revocation Check - Sparse Merkle Non-Existence Proof
+// Proves that a credential has NOT been revoked
+// Uses sparse Merkle tree to verify non-membership
+//
+// @param credentialId - Hash of credential ID being checked (private)
+// @param proof - Sparse Merkle proof of non-membership (private)
+// @returns Boolean - True if credential is NOT revoked (valid)
+// ============================================================================
+export circuit verifyNotRevoked(
+  credentialId: Bytes<32>,
+  proof: SparseMerkleProof
+): Boolean {
+  // Verify the credentialId is NOT in the revocation tree
+  // Returns true if proof shows non-membership
+  return verifySparseMerkleNonExistence(credentialId, proof, revocationRoot);
+}
+
+// ============================================================================
+// Update Revocation Root - Admin function for SOT to revoke credentials
+// Updates the sparse Merkle root to include new revoked credentials
+//
+// In production, this should have proper access control (only SOT can call)
+// ============================================================================
+export circuit updateRevocationRoot(newRoot: Bytes<32>): [] {
+  revocationRoot = disclose(newRoot);
+}
+

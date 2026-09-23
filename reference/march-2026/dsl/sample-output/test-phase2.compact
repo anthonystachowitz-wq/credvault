@@ -1,0 +1,112 @@
+// ============================================================================
+// CredVault Compact Smart Contract
+// Auto-generated from DSL schema - DO NOT EDIT MANUALLY
+// ============================================================================
+// Schema: university/transcript
+// Version: 1.0.0
+// Description: Academic transcript with GPA verification
+// Generated: 2026-03-14T02:10:25.821Z
+// ============================================================================
+
+pragma language_version >= 0.20;
+
+import CompactStandardLibrary;
+
+// ============================================================================
+// Credential Struct - Storage definition for credential fields
+// ============================================================================
+export struct Credential {
+  gpa: Uint<64>,
+}
+
+// ============================================================================
+// Ledger State - Public on-chain data
+// ============================================================================
+
+// Root of the Merkle tree containing all issued credentials
+export ledger merkleRoot: Bytes<32>;
+
+// SOT (Source of Truth) attestation hash - proves authority authenticity
+export ledger sotAttestation: Bytes<32>;
+
+// ============================================================================
+// Constructor - Initialize contract with Merkle root and SOT attestation
+// ============================================================================
+constructor(root: Bytes<32>, attestation: Bytes<32>) {
+  merkleRoot = disclose(root);
+  sotAttestation = disclose(attestation);
+}
+
+// ============================================================================
+// Hash Helper - Computes hash of two 32-byte values
+// Uses persistentHash for on-chain verifiability
+// ============================================================================
+circuit hashPair(left: Bytes<32>, right: Bytes<32>): Bytes<32> {
+  return persistentHash<[Bytes<32>, Bytes<32>]>([left, right]);
+}
+
+// ============================================================================
+// Merkle Proof Verification - 4-level proof
+// Verifies that a credential exists in the registry without revealing which one
+// 
+// @param leafHash - Hash of the credential leaf node (private)
+// @param siblings - Array of sibling hashes at each level (private)
+// @param isRight - Array indicating if leaf/sibling is right child at each level (private)
+// @returns Boolean - True if proof is valid (leaf exists in tree)
+// ============================================================================
+export circuit verifyMerkleProof4(
+  leafHash: Bytes<32>,
+  siblings: Vector<4, Bytes<32>>,
+  isRight: Vector<4, Boolean>
+): Boolean {
+  // Level 0: Hash with sibling0
+  const left0 = isRight[0] ? siblings[0] : leafHash;
+  const right0 = isRight[0] ? leafHash : siblings[0];
+  const hash0 = hashPair(left0, right0);
+
+  // Level 1: Hash with sibling1
+  const left1 = isRight[1] ? siblings[1] : hash0;
+  const right1 = isRight[1] ? hash0 : siblings[1];
+  const hash1 = hashPair(left1, right1);
+
+  // Level 2: Hash with sibling2
+  const left2 = isRight[2] ? siblings[2] : hash1;
+  const right2 = isRight[2] ? hash1 : siblings[2];
+  const hash2 = hashPair(left2, right2);
+
+  // Level 3: Hash with sibling3
+  const left3 = isRight[3] ? siblings[3] : hash2;
+  const right3 = isRight[3] ? hash2 : siblings[3];
+  const hash3 = hashPair(left3, right3);
+  // Final verification: computed root must match stored root
+  return hash3 == merkleRoot;
+}
+
+// ============================================================================
+// Range Proof Witness - gpa
+// ============================================================================
+// Witness: the actual gpa value (kept private, not revealed on-chain)
+// Note: gpa is stored as integer with scale 100
+// 0 = 0.00 GPA, 1000 = 10.00 GPA
+
+witness gpaValue(): Uint<64>;
+
+// ============================================================================
+// Minimum Value Proof - gpa
+// Proves that gpa >= minValue without revealing the actual value
+// ============================================================================
+export circuit verifyMinGpa(minValue: Uint<64>): [] {
+  const actualValue = gpaValue();
+  assert(actualValue >= minValue, "gpa below minimum");
+}
+
+// ============================================================================
+// Range Proof - gpa
+// Proves that minValue <= gpa <= maxValue without revealing the actual value
+// ============================================================================
+export circuit verifyGpaRange(minValue: Uint<64>, maxValue: Uint<64>): [] {
+  const actualValue = gpaValue();
+  assert(actualValue >= minValue, "gpa below minimum");
+  assert(actualValue <= maxValue, "gpa above maximum");
+}
+

@@ -1,0 +1,114 @@
+{
+  "schema": "credvault-degree/0.3",
+  "issuer": "Penn State University (mock)",
+  "cohort": "console-upload-2026-09-05",
+  "studentId": "MONO-033",
+  "values": {
+    "fullName": "Jack Emery",
+    "degree": "B.S. Computer Science",
+    "gpa": 281
+  },
+  "transcriptMode": "monolithic",
+  "courses": [
+    {
+      "code": "CS420",
+      "title": "Networks",
+      "credits": 4,
+      "grade": "A"
+    },
+    {
+      "code": "CS460",
+      "title": "Machine Learning",
+      "credits": 3,
+      "grade": "C+"
+    },
+    {
+      "code": "CS201",
+      "title": "Programming Languages",
+      "credits": 3,
+      "grade": "B-"
+    },
+    {
+      "code": "CS240",
+      "title": "Data Structures",
+      "credits": 3,
+      "grade": "A-"
+    },
+    {
+      "code": "CS410",
+      "title": "Databases",
+      "credits": 3,
+      "grade": "B"
+    },
+    {
+      "code": "CS330",
+      "title": "Computer Architecture",
+      "credits": 4,
+      "grade": "A"
+    },
+    {
+      "code": "CS360",
+      "title": "Operating Systems",
+      "credits": 4,
+      "grade": "B"
+    },
+    {
+      "code": "CS470",
+      "title": "Software Engineering",
+      "credits": 3,
+      "grade": "A"
+    },
+    {
+      "code": "STAT310",
+      "title": "Probability",
+      "credits": 3,
+      "grade": "A"
+    },
+    {
+      "code": "MATH420",
+      "title": "Cryptography",
+      "credits": 3,
+      "grade": "A"
+    }
+  ],
+  "docSalt": "77f9c3521661ccd0fdb72a0a6981def2bb3a818dd5106207f440542961a07377",
+  "docCommit": "bbaa0420344a5e52907fdd9720396e0dfd4dd30ebbe7cc570359031816ebec9d",
+  "salts": {
+    "fullName": "e794e66ac10e73ada12783cfc2e02d851dcac95ec130b3874374c6bea8ba6061",
+    "degree": "1c9389ef62070b3d7c0cfdf33c3d234667cfcb89113606cf6a9cb40d81f1feba",
+    "gpa": "bdea2954a548a253f43e22fac826d184df7adfef86065993d618a5037c38041c",
+    "master": "f032c6d639526f31ea8d0467b50cd43cf605847cd51caed0f830c80ff203d48f"
+  },
+  "gpaCommit": "b97aeeeeb4242bccdf27691be8225dc9b28b75d87eaf7efb5c47b3423806b8d4",
+  "masterLeaf": "b9c2f62e440e6495b03d15a4cfe60b44264df2f95ad6296918ddca4cf627ec91",
+  "credId": "34045bf3f606600b5f175635baf192558a998020e455f4cf3636bc9d57d67c5f",
+  "path": [
+    {
+      "sibling": "45ddde845608e995b24a29037cd794711d1988375d6eeabfa8606c1ac2f43f0d",
+      "goesLeft": true
+    },
+    {
+      "sibling": "bc8f83d478b490f0a779ca2aeb403f632fc3885ad6c2ac64d9d3412c0d06e4d1",
+      "goesLeft": true
+    },
+    {
+      "sibling": "0e3add685f915ac8fa8f754b942537b4e9eb68b86528dc8843f99b2ee9ec7f76",
+      "goesLeft": true
+    },
+    {
+      "sibling": "8ab21f54784d62438a9702f3a0eeba7d3b67603385539abcb6c0bd973f06c3ab",
+      "goesLeft": true
+    },
+    {
+      "sibling": "c116b32eae6654e03542a9783f5e9349ae84dc1cb00e77accd8153f9bf1c5ef7",
+      "goesLeft": true
+    },
+    {
+      "sibling": "e664895cf480488798be10d2516c3cd2d9e949fc7964a2f6eb2f7376df74a07b",
+      "goesLeft": false
+    }
+  ],
+  "cohortRoot": "f02d63b2c130f1d28a2ba1094d542ed04d8f7f395c05b77ad1476c4153b3ba35",
+  "contractAddress": "c3b82a86c2b4fe3b2414caef250008731c79b45e93ec0edcca7faf2867325d92",
+  "l2Proofs": []
+}

@@ -1,0 +1,501 @@
+studentId,fullName,degree,gpa,courseCode,courseTitle,credits,grade
+GRA-001,Cody Xu,B.S. Biology,312,BIO101,General Biology,3,A-
+GRA-001,Cody Xu,B.S. Biology,312,BIO320,Ecology,4,C+
+GRA-001,Cody Xu,B.S. Biology,312,MATH130,Calculus I,3,A-
+GRA-001,Cody Xu,B.S. Biology,312,STAT215,Biostatistics,4,B-
+GRA-001,Cody Xu,B.S. Biology,312,CHEM110,General Chemistry,4,B
+GRA-001,Cody Xu,B.S. Biology,312,BIO210,Cell Biology,3,A
+GRA-001,Cody Xu,B.S. Biology,312,CHEM210,Organic Chemistry,3,C+
+GRA-001,Cody Xu,B.S. Biology,312,BIO410,Microbiology,3,B+
+GRA-001,Cody Xu,B.S. Biology,312,BIO305,Genetics,3,B+
+GRA-001,Cody Xu,B.S. Biology,312,BCHM310,Biochemistry,3,A
+GRA-002,Vera Ali,B.A. Economics,313,MATH210,Linear Algebra,4,A-
+GRA-002,Vera Ali,B.A. Economics,313,ECON310,Game Theory,3,A-
+GRA-002,Vera Ali,B.A. Economics,313,ECON240,International Trade,3,B+
+GRA-002,Vera Ali,B.A. Economics,313,STAT200,Statistics,3,B+
+GRA-002,Vera Ali,B.A. Economics,313,HIST240,Economic History,3,C+
+GRA-002,Vera Ali,B.A. Economics,313,ECON410,Public Economics,3,C+
+GRA-002,Vera Ali,B.A. Economics,313,ECON210,Macroeconomics,3,A
+GRA-002,Vera Ali,B.A. Economics,313,ECON101,Microeconomics,3,B-
+GRA-002,Vera Ali,B.A. Economics,313,FIN220,Corporate Finance,4,C
+GRA-002,Vera Ali,B.A. Economics,313,ECON340,Econometrics,4,A-
+GRA-003,Hugo Costa,B.A. Economics,375,MATH210,Linear Algebra,3,A-
+GRA-003,Hugo Costa,B.A. Economics,375,ECON210,Macroeconomics,4,B
+GRA-003,Hugo Costa,B.A. Economics,375,ECON240,International Trade,3,A
+GRA-003,Hugo Costa,B.A. Economics,375,FIN220,Corporate Finance,3,A-
+GRA-003,Hugo Costa,B.A. Economics,375,STAT200,Statistics,4,B+
+GRA-003,Hugo Costa,B.A. Economics,375,ECON410,Public Economics,3,B-
+GRA-003,Hugo Costa,B.A. Economics,375,ECON340,Econometrics,3,A
+GRA-003,Hugo Costa,B.A. Economics,375,ECON310,Game Theory,4,A
+GRA-003,Hugo Costa,B.A. Economics,375,HIST240,Economic History,3,B+
+GRA-003,Hugo Costa,B.A. Economics,375,ECON101,Microeconomics,3,A
+GRA-004,Nora Zimmer,B.S. Mechanical Engineering,317,ME310,Fluid Mechanics,3,B
+GRA-004,Nora Zimmer,B.S. Mechanical Engineering,317,PHYS121,Physics I,3,C+
+GRA-004,Nora Zimmer,B.S. Mechanical Engineering,317,ENGR300,Engineering Ethics,3,B-
+GRA-004,Nora Zimmer,B.S. Mechanical Engineering,317,ME420,Control Systems,3,A
+GRA-004,Nora Zimmer,B.S. Mechanical Engineering,317,ME410,Heat Transfer,4,A-
+GRA-004,Nora Zimmer,B.S. Mechanical Engineering,317,ME330,Machine Design,3,A-
+GRA-004,Nora Zimmer,B.S. Mechanical Engineering,317,ME101,Engineering Mechanics,4,C+
+GRA-004,Nora Zimmer,B.S. Mechanical Engineering,317,ME230,Materials Science,4,A-
+GRA-004,Nora Zimmer,B.S. Mechanical Engineering,317,MATH251,Differential Equations,3,A-
+GRA-004,Nora Zimmer,B.S. Mechanical Engineering,317,ME210,Thermodynamics,3,A-
+GRA-005,Nora Uribe,B.S. Mechanical Engineering,321,ME330,Machine Design,4,C
+GRA-005,Nora Uribe,B.S. Mechanical Engineering,321,ME101,Engineering Mechanics,3,A-
+GRA-005,Nora Uribe,B.S. Mechanical Engineering,321,ME210,Thermodynamics,3,B
+GRA-005,Nora Uribe,B.S. Mechanical Engineering,321,ME230,Materials Science,3,A
+GRA-005,Nora Uribe,B.S. Mechanical Engineering,321,ENGR300,Engineering Ethics,3,A
+GRA-005,Nora Uribe,B.S. Mechanical Engineering,321,ME310,Fluid Mechanics,4,A-
+GRA-005,Nora Uribe,B.S. Mechanical Engineering,321,ME410,Heat Transfer,3,A
+GRA-005,Nora Uribe,B.S. Mechanical Engineering,321,ME420,Control Systems,3,B+
+GRA-005,Nora Uribe,B.S. Mechanical Engineering,321,PHYS121,Physics I,3,A
+GRA-005,Nora Uribe,B.S. Mechanical Engineering,321,MATH251,Differential Equations,3,B-
+GRA-006,Finn Klein,B.A. Psychology,340,PSY410,Research Methods,3,A-
+GRA-006,Finn Klein,B.A. Psychology,340,SOC210,Sociology,3,B
+GRA-006,Finn Klein,B.A. Psychology,340,PSY330,Social Psychology,3,A
+GRA-006,Finn Klein,B.A. Psychology,340,PHIL220,Ethics,3,A
+GRA-006,Finn Klein,B.A. Psychology,340,PSY101,Intro to Psychology,4,A
+GRA-006,Finn Klein,B.A. Psychology,340,PSY210,Cognitive Psychology,3,A
+GRA-006,Finn Klein,B.A. Psychology,340,PSY310,Abnormal Psychology,3,A-
+GRA-006,Finn Klein,B.A. Psychology,340,STAT205,Behavioral Statistics,3,A-
+GRA-006,Finn Klein,B.A. Psychology,340,BIO150,Neuroscience,3,A
+GRA-006,Finn Klein,B.A. Psychology,340,PSY230,Developmental Psychology,3,B+
+GRA-007,Jade Ingram,B.S. Mechanical Engineering,346,ME230,Materials Science,3,B+
+GRA-007,Jade Ingram,B.S. Mechanical Engineering,346,ME310,Fluid Mechanics,4,A
+GRA-007,Jade Ingram,B.S. Mechanical Engineering,346,ME101,Engineering Mechanics,3,C
+GRA-007,Jade Ingram,B.S. Mechanical Engineering,346,ME420,Control Systems,3,A-
+GRA-007,Jade Ingram,B.S. Mechanical Engineering,346,ME330,Machine Design,3,A-
+GRA-007,Jade Ingram,B.S. Mechanical Engineering,346,PHYS121,Physics I,3,A-
+GRA-007,Jade Ingram,B.S. Mechanical Engineering,346,ME210,Thermodynamics,3,B
+GRA-007,Jade Ingram,B.S. Mechanical Engineering,346,ME410,Heat Transfer,3,A-
+GRA-007,Jade Ingram,B.S. Mechanical Engineering,346,MATH251,Differential Equations,3,A-
+GRA-007,Jade Ingram,B.S. Mechanical Engineering,346,ENGR300,Engineering Ethics,3,A-
+GRA-008,Luna Yates,B.S. Mechanical Engineering,294,ME420,Control Systems,3,A-
+GRA-008,Luna Yates,B.S. Mechanical Engineering,294,ME210,Thermodynamics,4,C
+GRA-008,Luna Yates,B.S. Mechanical Engineering,294,ME101,Engineering Mechanics,3,A
+GRA-008,Luna Yates,B.S. Mechanical Engineering,294,ME330,Machine Design,3,A
+GRA-008,Luna Yates,B.S. Mechanical Engineering,294,PHYS121,Physics I,3,A-
+GRA-008,Luna Yates,B.S. Mechanical Engineering,294,ENGR300,Engineering Ethics,3,B+
+GRA-008,Luna Yates,B.S. Mechanical Engineering,294,ME230,Materials Science,4,B
+GRA-008,Luna Yates,B.S. Mechanical Engineering,294,ME310,Fluid Mechanics,3,C
+GRA-008,Luna Yates,B.S. Mechanical Engineering,294,MATH251,Differential Equations,3,B-
+GRA-008,Luna Yates,B.S. Mechanical Engineering,294,ME410,Heat Transfer,3,B+
+GRA-009,Neil Ali,B.S. Mechanical Engineering,340,ME410,Heat Transfer,3,A
+GRA-009,Neil Ali,B.S. Mechanical Engineering,340,ME330,Machine Design,4,B-
+GRA-009,Neil Ali,B.S. Mechanical Engineering,340,ENGR300,Engineering Ethics,4,A
+GRA-009,Neil Ali,B.S. Mechanical Engineering,340,ME101,Engineering Mechanics,3,B+
+GRA-009,Neil Ali,B.S. Mechanical Engineering,340,ME210,Thermodynamics,3,A-
+GRA-009,Neil Ali,B.S. Mechanical Engineering,340,PHYS121,Physics I,3,C
+GRA-009,Neil Ali,B.S. Mechanical Engineering,340,ME230,Materials Science,3,A
+GRA-009,Neil Ali,B.S. Mechanical Engineering,340,MATH251,Differential Equations,3,A-
+GRA-009,Neil Ali,B.S. Mechanical Engineering,340,ME310,Fluid Mechanics,3,C
+GRA-009,Neil Ali,B.S. Mechanical Engineering,340,ME420,Control Systems,3,B+
+GRA-010,Yale Baker,B.A. Psychology,354,PSY310,Abnormal Psychology,3,C
+GRA-010,Yale Baker,B.A. Psychology,354,STAT205,Behavioral Statistics,3,B+
+GRA-010,Yale Baker,B.A. Psychology,354,PHIL220,Ethics,4,B
+GRA-010,Yale Baker,B.A. Psychology,354,SOC210,Sociology,3,C+
+GRA-010,Yale Baker,B.A. Psychology,354,PSY210,Cognitive Psychology,4,B-
+GRA-010,Yale Baker,B.A. Psychology,354,PSY330,Social Psychology,3,B+
+GRA-010,Yale Baker,B.A. Psychology,354,PSY101,Intro to Psychology,3,A
+GRA-010,Yale Baker,B.A. Psychology,354,BIO150,Neuroscience,4,B
+GRA-010,Yale Baker,B.A. Psychology,354,PSY410,Research Methods,3,B+
+GRA-010,Yale Baker,B.A. Psychology,354,PSY230,Developmental Psychology,3,A
+GRA-011,Jade Ellis,B.S. Biology,354,BIO101,General Biology,4,B-
+GRA-011,Jade Ellis,B.S. Biology,354,CHEM210,Organic Chemistry,3,C+
+GRA-011,Jade Ellis,B.S. Biology,354,BCHM310,Biochemistry,3,B-
+GRA-011,Jade Ellis,B.S. Biology,354,BIO210,Cell Biology,3,A
+GRA-011,Jade Ellis,B.S. Biology,354,CHEM110,General Chemistry,3,A
+GRA-011,Jade Ellis,B.S. Biology,354,MATH130,Calculus I,3,B+
+GRA-011,Jade Ellis,B.S. Biology,354,BIO305,Genetics,4,B-
+GRA-011,Jade Ellis,B.S. Biology,354,BIO320,Ecology,3,B+
+GRA-011,Jade Ellis,B.S. Biology,354,STAT215,Biostatistics,3,C+
+GRA-011,Jade Ellis,B.S. Biology,354,BIO410,Microbiology,3,C
+GRA-012,Finn Farrell,B.S. Biology,373,BIO101,General Biology,3,A-
+GRA-012,Finn Farrell,B.S. Biology,373,BIO210,Cell Biology,3,B+
+GRA-012,Finn Farrell,B.S. Biology,373,BIO305,Genetics,3,B+
+GRA-012,Finn Farrell,B.S. Biology,373,MATH130,Calculus I,3,B
+GRA-012,Finn Farrell,B.S. Biology,373,STAT215,Biostatistics,4,A
+GRA-012,Finn Farrell,B.S. Biology,373,BIO320,Ecology,3,B+
+GRA-012,Finn Farrell,B.S. Biology,373,BIO410,Microbiology,3,B
+GRA-012,Finn Farrell,B.S. Biology,373,CHEM110,General Chemistry,3,B+
+GRA-012,Finn Farrell,B.S. Biology,373,CHEM210,Organic Chemistry,3,A
+GRA-012,Finn Farrell,B.S. Biology,373,BCHM310,Biochemistry,4,A
+GRA-013,Kent Tanaka,B.A. Economics,397,ECON101,Microeconomics,3,C
+GRA-013,Kent Tanaka,B.A. Economics,397,ECON310,Game Theory,4,C+
+GRA-013,Kent Tanaka,B.A. Economics,397,FIN220,Corporate Finance,3,C
+GRA-013,Kent Tanaka,B.A. Economics,397,HIST240,Economic History,4,A
+GRA-013,Kent Tanaka,B.A. Economics,397,MATH210,Linear Algebra,3,A
+GRA-013,Kent Tanaka,B.A. Economics,397,ECON410,Public Economics,3,B+
+GRA-013,Kent Tanaka,B.A. Economics,397,ECON210,Macroeconomics,3,A
+GRA-013,Kent Tanaka,B.A. Economics,397,ECON340,Econometrics,3,A
+GRA-013,Kent Tanaka,B.A. Economics,397,STAT200,Statistics,4,C
+GRA-013,Kent Tanaka,B.A. Economics,397,ECON240,International Trade,3,B-
+GRA-014,Tara Singh,B.S. Computer Science,341,CS101,Intro to Computer Science,4,B+
+GRA-014,Tara Singh,B.S. Computer Science,341,CS201,Programming Languages,3,B
+GRA-014,Tara Singh,B.S. Computer Science,341,CS410,Databases,4,C+
+GRA-014,Tara Singh,B.S. Computer Science,341,CS470,Software Engineering,4,A
+GRA-014,Tara Singh,B.S. Computer Science,341,CS420,Networks,3,C
+GRA-014,Tara Singh,B.S. Computer Science,341,CS460,Machine Learning,4,B+
+GRA-014,Tara Singh,B.S. Computer Science,341,CS360,Operating Systems,4,B+
+GRA-014,Tara Singh,B.S. Computer Science,341,CS240,Data Structures,4,B
+GRA-014,Tara Singh,B.S. Computer Science,341,STAT310,Probability,3,B
+GRA-014,Tara Singh,B.S. Computer Science,341,CS320,Algorithms,3,B+
+GRA-015,Zane Gray,B.A. Economics,319,ECON240,International Trade,3,A-
+GRA-015,Zane Gray,B.A. Economics,319,ECON101,Microeconomics,3,B+
+GRA-015,Zane Gray,B.A. Economics,319,ECON210,Macroeconomics,3,B-
+GRA-015,Zane Gray,B.A. Economics,319,HIST240,Economic History,3,A-
+GRA-015,Zane Gray,B.A. Economics,319,MATH210,Linear Algebra,4,B+
+GRA-015,Zane Gray,B.A. Economics,319,ECON310,Game Theory,3,C
+GRA-015,Zane Gray,B.A. Economics,319,ECON410,Public Economics,3,B
+GRA-015,Zane Gray,B.A. Economics,319,ECON340,Econometrics,3,B-
+GRA-015,Zane Gray,B.A. Economics,319,STAT200,Statistics,4,A
+GRA-015,Zane Gray,B.A. Economics,319,FIN220,Corporate Finance,3,B
+GRA-016,Wade Stewart,B.S. Biology,388,BIO305,Genetics,4,A
+GRA-016,Wade Stewart,B.S. Biology,388,CHEM110,General Chemistry,3,B+
+GRA-016,Wade Stewart,B.S. Biology,388,BIO210,Cell Biology,3,A
+GRA-016,Wade Stewart,B.S. Biology,388,BIO101,General Biology,3,B-
+GRA-016,Wade Stewart,B.S. Biology,388,CHEM210,Organic Chemistry,3,B
+GRA-016,Wade Stewart,B.S. Biology,388,BCHM310,Biochemistry,3,C
+GRA-016,Wade Stewart,B.S. Biology,388,BIO410,Microbiology,4,A-
+GRA-016,Wade Stewart,B.S. Biology,388,BIO320,Ecology,3,C+
+GRA-016,Wade Stewart,B.S. Biology,388,MATH130,Calculus I,3,C+
+GRA-016,Wade Stewart,B.S. Biology,388,STAT215,Biostatistics,4,C+
+GRA-017,Tess Zimmer,B.A. Economics,350,STAT200,Statistics,3,A-
+GRA-017,Tess Zimmer,B.A. Economics,350,FIN220,Corporate Finance,4,B
+GRA-017,Tess Zimmer,B.A. Economics,350,ECON340,Econometrics,3,B+
+GRA-017,Tess Zimmer,B.A. Economics,350,HIST240,Economic History,3,A
+GRA-017,Tess Zimmer,B.A. Economics,350,ECON310,Game Theory,3,A
+GRA-017,Tess Zimmer,B.A. Economics,350,MATH210,Linear Algebra,3,A-
+GRA-017,Tess Zimmer,B.A. Economics,350,ECON240,International Trade,3,A-
+GRA-017,Tess Zimmer,B.A. Economics,350,ECON210,Macroeconomics,3,B+
+GRA-017,Tess Zimmer,B.A. Economics,350,ECON410,Public Economics,3,B-
+GRA-017,Tess Zimmer,B.A. Economics,350,ECON101,Microeconomics,3,B
+GRA-018,Mia Uribe,B.S. Mechanical Engineering,307,ME230,Materials Science,3,A
+GRA-018,Mia Uribe,B.S. Mechanical Engineering,307,ME330,Machine Design,4,C
+GRA-018,Mia Uribe,B.S. Mechanical Engineering,307,ME210,Thermodynamics,3,A
+GRA-018,Mia Uribe,B.S. Mechanical Engineering,307,MATH251,Differential Equations,3,C
+GRA-018,Mia Uribe,B.S. Mechanical Engineering,307,ME310,Fluid Mechanics,4,A
+GRA-018,Mia Uribe,B.S. Mechanical Engineering,307,PHYS121,Physics I,4,B+
+GRA-018,Mia Uribe,B.S. Mechanical Engineering,307,ME101,Engineering Mechanics,3,B
+GRA-018,Mia Uribe,B.S. Mechanical Engineering,307,ME410,Heat Transfer,3,B+
+GRA-018,Mia Uribe,B.S. Mechanical Engineering,307,ME420,Control Systems,4,B+
+GRA-018,Mia Uribe,B.S. Mechanical Engineering,307,ENGR300,Engineering Ethics,3,B+
+GRA-019,Liam Park,B.S. Computer Science,353,CS330,Computer Architecture,3,B-
+GRA-019,Liam Park,B.S. Computer Science,353,CS101,Intro to Computer Science,3,B
+GRA-019,Liam Park,B.S. Computer Science,353,STAT310,Probability,3,A
+GRA-019,Liam Park,B.S. Computer Science,353,MATH420,Cryptography,3,C
+GRA-019,Liam Park,B.S. Computer Science,353,CS360,Operating Systems,3,C
+GRA-019,Liam Park,B.S. Computer Science,353,CS470,Software Engineering,4,A-
+GRA-019,Liam Park,B.S. Computer Science,353,CS201,Programming Languages,3,A
+GRA-019,Liam Park,B.S. Computer Science,353,CS240,Data Structures,3,B-
+GRA-019,Liam Park,B.S. Computer Science,353,CS320,Algorithms,3,B-
+GRA-019,Liam Park,B.S. Computer Science,353,CS420,Networks,3,B+
+GRA-020,Yale Wang,B.S. Biology,375,MATH130,Calculus I,3,A
+GRA-020,Yale Wang,B.S. Biology,375,BCHM310,Biochemistry,3,B-
+GRA-020,Yale Wang,B.S. Biology,375,BIO320,Ecology,3,C
+GRA-020,Yale Wang,B.S. Biology,375,BIO101,General Biology,3,B
+GRA-020,Yale Wang,B.S. Biology,375,BIO305,Genetics,4,A-
+GRA-020,Yale Wang,B.S. Biology,375,STAT215,Biostatistics,4,C
+GRA-020,Yale Wang,B.S. Biology,375,CHEM210,Organic Chemistry,3,B
+GRA-020,Yale Wang,B.S. Biology,375,BIO410,Microbiology,3,B+
+GRA-020,Yale Wang,B.S. Biology,375,CHEM110,General Chemistry,3,B-
+GRA-020,Yale Wang,B.S. Biology,375,BIO210,Cell Biology,3,B+
+GRA-021,Kent Singh,B.S. Computer Science,396,STAT310,Probability,3,A
+GRA-021,Kent Singh,B.S. Computer Science,396,CS101,Intro to Computer Science,4,A-
+GRA-021,Kent Singh,B.S. Computer Science,396,CS201,Programming Languages,3,A-
+GRA-021,Kent Singh,B.S. Computer Science,396,MATH420,Cryptography,3,B+
+GRA-021,Kent Singh,B.S. Computer Science,396,CS240,Data Structures,3,A
+GRA-021,Kent Singh,B.S. Computer Science,396,CS320,Algorithms,4,A-
+GRA-021,Kent Singh,B.S. Computer Science,396,CS330,Computer Architecture,3,B+
+GRA-021,Kent Singh,B.S. Computer Science,396,CS360,Operating Systems,3,C
+GRA-021,Kent Singh,B.S. Computer Science,396,CS470,Software Engineering,3,A-
+GRA-021,Kent Singh,B.S. Computer Science,396,CS410,Databases,4,C
+GRA-022,Gail Ali,B.S. Biology,303,BIO210,Cell Biology,3,A-
+GRA-022,Gail Ali,B.S. Biology,303,BCHM310,Biochemistry,3,B+
+GRA-022,Gail Ali,B.S. Biology,303,MATH130,Calculus I,4,C
+GRA-022,Gail Ali,B.S. Biology,303,CHEM110,General Chemistry,3,B
+GRA-022,Gail Ali,B.S. Biology,303,BIO320,Ecology,3,B+
+GRA-022,Gail Ali,B.S. Biology,303,CHEM210,Organic Chemistry,4,B+
+GRA-022,Gail Ali,B.S. Biology,303,BIO101,General Biology,3,B
+GRA-022,Gail Ali,B.S. Biology,303,BIO305,Genetics,4,A-
+GRA-022,Gail Ali,B.S. Biology,303,BIO410,Microbiology,3,B-
+GRA-022,Gail Ali,B.S. Biology,303,STAT215,Biostatistics,3,B
+GRA-023,Kai Young,B.S. Mechanical Engineering,397,ME330,Machine Design,3,A
+GRA-023,Kai Young,B.S. Mechanical Engineering,397,MATH251,Differential Equations,4,A
+GRA-023,Kai Young,B.S. Mechanical Engineering,397,PHYS121,Physics I,3,A
+GRA-023,Kai Young,B.S. Mechanical Engineering,397,ME101,Engineering Mechanics,3,B+
+GRA-023,Kai Young,B.S. Mechanical Engineering,397,ME210,Thermodynamics,4,B-
+GRA-023,Kai Young,B.S. Mechanical Engineering,397,ME230,Materials Science,3,B+
+GRA-023,Kai Young,B.S. Mechanical Engineering,397,ME420,Control Systems,3,A
+GRA-023,Kai Young,B.S. Mechanical Engineering,397,ME410,Heat Transfer,4,B+
+GRA-023,Kai Young,B.S. Mechanical Engineering,397,ME310,Fluid Mechanics,3,A-
+GRA-023,Kai Young,B.S. Mechanical Engineering,397,ENGR300,Engineering Ethics,4,A
+GRA-024,Umar Tran,B.S. Computer Science,305,CS201,Programming Languages,3,B+
+GRA-024,Umar Tran,B.S. Computer Science,305,STAT310,Probability,4,B+
+GRA-024,Umar Tran,B.S. Computer Science,305,CS410,Databases,3,A-
+GRA-024,Umar Tran,B.S. Computer Science,305,CS320,Algorithms,3,B+
+GRA-024,Umar Tran,B.S. Computer Science,305,CS101,Intro to Computer Science,4,B
+GRA-024,Umar Tran,B.S. Computer Science,305,CS240,Data Structures,3,A-
+GRA-024,Umar Tran,B.S. Computer Science,305,CS360,Operating Systems,4,B+
+GRA-024,Umar Tran,B.S. Computer Science,305,CS330,Computer Architecture,3,A-
+GRA-024,Umar Tran,B.S. Computer Science,305,CS420,Networks,3,A-
+GRA-024,Umar Tran,B.S. Computer Science,305,MATH420,Cryptography,4,A-
+GRA-025,Umar Jensen,B.A. Psychology,284,PSY330,Social Psychology,3,B
+GRA-025,Umar Jensen,B.A. Psychology,284,PSY310,Abnormal Psychology,3,C
+GRA-025,Umar Jensen,B.A. Psychology,284,PSY410,Research Methods,4,B+
+GRA-025,Umar Jensen,B.A. Psychology,284,PHIL220,Ethics,3,A
+GRA-025,Umar Jensen,B.A. Psychology,284,PSY230,Developmental Psychology,3,B+
+GRA-025,Umar Jensen,B.A. Psychology,284,SOC210,Sociology,4,A-
+GRA-025,Umar Jensen,B.A. Psychology,284,PSY210,Cognitive Psychology,3,B-
+GRA-025,Umar Jensen,B.A. Psychology,284,STAT205,Behavioral Statistics,3,C+
+GRA-025,Umar Jensen,B.A. Psychology,284,BIO150,Neuroscience,3,B+
+GRA-025,Umar Jensen,B.A. Psychology,284,PSY101,Intro to Psychology,3,B-
+GRA-026,Kai Yates,B.S. Mechanical Engineering,332,ENGR300,Engineering Ethics,4,A-
+GRA-026,Kai Yates,B.S. Mechanical Engineering,332,ME420,Control Systems,3,B-
+GRA-026,Kai Yates,B.S. Mechanical Engineering,332,ME210,Thermodynamics,3,B+
+GRA-026,Kai Yates,B.S. Mechanical Engineering,332,PHYS121,Physics I,4,A-
+GRA-026,Kai Yates,B.S. Mechanical Engineering,332,MATH251,Differential Equations,3,A-
+GRA-026,Kai Yates,B.S. Mechanical Engineering,332,ME101,Engineering Mechanics,3,C
+GRA-026,Kai Yates,B.S. Mechanical Engineering,332,ME330,Machine Design,3,C
+GRA-026,Kai Yates,B.S. Mechanical Engineering,332,ME410,Heat Transfer,3,B+
+GRA-026,Kai Yates,B.S. Mechanical Engineering,332,ME310,Fluid Mechanics,3,B+
+GRA-026,Kai Yates,B.S. Mechanical Engineering,332,ME230,Materials Science,3,B-
+GRA-027,Ruby Zhao,B.A. Economics,339,ECON340,Econometrics,4,C
+GRA-027,Ruby Zhao,B.A. Economics,339,FIN220,Corporate Finance,3,B+
+GRA-027,Ruby Zhao,B.A. Economics,339,ECON310,Game Theory,3,B+
+GRA-027,Ruby Zhao,B.A. Economics,339,ECON240,International Trade,4,A
+GRA-027,Ruby Zhao,B.A. Economics,339,HIST240,Economic History,4,C
+GRA-027,Ruby Zhao,B.A. Economics,339,MATH210,Linear Algebra,3,A-
+GRA-027,Ruby Zhao,B.A. Economics,339,STAT200,Statistics,3,B+
+GRA-027,Ruby Zhao,B.A. Economics,339,ECON410,Public Economics,4,B-
+GRA-027,Ruby Zhao,B.A. Economics,339,ECON210,Macroeconomics,3,B+
+GRA-027,Ruby Zhao,B.A. Economics,339,ECON101,Microeconomics,3,A-
+GRA-028,Sam Vega,B.S. Biology,317,BIO410,Microbiology,3,A-
+GRA-028,Sam Vega,B.S. Biology,317,CHEM110,General Chemistry,3,B+
+GRA-028,Sam Vega,B.S. Biology,317,BCHM310,Biochemistry,4,C+
+GRA-028,Sam Vega,B.S. Biology,317,BIO101,General Biology,3,B+
+GRA-028,Sam Vega,B.S. Biology,317,BIO210,Cell Biology,3,A
+GRA-028,Sam Vega,B.S. Biology,317,MATH130,Calculus I,3,A-
+GRA-028,Sam Vega,B.S. Biology,317,BIO305,Genetics,3,A
+GRA-028,Sam Vega,B.S. Biology,317,BIO320,Ecology,4,A
+GRA-028,Sam Vega,B.S. Biology,317,CHEM210,Organic Chemistry,3,A
+GRA-028,Sam Vega,B.S. Biology,317,STAT215,Biostatistics,3,B-
+GRA-029,Nina Ford,B.A. Psychology,288,BIO150,Neuroscience,3,B+
+GRA-029,Nina Ford,B.A. Psychology,288,PSY410,Research Methods,3,B+
+GRA-029,Nina Ford,B.A. Psychology,288,PSY230,Developmental Psychology,3,B-
+GRA-029,Nina Ford,B.A. Psychology,288,PHIL220,Ethics,3,A-
+GRA-029,Nina Ford,B.A. Psychology,288,PSY310,Abnormal Psychology,4,C
+GRA-029,Nina Ford,B.A. Psychology,288,STAT205,Behavioral Statistics,3,B+
+GRA-029,Nina Ford,B.A. Psychology,288,SOC210,Sociology,4,C
+GRA-029,Nina Ford,B.A. Psychology,288,PSY101,Intro to Psychology,3,B+
+GRA-029,Nina Ford,B.A. Psychology,288,PSY330,Social Psychology,3,B+
+GRA-029,Nina Ford,B.A. Psychology,288,PSY210,Cognitive Psychology,3,C
+GRA-030,Yale Uribe,B.S. Biology,300,BIO320,Ecology,4,B-
+GRA-030,Yale Uribe,B.S. Biology,300,CHEM210,Organic Chemistry,3,B+
+GRA-030,Yale Uribe,B.S. Biology,300,BIO305,Genetics,4,C+
+GRA-030,Yale Uribe,B.S. Biology,300,BIO210,Cell Biology,3,B-
+GRA-030,Yale Uribe,B.S. Biology,300,CHEM110,General Chemistry,3,A-
+GRA-030,Yale Uribe,B.S. Biology,300,BCHM310,Biochemistry,4,C+
+GRA-030,Yale Uribe,B.S. Biology,300,BIO101,General Biology,4,B+
+GRA-030,Yale Uribe,B.S. Biology,300,MATH130,Calculus I,3,A
+GRA-030,Yale Uribe,B.S. Biology,300,BIO410,Microbiology,3,A
+GRA-030,Yale Uribe,B.S. Biology,300,STAT215,Biostatistics,3,C+
+GRA-031,Owen Zimmer,B.S. Biology,390,STAT215,Biostatistics,4,A
+GRA-031,Owen Zimmer,B.S. Biology,390,CHEM110,General Chemistry,3,B+
+GRA-031,Owen Zimmer,B.S. Biology,390,BIO320,Ecology,3,C+
+GRA-031,Owen Zimmer,B.S. Biology,390,CHEM210,Organic Chemistry,4,A-
+GRA-031,Owen Zimmer,B.S. Biology,390,BIO410,Microbiology,4,B+
+GRA-031,Owen Zimmer,B.S. Biology,390,MATH130,Calculus I,3,B
+GRA-031,Owen Zimmer,B.S. Biology,390,BIO305,Genetics,4,C+
+GRA-031,Owen Zimmer,B.S. Biology,390,BIO101,General Biology,3,A
+GRA-031,Owen Zimmer,B.S. Biology,390,BIO210,Cell Biology,4,B+
+GRA-031,Owen Zimmer,B.S. Biology,390,BCHM310,Biochemistry,4,A-
+GRA-032,Luna Ross,B.A. Economics,399,ECON310,Game Theory,3,B
+GRA-032,Luna Ross,B.A. Economics,399,FIN220,Corporate Finance,4,A-
+GRA-032,Luna Ross,B.A. Economics,399,ECON340,Econometrics,3,A-
+GRA-032,Luna Ross,B.A. Economics,399,STAT200,Statistics,4,B
+GRA-032,Luna Ross,B.A. Economics,399,ECON240,International Trade,3,C
+GRA-032,Luna Ross,B.A. Economics,399,HIST240,Economic History,3,B
+GRA-032,Luna Ross,B.A. Economics,399,MATH210,Linear Algebra,3,C
+GRA-032,Luna Ross,B.A. Economics,399,ECON410,Public Economics,3,A
+GRA-032,Luna Ross,B.A. Economics,399,ECON210,Macroeconomics,4,A
+GRA-032,Luna Ross,B.A. Economics,399,ECON101,Microeconomics,3,B-
+GRA-033,Kent Ford,B.S. Biology,329,BIO101,General Biology,3,C
+GRA-033,Kent Ford,B.S. Biology,329,BIO210,Cell Biology,3,B
+GRA-033,Kent Ford,B.S. Biology,329,STAT215,Biostatistics,3,B+
+GRA-033,Kent Ford,B.S. Biology,329,CHEM210,Organic Chemistry,4,A
+GRA-033,Kent Ford,B.S. Biology,329,BIO305,Genetics,4,B
+GRA-033,Kent Ford,B.S. Biology,329,MATH130,Calculus I,3,A
+GRA-033,Kent Ford,B.S. Biology,329,BIO320,Ecology,4,C+
+GRA-033,Kent Ford,B.S. Biology,329,BIO410,Microbiology,4,A-
+GRA-033,Kent Ford,B.S. Biology,329,CHEM110,General Chemistry,4,B+
+GRA-033,Kent Ford,B.S. Biology,329,BCHM310,Biochemistry,4,B+
+GRA-034,Seth Underwood,B.S. Mechanical Engineering,283,PHYS121,Physics I,3,B+
+GRA-034,Seth Underwood,B.S. Mechanical Engineering,283,ME101,Engineering Mechanics,3,A
+GRA-034,Seth Underwood,B.S. Mechanical Engineering,283,ME230,Materials Science,3,B+
+GRA-034,Seth Underwood,B.S. Mechanical Engineering,283,ME420,Control Systems,3,C+
+GRA-034,Seth Underwood,B.S. Mechanical Engineering,283,ME310,Fluid Mechanics,3,B+
+GRA-034,Seth Underwood,B.S. Mechanical Engineering,283,MATH251,Differential Equations,3,C
+GRA-034,Seth Underwood,B.S. Mechanical Engineering,283,ME210,Thermodynamics,3,C
+GRA-034,Seth Underwood,B.S. Mechanical Engineering,283,ENGR300,Engineering Ethics,3,A
+GRA-034,Seth Underwood,B.S. Mechanical Engineering,283,ME330,Machine Design,3,B+
+GRA-034,Seth Underwood,B.S. Mechanical Engineering,283,ME410,Heat Transfer,3,A
+GRA-035,Yale Park,B.A. Economics,359,ECON210,Macroeconomics,3,A-
+GRA-035,Yale Park,B.A. Economics,359,FIN220,Corporate Finance,3,A-
+GRA-035,Yale Park,B.A. Economics,359,ECON410,Public Economics,4,B+
+GRA-035,Yale Park,B.A. Economics,359,ECON310,Game Theory,4,C+
+GRA-035,Yale Park,B.A. Economics,359,HIST240,Economic History,3,A-
+GRA-035,Yale Park,B.A. Economics,359,ECON340,Econometrics,3,A-
+GRA-035,Yale Park,B.A. Economics,359,ECON101,Microeconomics,3,C+
+GRA-035,Yale Park,B.A. Economics,359,ECON240,International Trade,3,C
+GRA-035,Yale Park,B.A. Economics,359,MATH210,Linear Algebra,3,B+
+GRA-035,Yale Park,B.A. Economics,359,STAT200,Statistics,3,A
+GRA-036,Ruby Khan,B.S. Biology,366,STAT215,Biostatistics,3,B+
+GRA-036,Ruby Khan,B.S. Biology,366,BIO320,Ecology,3,A
+GRA-036,Ruby Khan,B.S. Biology,366,BIO305,Genetics,3,B+
+GRA-036,Ruby Khan,B.S. Biology,366,MATH130,Calculus I,3,A-
+GRA-036,Ruby Khan,B.S. Biology,366,BCHM310,Biochemistry,4,B+
+GRA-036,Ruby Khan,B.S. Biology,366,BIO410,Microbiology,3,B
+GRA-036,Ruby Khan,B.S. Biology,366,CHEM210,Organic Chemistry,4,B-
+GRA-036,Ruby Khan,B.S. Biology,366,BIO210,Cell Biology,3,B-
+GRA-036,Ruby Khan,B.S. Biology,366,BIO101,General Biology,3,C+
+GRA-036,Ruby Khan,B.S. Biology,366,CHEM110,General Chemistry,3,A-
+GRA-037,Max Ortiz,B.S. Biology,358,CHEM110,General Chemistry,3,B-
+GRA-037,Max Ortiz,B.S. Biology,358,BIO101,General Biology,3,B+
+GRA-037,Max Ortiz,B.S. Biology,358,BCHM310,Biochemistry,4,A-
+GRA-037,Max Ortiz,B.S. Biology,358,BIO320,Ecology,3,A
+GRA-037,Max Ortiz,B.S. Biology,358,MATH130,Calculus I,3,A
+GRA-037,Max Ortiz,B.S. Biology,358,CHEM210,Organic Chemistry,3,B-
+GRA-037,Max Ortiz,B.S. Biology,358,BIO210,Cell Biology,3,A-
+GRA-037,Max Ortiz,B.S. Biology,358,BIO305,Genetics,3,B
+GRA-037,Max Ortiz,B.S. Biology,358,BIO410,Microbiology,4,B+
+GRA-037,Max Ortiz,B.S. Biology,358,STAT215,Biostatistics,3,A-
+GRA-038,Mia Underwood,B.A. Psychology,346,PSY310,Abnormal Psychology,3,B
+GRA-038,Mia Underwood,B.A. Psychology,346,PSY330,Social Psychology,3,B+
+GRA-038,Mia Underwood,B.A. Psychology,346,PSY101,Intro to Psychology,3,A-
+GRA-038,Mia Underwood,B.A. Psychology,346,PHIL220,Ethics,4,A-
+GRA-038,Mia Underwood,B.A. Psychology,346,STAT205,Behavioral Statistics,3,C
+GRA-038,Mia Underwood,B.A. Psychology,346,PSY410,Research Methods,3,C
+GRA-038,Mia Underwood,B.A. Psychology,346,PSY210,Cognitive Psychology,3,C+
+GRA-038,Mia Underwood,B.A. Psychology,346,BIO150,Neuroscience,3,B+
+GRA-038,Mia Underwood,B.A. Psychology,346,PSY230,Developmental Psychology,3,B
+GRA-038,Mia Underwood,B.A. Psychology,346,SOC210,Sociology,3,B+
+GRA-039,Ethan Underwood,B.A. Economics,332,HIST240,Economic History,3,B+
+GRA-039,Ethan Underwood,B.A. Economics,332,STAT200,Statistics,3,B+
+GRA-039,Ethan Underwood,B.A. Economics,332,ECON101,Microeconomics,3,A
+GRA-039,Ethan Underwood,B.A. Economics,332,ECON210,Macroeconomics,3,A-
+GRA-039,Ethan Underwood,B.A. Economics,332,ECON410,Public Economics,3,B+
+GRA-039,Ethan Underwood,B.A. Economics,332,MATH210,Linear Algebra,4,C
+GRA-039,Ethan Underwood,B.A. Economics,332,ECON340,Econometrics,4,B
+GRA-039,Ethan Underwood,B.A. Economics,332,ECON240,International Trade,3,B-
+GRA-039,Ethan Underwood,B.A. Economics,332,ECON310,Game Theory,3,A-
+GRA-039,Ethan Underwood,B.A. Economics,332,FIN220,Corporate Finance,3,A-
+GRA-040,Ruby Price,B.A. Economics,357,FIN220,Corporate Finance,3,C
+GRA-040,Ruby Price,B.A. Economics,357,ECON310,Game Theory,4,B+
+GRA-040,Ruby Price,B.A. Economics,357,STAT200,Statistics,4,B+
+GRA-040,Ruby Price,B.A. Economics,357,HIST240,Economic History,4,B
+GRA-040,Ruby Price,B.A. Economics,357,ECON101,Microeconomics,3,B+
+GRA-040,Ruby Price,B.A. Economics,357,MATH210,Linear Algebra,3,B+
+GRA-040,Ruby Price,B.A. Economics,357,ECON340,Econometrics,3,A-
+GRA-040,Ruby Price,B.A. Economics,357,ECON210,Macroeconomics,3,B-
+GRA-040,Ruby Price,B.A. Economics,357,ECON240,International Trade,3,A-
+GRA-040,Ruby Price,B.A. Economics,357,ECON410,Public Economics,3,A-
+GRA-041,Tara Tanaka,B.S. Mechanical Engineering,348,MATH251,Differential Equations,3,C
+GRA-041,Tara Tanaka,B.S. Mechanical Engineering,348,ME310,Fluid Mechanics,3,C+
+GRA-041,Tara Tanaka,B.S. Mechanical Engineering,348,ME420,Control Systems,3,B+
+GRA-041,Tara Tanaka,B.S. Mechanical Engineering,348,PHYS121,Physics I,3,A
+GRA-041,Tara Tanaka,B.S. Mechanical Engineering,348,ME230,Materials Science,4,A
+GRA-041,Tara Tanaka,B.S. Mechanical Engineering,348,ME410,Heat Transfer,3,A-
+GRA-041,Tara Tanaka,B.S. Mechanical Engineering,348,ME101,Engineering Mechanics,3,C
+GRA-041,Tara Tanaka,B.S. Mechanical Engineering,348,ME210,Thermodynamics,3,C+
+GRA-041,Tara Tanaka,B.S. Mechanical Engineering,348,ME330,Machine Design,3,A
+GRA-041,Tara Tanaka,B.S. Mechanical Engineering,348,ENGR300,Engineering Ethics,3,B-
+GRA-042,Abby Yates,B.A. Psychology,326,SOC210,Sociology,3,A
+GRA-042,Abby Yates,B.A. Psychology,326,PSY410,Research Methods,3,B-
+GRA-042,Abby Yates,B.A. Psychology,326,PSY101,Intro to Psychology,3,A-
+GRA-042,Abby Yates,B.A. Psychology,326,PSY210,Cognitive Psychology,3,A
+GRA-042,Abby Yates,B.A. Psychology,326,BIO150,Neuroscience,3,B-
+GRA-042,Abby Yates,B.A. Psychology,326,PSY310,Abnormal Psychology,3,A-
+GRA-042,Abby Yates,B.A. Psychology,326,PSY230,Developmental Psychology,4,C+
+GRA-042,Abby Yates,B.A. Psychology,326,PSY330,Social Psychology,3,B+
+GRA-042,Abby Yates,B.A. Psychology,326,STAT205,Behavioral Statistics,3,A-
+GRA-042,Abby Yates,B.A. Psychology,326,PHIL220,Ethics,3,A
+GRA-043,Noah Webb,B.A. Economics,296,MATH210,Linear Algebra,4,A-
+GRA-043,Noah Webb,B.A. Economics,296,ECON210,Macroeconomics,3,B+
+GRA-043,Noah Webb,B.A. Economics,296,HIST240,Economic History,4,B
+GRA-043,Noah Webb,B.A. Economics,296,ECON310,Game Theory,4,A
+GRA-043,Noah Webb,B.A. Economics,296,ECON101,Microeconomics,3,A-
+GRA-043,Noah Webb,B.A. Economics,296,ECON410,Public Economics,3,A
+GRA-043,Noah Webb,B.A. Economics,296,ECON240,International Trade,4,C+
+GRA-043,Noah Webb,B.A. Economics,296,ECON340,Econometrics,3,B
+GRA-043,Noah Webb,B.A. Economics,296,FIN220,Corporate Finance,3,C+
+GRA-043,Noah Webb,B.A. Economics,296,STAT200,Statistics,4,C
+GRA-044,Bret Young,B.A. Economics,285,ECON240,International Trade,3,C
+GRA-044,Bret Young,B.A. Economics,285,HIST240,Economic History,3,B+
+GRA-044,Bret Young,B.A. Economics,285,ECON210,Macroeconomics,3,B+
+GRA-044,Bret Young,B.A. Economics,285,ECON101,Microeconomics,3,A
+GRA-044,Bret Young,B.A. Economics,285,ECON410,Public Economics,3,B+
+GRA-044,Bret Young,B.A. Economics,285,ECON310,Game Theory,3,A-
+GRA-044,Bret Young,B.A. Economics,285,STAT200,Statistics,3,B
+GRA-044,Bret Young,B.A. Economics,285,ECON340,Econometrics,3,A-
+GRA-044,Bret Young,B.A. Economics,285,FIN220,Corporate Finance,3,C
+GRA-044,Bret Young,B.A. Economics,285,MATH210,Linear Algebra,3,A-
+GRA-045,Liam Gupta,B.A. Economics,376,MATH210,Linear Algebra,4,B
+GRA-045,Liam Gupta,B.A. Economics,376,ECON210,Macroeconomics,3,A
+GRA-045,Liam Gupta,B.A. Economics,376,ECON340,Econometrics,4,A
+GRA-045,Liam Gupta,B.A. Economics,376,ECON410,Public Economics,3,A
+GRA-045,Liam Gupta,B.A. Economics,376,HIST240,Economic History,3,B+
+GRA-045,Liam Gupta,B.A. Economics,376,FIN220,Corporate Finance,3,A-
+GRA-045,Liam Gupta,B.A. Economics,376,STAT200,Statistics,4,C+
+GRA-045,Liam Gupta,B.A. Economics,376,ECON310,Game Theory,3,A-
+GRA-045,Liam Gupta,B.A. Economics,376,ECON240,International Trade,3,A-
+GRA-045,Liam Gupta,B.A. Economics,376,ECON101,Microeconomics,3,B-
+GRA-046,Bret Lopez,B.A. Economics,384,ECON240,International Trade,3,A-
+GRA-046,Bret Lopez,B.A. Economics,384,ECON310,Game Theory,3,C+
+GRA-046,Bret Lopez,B.A. Economics,384,MATH210,Linear Algebra,3,A-
+GRA-046,Bret Lopez,B.A. Economics,384,STAT200,Statistics,4,B
+GRA-046,Bret Lopez,B.A. Economics,384,FIN220,Corporate Finance,4,A-
+GRA-046,Bret Lopez,B.A. Economics,384,ECON210,Macroeconomics,4,B+
+GRA-046,Bret Lopez,B.A. Economics,384,ECON101,Microeconomics,3,B-
+GRA-046,Bret Lopez,B.A. Economics,384,HIST240,Economic History,3,A-
+GRA-046,Bret Lopez,B.A. Economics,384,ECON340,Econometrics,4,B+
+GRA-046,Bret Lopez,B.A. Economics,384,ECON410,Public Economics,4,B+
+GRA-047,Cody Tran,B.A. Psychology,323,PSY101,Intro to Psychology,4,B
+GRA-047,Cody Tran,B.A. Psychology,323,PSY210,Cognitive Psychology,3,A-
+GRA-047,Cody Tran,B.A. Psychology,323,PSY230,Developmental Psychology,3,B+
+GRA-047,Cody Tran,B.A. Psychology,323,PSY310,Abnormal Psychology,3,B
+GRA-047,Cody Tran,B.A. Psychology,323,BIO150,Neuroscience,3,A
+GRA-047,Cody Tran,B.A. Psychology,323,PSY330,Social Psychology,3,C
+GRA-047,Cody Tran,B.A. Psychology,323,PSY410,Research Methods,4,B+
+GRA-047,Cody Tran,B.A. Psychology,323,SOC210,Sociology,4,C
+GRA-047,Cody Tran,B.A. Psychology,323,PHIL220,Ethics,3,C+
+GRA-047,Cody Tran,B.A. Psychology,323,STAT205,Behavioral Statistics,4,B-
+GRA-048,Ethan Reyes,B.A. Economics,331,ECON310,Game Theory,3,B
+GRA-048,Ethan Reyes,B.A. Economics,331,FIN220,Corporate Finance,3,B-
+GRA-048,Ethan Reyes,B.A. Economics,331,ECON410,Public Economics,3,A
+GRA-048,Ethan Reyes,B.A. Economics,331,ECON240,International Trade,3,A
+GRA-048,Ethan Reyes,B.A. Economics,331,ECON210,Macroeconomics,3,B+
+GRA-048,Ethan Reyes,B.A. Economics,331,MATH210,Linear Algebra,4,C+
+GRA-048,Ethan Reyes,B.A. Economics,331,ECON101,Microeconomics,3,A
+GRA-048,Ethan Reyes,B.A. Economics,331,HIST240,Economic History,3,A-
+GRA-048,Ethan Reyes,B.A. Economics,331,ECON340,Econometrics,4,C+
+GRA-048,Ethan Reyes,B.A. Economics,331,STAT200,Statistics,3,C+
+GRA-049,Neil Dunn,B.S. Biology,294,BIO210,Cell Biology,3,B+
+GRA-049,Neil Dunn,B.S. Biology,294,CHEM110,General Chemistry,4,C+
+GRA-049,Neil Dunn,B.S. Biology,294,MATH130,Calculus I,4,C
+GRA-049,Neil Dunn,B.S. Biology,294,BIO305,Genetics,3,A
+GRA-049,Neil Dunn,B.S. Biology,294,BCHM310,Biochemistry,4,C
+GRA-049,Neil Dunn,B.S. Biology,294,BIO101,General Biology,4,A-
+GRA-049,Neil Dunn,B.S. Biology,294,BIO320,Ecology,3,B
+GRA-049,Neil Dunn,B.S. Biology,294,STAT215,Biostatistics,3,A-
+GRA-049,Neil Dunn,B.S. Biology,294,CHEM210,Organic Chemistry,3,A
+GRA-049,Neil Dunn,B.S. Biology,294,BIO410,Microbiology,4,C+
+GRA-050,Neil Price,B.S. Computer Science,350,STAT310,Probability,3,A-
+GRA-050,Neil Price,B.S. Computer Science,350,CS460,Machine Learning,3,A-
+GRA-050,Neil Price,B.S. Computer Science,350,CS360,Operating Systems,3,B+
+GRA-050,Neil Price,B.S. Computer Science,350,CS320,Algorithms,4,A
+GRA-050,Neil Price,B.S. Computer Science,350,CS410,Databases,4,B+
+GRA-050,Neil Price,B.S. Computer Science,350,MATH420,Cryptography,3,A-
+GRA-050,Neil Price,B.S. Computer Science,350,CS101,Intro to Computer Science,3,A-
+GRA-050,Neil Price,B.S. Computer Science,350,CS470,Software Engineering,3,A-
+GRA-050,Neil Price,B.S. Computer Science,350,CS420,Networks,4,C+
+GRA-050,Neil Price,B.S. Computer Science,350,CS201,Programming Languages,3,B

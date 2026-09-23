@@ -1,0 +1,8 @@
+studentId,fullName,degree,gpa,courseCode,courseTitle,credits,grade
+STU-101,Maya Patel,B.S. Computer Science,391,CS101,Intro to Computer Science,3,A
+STU-101,Maya Patel,B.S. Computer Science,391,CS320,Algorithms,3,A
+STU-101,Maya Patel,B.S. Computer Science,391,MATH420,Cryptography,3,A-
+STU-101,Maya Patel,B.S. Computer Science,391,CS460,Machine Learning,3,A
+STU-102,Tom Becker,B.A. Economics,315,ECON101,Microeconomics,3,B
+STU-102,Tom Becker,B.A. Economics,315,ECON210,Macroeconomics,3,B+
+STU-102,Tom Becker,B.A. Economics,315,STAT200,Statistics,4,B-

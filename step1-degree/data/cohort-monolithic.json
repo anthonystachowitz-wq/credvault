@@ -1,0 +1,65 @@
+{
+  "issuer": "Monolithic University (mock)",
+  "cohort": "2027-spring",
+  "transcriptMode": "monolithic",
+  "students": [
+    {
+      "id": "MON-001",
+      "fullName": "Grace Lee",
+      "degree": "B.S. Biology",
+      "gpa": 368,
+      "courses": [
+        {
+          "code": "BIO101",
+          "title": "General Biology",
+          "credits": 4,
+          "grade": "A-"
+        },
+        {
+          "code": "BIO305",
+          "title": "Genetics",
+          "credits": 3,
+          "grade": "A"
+        },
+        {
+          "code": "CHEM110",
+          "title": "General Chemistry",
+          "credits": 4,
+          "grade": "B+"
+        },
+        {
+          "code": "BIO410",
+          "title": "Microbiology",
+          "credits": 3,
+          "grade": "A-"
+        }
+      ]
+    },
+    {
+      "id": "MON-002",
+      "fullName": "Henry Adams",
+      "degree": "B.A. History",
+      "gpa": 331,
+      "courses": [
+        {
+          "code": "HIST101",
+          "title": "World History",
+          "credits": 3,
+          "grade": "B"
+        },
+        {
+          "code": "HIST220",
+          "title": "American History",
+          "credits": 3,
+          "grade": "B+"
+        },
+        {
+          "code": "HIST350",
+          "title": "Historiography",
+          "credits": 3,
+          "grade": "A-"
+        }
+      ]
+    }
+  ]
+}

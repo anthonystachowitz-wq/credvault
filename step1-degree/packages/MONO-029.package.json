@@ -1,0 +1,114 @@
+{
+  "schema": "credvault-degree/0.3",
+  "issuer": "Penn State University (mock)",
+  "cohort": "console-upload-2026-09-05",
+  "studentId": "MONO-029",
+  "values": {
+    "fullName": "Ella Farrell",
+    "degree": "B.A. Economics",
+    "gpa": 282
+  },
+  "transcriptMode": "monolithic",
+  "courses": [
+    {
+      "code": "ECON310",
+      "title": "Game Theory",
+      "credits": 3,
+      "grade": "B-"
+    },
+    {
+      "code": "ECON101",
+      "title": "Microeconomics",
+      "credits": 3,
+      "grade": "A"
+    },
+    {
+      "code": "ECON410",
+      "title": "Public Economics",
+      "credits": 3,
+      "grade": "A"
+    },
+    {
+      "code": "FIN220",
+      "title": "Corporate Finance",
+      "credits": 4,
+      "grade": "C"
+    },
+    {
+      "code": "ECON210",
+      "title": "Macroeconomics",
+      "credits": 4,
+      "grade": "C"
+    },
+    {
+      "code": "STAT200",
+      "title": "Statistics",
+      "credits": 3,
+      "grade": "A"
+    },
+    {
+      "code": "ECON340",
+      "title": "Econometrics",
+      "credits": 3,
+      "grade": "B"
+    },
+    {
+      "code": "MATH210",
+      "title": "Linear Algebra",
+      "credits": 4,
+      "grade": "A"
+    },
+    {
+      "code": "HIST240",
+      "title": "Economic History",
+      "credits": 3,
+      "grade": "B"
+    },
+    {
+      "code": "ECON240",
+      "title": "International Trade",
+      "credits": 3,
+      "grade": "B"
+    }
+  ],
+  "docSalt": "54e5182681141e11aba1515e6d507faee1b77a918d6f24b51832531a9a2648d6",
+  "docCommit": "75ba62716a2a21e9d2ba6ab9d08cc274663bb5f37bafa3773743a0767632febf",
+  "salts": {
+    "fullName": "23c68914ed98a960e2ab57b7ed4f217a38769f4c01522ca8b1b82a723910756e",
+    "degree": "c16cd4419ffc5c260a3df57656cc9a1e8baefd11db59fdc800c041a36979ae1c",
+    "gpa": "da094ae27fb4a4be5f97860a0e258e06ae2abd05fd0c7f5cf9d56bfb58c6a337",
+    "master": "bae44e9ed2cc56651e9cdce2e074ffe13f06feea16fd9c1565c55219b6b21e53"
+  },
+  "gpaCommit": "b355b00d0ad8974165979386ea323f96a0e898ac58dfe9f58f3134a149f49682",
+  "masterLeaf": "fe8112ea4d20d18a2953fd108a1af65b26188a32f4f922baebf1fcaedbb76f73",
+  "credId": "6c8593572e3719d63a18b735ad086ce2ec9fafc1639390e8e57ea62663cef711",
+  "path": [
+    {
+      "sibling": "2b8a2c8562fb3f7e36b46c006be531bdbe1f1a32d66c2bcf284ac1f3159241ce",
+      "goesLeft": true
+    },
+    {
+      "sibling": "91369075c37f5dd4bc9cab500b8a4b292dc1f9e3a15466414f5f59daaad51c0b",
+      "goesLeft": true
+    },
+    {
+      "sibling": "90e1d68ada98bd5ee924a6a8749ce198de127713ee082251ccd5927a323bc6db",
+      "goesLeft": false
+    },
+    {
+      "sibling": "25778bcc4c18efdeed27865e21d2237f698fa9662222cb8bfe26201aba1395b9",
+      "goesLeft": false
+    },
+    {
+      "sibling": "06f42b0dd2c08e60e956307508ffaf05eca0cd015c67b29636a5a7cb6f7af0c2",
+      "goesLeft": false
+    },
+    {
+      "sibling": "9fd5d67d2b09058676e8e56505aa8fe12d808c851a2a88d7d47e6200e4946e1e",
+      "goesLeft": true
+    }
+  ],
+  "cohortRoot": "f02d63b2c130f1d28a2ba1094d542ed04d8f7f395c05b77ad1476c4153b3ba35",
+  "contractAddress": "c3b82a86c2b4fe3b2414caef250008731c79b45e93ec0edcca7faf2867325d92",
+  "l2Proofs": []
+}

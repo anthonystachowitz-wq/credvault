@@ -1,0 +1,165 @@
+{
+  "packageType": "credvault-package/1.0",
+  "schemaRef": {
+    "id": "college-degree",
+    "version": "0.3",
+    "hash": "8843596ae7b461e5fd5c2ca5d25e4de6d1f41c22948af6190ab579affdc6a89a"
+  },
+  "issuer": {
+    "id": "college-degree",
+    "displayName": "Penn State University"
+  },
+  "cohort": "2027-spring",
+  "holderRef": "STU-004",
+  "values": {
+    "fullName": "David Kim",
+    "degree": "B.S. Computer Science",
+    "gpa": 3.49
+  },
+  "salts": {
+    "fullName": "151c46dd337b69433fd2d8f9d9b6ce48876d26c24af3232e87897ff7e5952658",
+    "degree": "547a56aef4ecf1a3325af773b3effb037adc1e6367a1f4bf7f9e6ff0eeda5c68",
+    "gpa": "a73ad7e5a19a1cdd28c83ef4cfd1feb4a9c8317bbb59acdf4b7938a141cda236",
+    "master": "6f394247723b29134399a434889e8abc5dcc5928d5edb1ab5d174c9d1c652483"
+  },
+  "commitments": {
+    "fullName": "c3a29fd0538d5216e376c778f08492d5d243b72c1e87e2940cc87df02f4ca6ec",
+    "degree": "cc3d394001bcee4ad0bb3c8d5db840621a5497ddd36a7ce401d86eec08405395",
+    "gpa": "d72751b7d58a9e578d87d3bbc93ed617dd93433b5757d42755ac7ca059d17e81",
+    "courseGrades": "b767285c5419b3f7b39a1e2a0638850e37279eb4e4c3d1976ba23e7c2a119de3"
+  },
+  "sets": {
+    "courseGrades": {
+      "mode": "granular",
+      "itemCount": 5,
+      "subRoot": "b767285c5419b3f7b39a1e2a0638850e37279eb4e4c3d1976ba23e7c2a119de3",
+      "items": [
+        {
+          "code": "CS101",
+          "title": "Intro to Computer Science",
+          "credits": 3,
+          "grade": "B",
+          "salt": "544e28af82f13f32d5e455ccb4ec9f4d5661b1901829f491fe79bda7bd0309fa",
+          "path": [
+            {
+              "sibling": "cc8f3760a4f1b9b7fce41a8a4e34accc9041621c9daa8d60f4901ccda909b8c3",
+              "goesLeft": true
+            },
+            {
+              "sibling": "8e1efdd03603c64c8a510e7a00ccc692e9deebdd833c026895c9e832a50137f1",
+              "goesLeft": true
+            },
+            {
+              "sibling": "93a8f04d1be70b50bb9b884814c5c6e4ef03be8f6bde56fe6ef8ced71d0ba304",
+              "goesLeft": true
+            }
+          ]
+        },
+        {
+          "code": "CS240",
+          "title": "Data Structures",
+          "credits": 3,
+          "grade": "B+",
+          "salt": "845dfbe1d7a7e66e664d7bb5918e963bd4b52bbf62cfad4982ee6e4b31e6a2c7",
+          "path": [
+            {
+              "sibling": "ac4e8520fa43b51698a28b1725aa9be9ebabe0b0eef466393851a48b8ec9c126",
+              "goesLeft": false
+            },
+            {
+              "sibling": "8e1efdd03603c64c8a510e7a00ccc692e9deebdd833c026895c9e832a50137f1",
+              "goesLeft": true
+            },
+            {
+              "sibling": "93a8f04d1be70b50bb9b884814c5c6e4ef03be8f6bde56fe6ef8ced71d0ba304",
+              "goesLeft": true
+            }
+          ]
+        },
+        {
+          "code": "CS320",
+          "title": "Algorithms",
+          "credits": 3,
+          "grade": "C+",
+          "salt": "09720201be4e8fba0c6f9af649d5137a9659316f32a1610b8e27123e63246f25",
+          "path": [
+            {
+              "sibling": "2dd704c4c30a1b4cde4d260edece1c9f7a4d1d7e814e83be519960a1cc9a6c57",
+              "goesLeft": true
+            },
+            {
+              "sibling": "eed8f870122a59295fbfcb8c58b0180e04b7589e653ed966a64ce84742b08778",
+              "goesLeft": false
+            },
+            {
+              "sibling": "93a8f04d1be70b50bb9b884814c5c6e4ef03be8f6bde56fe6ef8ced71d0ba304",
+              "goesLeft": true
+            }
+          ]
+        },
+        {
+          "code": "MATH420",
+          "title": "Cryptography",
+          "credits": 3,
+          "grade": "A-",
+          "salt": "d3ba8c058cf299058c320634ae5450338a3402676ccc252b7a939ef469a45a8c",
+          "path": [
+            {
+              "sibling": "86754d367e2fb6b09eaf724e5df4eb37ac469c0ba154ec396b704434fd086302",
+              "goesLeft": false
+            },
+            {
+              "sibling": "eed8f870122a59295fbfcb8c58b0180e04b7589e653ed966a64ce84742b08778",
+              "goesLeft": false
+            },
+            {
+              "sibling": "93a8f04d1be70b50bb9b884814c5c6e4ef03be8f6bde56fe6ef8ced71d0ba304",
+              "goesLeft": true
+            }
+          ]
+        },
+        {
+          "code": "CS470",
+          "title": "Operating Systems",
+          "credits": 3,
+          "grade": "B",
+          "salt": "a93636a2ac8d4ad91789f296a28765b6605c8a4f475440c5258e6997ff994f9f",
+          "path": [
+            {
+              "sibling": "e2e12cc517b62ff2a6a46a6d3c7bd327c1fc8c497953dfb78818f5ce812f1622",
+              "goesLeft": true
+            },
+            {
+              "sibling": "f6e27afafd7da41a755a7cf3b4cc95eb9dd4fb32c0badd18106636788c1c83e6",
+              "goesLeft": true
+            },
+            {
+              "sibling": "a28699787a4936148a3c058a945906e57225b04fb78ff03f958925a952646331",
+              "goesLeft": false
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "masterLeaf": "628df0486194edff6339aff5c45f19844f29c41c2c8924a532c0e36fb602547f",
+  "credId": "8b9970e05882190a83789601f5266abc2996ef1c5ed52f728fcba73476977957",
+  "path": [
+    {
+      "sibling": "50eff1221dac52e3a95885d4921d80fc405a4c637f09d559ecda0fa32081b409",
+      "goesLeft": false
+    },
+    {
+      "sibling": "b67eb8b5f82ec5c2bace5b685c386efc1f56837323146b55506625aec25c7319",
+      "goesLeft": false
+    },
+    {
+      "sibling": "d3255e3f3a8ed2189811fa87c68f303324ac6e4797d4c6e81ddb2cfaae9094c5",
+      "goesLeft": true
+    }
+  ],
+  "cohortRoot": "ef5ecbe47f36421872dce598471f0bccbea476731bfb76cb0c33b69daee29414",
+  "contractAddress": "c3b82a86c2b4fe3b2414caef250008731c79b45e93ec0edcca7faf2867325d92",
+  "network": "undeployed",
+  "predicateProofs": []
+}

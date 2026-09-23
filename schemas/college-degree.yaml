@@ -1,0 +1,274 @@
+# ═════════════════════════════════════════════════════════════════════════════
+# CredVault Verification Schema — "college-degree" (SUGGESTED university option)
+# ═════════════════════════════════════════════════════════════════════════════
+# This is the default template CredVault offers universities. It encodes the
+# product design from the 2026-09-03 Gemini discussion (zk conversation.pdf,
+# transcribed at .scratch/zk-conversation.txt) mapped onto CredVault's
+# 7-pattern verification algebra (see apps/credvault/ARCHITECTURE.md §3).
+#
+# Status: DRAFT — input format for the Step-3 generator. Nothing here is final;
+# the schema format itself will be defined in Step 3. This file is the design
+# target the generator must be able to express.
+
+schemaVersion: 0.1
+name: college-degree
+displayName: "College Degree Verification (suggested)"
+issuerType: university            # drives issuer-runtime profile + compliance notes
+
+# ─────────────────────────────────────────────────────────────────────────────
+# WHAT THE CREDENTIAL CONTAINS (the five claims from the Gemini discussion)
+# ─────────────────────────────────────────────────────────────────────────────
+# Every field is committed at issuance (pattern 1: persistentCommit, per-field
+# salt) and bound into ONE issuer-signed commitment tree (pattern 2). The
+# binding across fields is what prevents cherry-picking ("my degree + my
+# friend's GPA"): all proven fields must belong to the same leaf in the same
+# issuer tree.
+# Issuer choice (added Step 2c): how transcripts are committed.
+#   granular   → per-course sub-tree; holders may disclose SUBSETS of courses
+#   monolithic → whole transcript as one docCommit blob; all-or-nothing verify
+# Same contract + pipeline serve both; choose at onboarding.
+transcriptMode: granular        # granular | monolithic
+
+fields:
+  fullName:
+    type: string                  # stored off-chain only; on-chain as commitment
+    disclosable: [reveal]         # may be fully revealed; never threshold-proven
+  university:
+    type: string                  # usually constant per issuer contract
+    disclosable: [reveal, equality]
+  degree:
+    type: string                  # e.g. "B.S. Computer Science"
+    disclosable: [reveal, equality]
+  gpa:
+    type: uint                    # stored x100 (385 = 3.85) — Compact has no floats;
+                                  # comparisons require Uint<N> (pattern 7 gotcha)
+    disclosable: [reveal, threshold, range]
+  courseGrades:
+    type: list                    # FIXED-SIZE in Compact: vector of per-course
+    maxItems: 40                  #   commitments; March lesson: no variable-length
+    disclosable: [reveal, membership]   # prove specific course+grade membership
+    notes: >
+      Courses are leaves in a per-student course sub-tree (depth 6 = 64 slots);
+      the student's master leaf commits to the course sub-root. See
+      reference/march-2026/memory-notes/2026-03-11-merkle-proof-limitations.md.
+
+# ═══ SIZE RULE (generator MUST enforce) ═══════════════════════════════════════
+# No circuit ever processes a full document. Large data (a 10,000-char
+# transcript) is committed as a fixed 32-byte hash computed OFF-CIRCUIT:
+#   • L3 full-reveal verification = recompute hash of presented canonical data
+#     and compare to the on-chain commitment — NO ZK proof needed at all
+#     (nothing is hidden; hash-compare is the proof). Milliseconds, any size.
+#   • L1/L2 hidden-data proofs put only SMALL values in circuits (gpa: Uint,
+#     degree code, salts, Merkle paths) — one small hash per circuit.
+#   • Per-course selective disclosure = Merkle membership paths in the course
+#     sub-tree (~6-8 sibling hashes per course), never the whole transcript.
+# In-circuit SHA-256 costs tens of thousands of constraints per 64-byte block;
+# hashing 10KB in-circuit would be millions of constraints — never generate that.
+
+# ─────────────────────────────────────────────────────────────────────────────
+# CANONICAL LAYOUT (what exactly gets committed — binding spec)
+# ─────────────────────────────────────────────────────────────────────────────
+# Data flows DOWNHILL: school SIS export → structured record → commitments →
+# rendered transcript (a VIEW). We NEVER parse a rendered transcript document.
+# The credential package the holder carries IS the structured data:
+#   { fieldValues, perFieldSalts, courseSalts, merklePath, issuerSignature }
+canonicalLayout:
+  normalization:                  # commitments bind EXACT bytes — normalize first
+    strings: [utf8, trim, uppercase]
+    gpa: uint-x100                # 3.85 → 385 (no floats in circuits)
+    absentField: zero-leaf        # defined encoding for optional fields
+  masterLeaf: >                   # identical shape for every student, any size
+    persistentCommit([commit_fullName, commit_university, commit_degree,
+                      commit_gpa, courseRoot], salt_master)
+  courseLeaf: >
+    persistentCommit([courseCode, title, credits, grade], salt_course_i)
+  variableSize: >
+    Only the course LIST varies per student. The sub-tree absorbs it: 17 courses
+    = 17 leaves, 63 = 63; depth is CAPACITY, unused slots are defined-as-empty.
+    Transfer students above maxItems → bump depth in THIS school's schema.
+  verifierRecomputation: >
+    The verifier portal REBUILDS masterLeaf from presented values using the SAME
+    generated hashing library used by the issuer runtime (one library, both sides
+    — structurally prevents the March JS-vs-Compact hash-mismatch bug), then
+    compares to the on-chain commitment.
+
+# PRESENTATION MECHANICS (what the holder hands over, per mode)
+# NOTE: the subset machinery below now serves LICENSE-AUTHORITY templates
+# (per-course proofs). The college template uses only: L1 (anchor check) and
+# L3 (full canonical package + recompute-and-compare).
+# RULE OF THUMB: revealing DATA => hash-compare (no circuit, instant, free).
+# Proving a PREDICATE about hidden data => ZK circuit (pre-minted standards;
+# novel predicates on-request). Selective course disclosure needs NO circuit.
+presentationMechanics:
+  subsetAssembly: >
+    Nothing is pre-computed per subset (2^40 subsets of 40 courses can never
+    materialize). Paths and salts belong to LEAVES, not combinations: the
+    holder's package carries a FIXED inventory (~40 course values + 40 salts +
+    40 paths + 4 field values + 4 field salts + 1 master salt + issuer
+    signature, a few KB). Any subset = a pick from that inventory, assembled
+    at presentation time. Paths may even be re-derived locally by rebuilding
+    the tree from the full leaf set; storing them is a convenience.
+  revealPackage:
+    revealed: [canonical field/course values + their salts + per-leaf Merkle paths]
+    sealed: [salted commitments of non-revealed fields (they bind, but hide)]
+    linkage: [courseRoot, salt_master]     # lets verifier rebuild masterLeaf
+    anchor: [issuerId, cohortTreeRef]      # the on-chain lookup
+  verificationIs: recompute-and-compare    # leaves -> paths -> courseRoot ->
+    # masterLeaf -> compare to on-chain. No ZK; works for ANY subset; instant.
+  statelessVerifier: >
+    NO credential database exists anywhere new. The proof bundle IS the data
+    source: disclosed values travel INSIDE the bundle (holder-carried, from the
+    pre-minted package downloaded once at graduation). The verifier portal is a
+    PURE FUNCTION — bundle in, verified page out — whose only external read is
+    the on-chain commitment + revocation status via the indexer. CredVault
+    stores nothing; the school's existing SIS remains the only system of
+    record. (This is the deliberate anti-Clearinghouse: their model IS the
+    central credential database + per-query lookup + breach target; ours
+    deletes it.) The only stateful additions ever contemplated are the parked
+    audit log (hashes/IDs only, may live issuer-side) and fee plumbing (§12).
+  presentationArtifacts: >
+    The employer NEVER relies on a document the student renders (a student-made
+    '3 courses on a page' file has no credibility). The student hands over a
+    PROOF BUNDLE (QR/link/file: revealed values + salts + paths + sealed
+    commitments + linkage + issuer ref). The EMPLOYER-FACING artifact is
+    rendered by the verifier portal AFTER independent recomputation — an
+    official CredVault-branded result page ('VERIFIED — Penn State credential,
+    3 of 40 courses disclosed, all other fields sealed, bound to commitment
+    0x...'), the same shape as a Clearinghouse-issued verification certificate
+    but backed by math instead of a database. The portal learns only disclosed
+    fields (privacy is end-to-end). This result page is where the future
+    verification-fee paywall slots in (see fees.futureSeams). Optionally the
+    holder app may emit a polished 'disclosure certificate' PDF for in-person
+    use, always carrying the QR that makes it checkable.
+
+# ─────────────────────────────────────────────────────────────────────────────
+# DISCLOSURE LEVELS (the answer to the "employer decision gap")
+# ─────────────────────────────────────────────────────────────────────────────
+# The HOLDER chooses a level per verifier when presenting. Each level is a
+# composed proof over the patterns in ARCHITECTURE.md §3. Level choice is a
+# holder decision; verifiers may *request* a level.
+# SIMPLIFIED DEFAULT (decided 2026-09-03): the suggested college template
+# ships TWO levels only — L1 and L3 — because they match what employers and
+# students actually do today. Per-course selective disclosure is NOT in this
+# template: hiring managers don't request single-course grades, and students
+# don't mind sharing a full transcript (today's norm). Per-course proofs move
+# to the pattern library, reserved for LICENSE-AUTHORITY templates where
+# specific coursework is a real requirement (CPA credit hours, nursing
+# pharmacology hours, teacher pedagogy courses).
+disclosureLevels:
+  L1-minimal:
+    label: "Instant degree check"
+    proves: [membership(issued-set), non-membership(revocation-set), equality(university), equality(degree)]
+    reveals: []                   # binary TRUE + issuer identity only
+    patterns: [merkle-membership, non-membership, selective-disclosure]
+  L2-threshold:
+    label: "OPTIONAL: GPA cutoff"
+    default: false                # not in the default pitch; enable per issuer
+    proves: [L1-minimal, threshold(gpa >= requested_min)]   # min supplied by verifier
+    reveals: []                   # exact GPA stays hidden (3.62 vs 3.98 invisible)
+    patterns: [merkle-membership, non-membership, selective-disclosure, commitment]
+  L3-full-verified:
+    label: "Full transcript, tamper-proof (PORTAL-RENDERED, app flow-through)"
+    mechanism: >
+      DECIDED 2026-09-03 — the student's APP is the flow-through. Student picks
+      'share full transcript' → app uploads the canonical package to the portal
+      and mints a TIME-LIMITED link → QR encodes that link. Employer scans →
+      the PORTAL renders the authoritative full transcript itself after
+      recompute-and-compare. The employer reads the transcript FROM THE PORTAL;
+      any student-supplied PDF/print is decorative only. RATIONALE: a
+      student-rendered document + valid QR enables the lazy-comparison attack
+      (doctored PDF, copied stamps, green VERIFIED banner when details aren't
+      compared line-by-line). Portal-side rendering removes every
+      student-rendered document from the trust path. The student's phone need
+      not be online at scan time (upload happens at presentation creation).
+      Portal stays STATELESS: package processed transiently, then discarded;
+      audit log stores hashes/IDs only. Initiating the upload is the student's
+      affirmative consent act; the time-limited link scopes it.
+    proves: [L1-minimal, documentIntegrity(canonicalCredentialData)]
+    reveals: [fullName, university, degree, gpa, courseGrades]  # holder hands over
+            # the human-readable transcript (a RENDERING); the proof binds the
+            # CANONICAL FIELD VALUES to the issuer's commitment — never file bytes.
+            # Re-saving/printing/converting the PDF stays VALID (proof binds data,
+            # not container); editing a field value reads FALSE (that is tampering).
+    patterns: [merkle-membership, non-membership, commitment, selective-disclosure]
+    notes: >
+      The credential package is STRUCTURED DATA (fields + salts + merkle path +
+      issuer signature); PDF/HTML transcripts are views rendered from it. Never
+      hash rendered files. Optionally anchor a hash of an official rendered PDF
+      as a SECONDARY commitment for employers who want a 'sealed document' feel.
+
+# ─────────────────────────────────────────────────────────────────────────────
+# ISSUER OPERATIONS PROFILE (universities ≈ batch-only, per ARCHITECTURE §5)
+# ─────────────────────────────────────────────────────────────────────────────
+issuerRuntime:
+  mode: batch                     # turn on for graduation runs; off otherwise
+  batchTriggers: [graduation-cohort, registrar-correction]
+  revocation:
+    cadence: batch                # degrees are revoked ~never; licenses would be "prompt"
+    mechanism: revocation-set     # sparse-Merkle / nullifier set, updated in batch runs
+  proofPackages:
+    preMinted: [L1-minimal, L2-threshold]   # generated during the batch run,
+        # downloaded by the graduate once. L3 needs no pre-mint: it is the
+        # transcript document + integrity proof (holder already has it).
+    novelProofs: on-request       # unusual verifier request (e.g. GPA >= 3.7 when
+        # package only has 3.5) => holder contacts issuer; implies brief runtime uptime
+  merkle:
+    tree: HistoricMerkleTree      # proofs stay valid across later batches
+    depth: 16                     # 65,536 leaves; one cohort tree per graduation
+                                  # batch keeps each tree comfortably small
+  tokenModel: issuer-holds-NIGHT  # DUST accrues while server is off; students
+                                  # generate ZERO transactions (proofs verified, not submitted)
+
+# ─────────────────────────────────────────────────────────────────────────────
+# COMPLIANCE HOOKS (schema-level, because they shape the data flows)
+# ─────────────────────────────────────────────────────────────────────────────
+compliance:
+  ferpa:
+    role: school-official         # CredVault/issuer agreement designates "school
+                                  # official with legitimate educational interest"
+    directoryInfoOnly: false      # if true, L1 works without per-request consent
+  fcra:
+    appliesWhen: verifier-makes-hiring-decision
+    consent: naturally-captured   # signed employer application release + the
+                                  # student's ACTIVE presentation of the credential
+                                  # (we are not a passive background-lookup API)
+    residualRisk: cra-classification   # if CredVault SELLS verification reports
+                                  # used in hiring decisions, CredVault itself may
+                                  # be classified a Consumer Reporting Agency →
+                                  # accuracy/dispute/adverse-action obligations.
+                                  # Business-model question — park for fee milestone.
+  gdpr:
+    credvaultHoldsNoPII: true     # school holds records; student presents them;
+                                  # CredVault is tooling, not a data custodian
+    deletion: break-link          # delete off-chain record; on-chain commitment
+                                  # becomes meaningless (no PII ever on-chain)
+    dpia: issuer-obligation       # DPIA (GDPR Art. 35) belongs to the SCHOOL as
+                                  # data controller; CredVault supplies technical
+                                  # documentation for the school's DPIA. Nothing to build.
+  auditLog:
+    immutable: true
+    records: [verifier-identity, disclosure-level, consent-receipt-id, timestamp, result]
+    # NOTE: the audit trail itself must be privacy-minimal (no raw PII) — hashes
+    # + IDs only. SOC 2 Type II is the enterprise trust target (Step 4).
+
+# ─────────────────────────────────────────────────────────────────────────────
+# VERIFICATION FEES — ★ FUTURE FEATURE, NOT BUILT YET ★
+# ─────────────────────────────────────────────────────────────────────────────
+# Do NOT implement in v1. This section exists so every downstream design
+# (schema, verifier portal, issuer onboarding) leaves the right seams.
+# Industry norms (Gemini research, 2026-09-03): requester-pays, $5–$20/lookup
+# (National Student Clearinghouse ≈ $19.95); issuers pay nothing or get a cut.
+fees:
+  enabled: false                  # ← flip in a future milestone
+  model: requester-pays           # employer/verifier pays per verification
+  futureSeams:
+    verifierPortal: paywall-hook  # QR scan → (future: payment) → instant result
+    pricingConfig: per-issuer     # each issuer's schema carries an optional
+                                  # pricing block: {amount, currency, revenueSplit}
+    revenueSplit:
+      example: {issuer: 10.00, platform: 5.00, operations: 5.00}  # of $20
+      note: settlement starts off-chain (Stripe/invoice); on-chain
+            smart-contract micropayment splits are a later option (pattern 6,
+            shielded tokens, was deliberately out of v1 scope)
+    freeTier: L1-minimal          # consider keeping L1 free forever (adoption!),
+                                  # charging only for L2/L3 depth

@@ -1,0 +1,51 @@
+{
+  "configType": "credvault-issuer-config/1.0",
+  "issuerId": "college-degree",
+  "schemaRef": {
+    "id": "college-degree",
+    "version": "0.3",
+    "hash": "8843596ae7b461e5fd5c2ca5d25e4de6d1f41c22948af6190ab579affdc6a89a"
+  },
+  "network": "undeployed",
+  "upload": {
+    "format": "csv",
+    "rowGrouping": "holderId",
+    "columns": {
+      "holderRef": "id",
+      "fields": {
+        "fullName": "fullName",
+        "degree": "degree",
+        "gpa": "gpa"
+      },
+      "sets": {
+        "courseGrades": {
+          "code": "code",
+          "title": "title",
+          "credits": "credits",
+          "grade": "grade"
+        }
+      }
+    },
+    "valueChecks": {
+      "gpa": "uint, scale 100"
+    }
+  },
+  "premint": [
+    {
+      "field": "gpa",
+      "op": "gte",
+      "value": 300
+    },
+    {
+      "field": "gpa",
+      "op": "gte",
+      "value": 350
+    }
+  ],
+  "revocation": {
+    "cadence": "batch"
+  },
+  "delivery": {
+    "packageLinks": true
+  }
+}

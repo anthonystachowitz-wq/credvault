@@ -1,0 +1,26 @@
+# Dependencies
+**/node_modules/
+
+# Build output
+**/dist/
+**/output/
+**/contracts/managed/
+
+# Runtime data
+data/deployment.json
+data/manifest.json
+packages/*.package.json
+
+# Environment
+.env
+.env.local
+
+# OS
+.DS_Store
+
+# Logs
+*.log
+npm-debug.log*
+
+# Test coverage
+coverage/

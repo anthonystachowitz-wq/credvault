@@ -1,0 +1,184 @@
+{
+  "issuer": "Penn State University (mock)",
+  "cohort": "2027-spring",
+  "students": [
+    {
+      "id": "STU-001",
+      "fullName": "Alice Johnson",
+      "degree": "B.S. Computer Science",
+      "gpa": 385,
+      "courses": [
+        {
+          "code": "CS101",
+          "title": "Intro to Computer Science",
+          "credits": 3,
+          "grade": "A"
+        },
+        {
+          "code": "CS240",
+          "title": "Data Structures",
+          "credits": 3,
+          "grade": "A"
+        },
+        {
+          "code": "CS320",
+          "title": "Algorithms",
+          "credits": 3,
+          "grade": "A-"
+        },
+        {
+          "code": "MATH420",
+          "title": "Cryptography",
+          "credits": 3,
+          "grade": "A"
+        },
+        {
+          "code": "CS460",
+          "title": "Machine Learning",
+          "credits": 3,
+          "grade": "A-"
+        }
+      ]
+    },
+    {
+      "id": "STU-002",
+      "fullName": "Brian Smith",
+      "degree": "B.A. Economics",
+      "gpa": 342,
+      "courses": [
+        {
+          "code": "ECON101",
+          "title": "Microeconomics",
+          "credits": 3,
+          "grade": "B+"
+        },
+        {
+          "code": "ECON210",
+          "title": "Macroeconomics",
+          "credits": 3,
+          "grade": "A-"
+        },
+        {
+          "code": "STAT200",
+          "title": "Statistics",
+          "credits": 4,
+          "grade": "B"
+        },
+        {
+          "code": "ECON340",
+          "title": "Econometrics",
+          "credits": 3,
+          "grade": "B+"
+        }
+      ]
+    },
+    {
+      "id": "STU-003",
+      "fullName": "Carla Reyes",
+      "degree": "B.S. Mechanical Engineering",
+      "gpa": 371,
+      "courses": [
+        {
+          "code": "ME101",
+          "title": "Engineering Mechanics",
+          "credits": 4,
+          "grade": "A-"
+        },
+        {
+          "code": "ME210",
+          "title": "Thermodynamics",
+          "credits": 4,
+          "grade": "A"
+        },
+        {
+          "code": "ME330",
+          "title": "Fluid Mechanics",
+          "credits": 3,
+          "grade": "B+"
+        },
+        {
+          "code": "ME410",
+          "title": "Heat Transfer",
+          "credits": 3,
+          "grade": "A-"
+        },
+        {
+          "code": "MATH251",
+          "title": "Differential Equations",
+          "credits": 4,
+          "grade": "A"
+        }
+      ]
+    },
+    {
+      "id": "STU-004",
+      "fullName": "David Kim",
+      "degree": "B.S. Computer Science",
+      "gpa": 349,
+      "courses": [
+        {
+          "code": "CS101",
+          "title": "Intro to Computer Science",
+          "credits": 3,
+          "grade": "B"
+        },
+        {
+          "code": "CS240",
+          "title": "Data Structures",
+          "credits": 3,
+          "grade": "B+"
+        },
+        {
+          "code": "CS320",
+          "title": "Algorithms",
+          "credits": 3,
+          "grade": "C+"
+        },
+        {
+          "code": "MATH420",
+          "title": "Cryptography",
+          "credits": 3,
+          "grade": "A-"
+        },
+        {
+          "code": "CS470",
+          "title": "Operating Systems",
+          "credits": 3,
+          "grade": "B"
+        }
+      ]
+    },
+    {
+      "id": "STU-005",
+      "fullName": "Erin O'Neill",
+      "degree": "B.F.A. Design",
+      "gpa": 355,
+      "courses": [
+        {
+          "code": "ART101",
+          "title": "Design Fundamentals",
+          "credits": 3,
+          "grade": "A"
+        },
+        {
+          "code": "ART220",
+          "title": "Typography",
+          "credits": 3,
+          "grade": "A-"
+        },
+        {
+          "code": "ART310",
+          "title": "UX Design",
+          "credits": 3,
+          "grade": "A"
+        },
+        {
+          "code": "ART405",
+          "title": "Motion Graphics",
+          "credits": 3,
+          "grade": "B+"
+        }
+      ]
+    }
+  ]
+}

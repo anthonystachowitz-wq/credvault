@@ -1,0 +1,114 @@
+{
+  "schema": "credvault-degree/0.3",
+  "issuer": "Penn State University (mock)",
+  "cohort": "console-upload-2026-09-05",
+  "studentId": "MONO-020",
+  "values": {
+    "fullName": "Gail Khan",
+    "degree": "B.S. Computer Science",
+    "gpa": 292
+  },
+  "transcriptMode": "monolithic",
+  "courses": [
+    {
+      "code": "CS240",
+      "title": "Data Structures",
+      "credits": 3,
+      "grade": "A"
+    },
+    {
+      "code": "CS470",
+      "title": "Software Engineering",
+      "credits": 4,
+      "grade": "C+"
+    },
+    {
+      "code": "CS330",
+      "title": "Computer Architecture",
+      "credits": 4,
+      "grade": "A"
+    },
+    {
+      "code": "CS360",
+      "title": "Operating Systems",
+      "credits": 3,
+      "grade": "B+"
+    },
+    {
+      "code": "CS460",
+      "title": "Machine Learning",
+      "credits": 3,
+      "grade": "A"
+    },
+    {
+      "code": "STAT310",
+      "title": "Probability",
+      "credits": 4,
+      "grade": "B+"
+    },
+    {
+      "code": "CS101",
+      "title": "Intro to Computer Science",
+      "credits": 3,
+      "grade": "C"
+    },
+    {
+      "code": "CS410",
+      "title": "Databases",
+      "credits": 4,
+      "grade": "A"
+    },
+    {
+      "code": "MATH420",
+      "title": "Cryptography",
+      "credits": 3,
+      "grade": "A-"
+    },
+    {
+      "code": "CS320",
+      "title": "Algorithms",
+      "credits": 3,
+      "grade": "A-"
+    }
+  ],
+  "docSalt": "f89e74a9413efb9152ca4ffe36f7a443cde385a04c4d06262794bd37bc1617a8",
+  "docCommit": "46ccf4f2f274173ce6bd3ac3da66e95da0e2df80679ea80152e91c2c53530d42",
+  "salts": {
+    "fullName": "112c887f2aa7dcc0a8b7b26d289c58d99ab8c7e04341c4878419ed48a2415e31",
+    "degree": "e7ee492bdb8d7b4a58acb74acef2494bd8cfbac4b43a1b5d92f27d65b04cc139",
+    "gpa": "3c3948624a6dac6171413e51e7370fe18f0ea18f78ae8ea98c22e02ea8dd5e1f",
+    "master": "c9b65e17a516582d641dc35e0f6f0b27728e247fd5e1d36459e54e4a647b9ab1"
+  },
+  "gpaCommit": "0fe109efb4b062fbde9ea3f42fa912d7225113e405f47a500f17ecc648cd1641",
+  "masterLeaf": "273377d7afbf0065d373373298ed56841b808fab68f7789ff040260186706bcc",
+  "credId": "76249e6855139bcb705ee3dc69c051662e2f8db88ed9530d89c81b68cf747eeb",
+  "path": [
+    {
+      "sibling": "7fbba7144edcd8c316ffbbe700ebf2be2aeb8c2aad75483a58f7a60d0d2ba4c5",
+      "goesLeft": false
+    },
+    {
+      "sibling": "8aef23610da3d4cd7299c9b02d1a3002e5b1c197b083c7df2b01253914e16401",
+      "goesLeft": false
+    },
+    {
+      "sibling": "e07b546dc18a08c3e7de45b660532c22d10ff2faab294a0ffeb8a94b6e16b6c5",
+      "goesLeft": true
+    },
+    {
+      "sibling": "82ae462efade829084942e469f6b748e774891e8d91ffdc072ec9ba174629bad",
+      "goesLeft": true
+    },
+    {
+      "sibling": "06f42b0dd2c08e60e956307508ffaf05eca0cd015c67b29636a5a7cb6f7af0c2",
+      "goesLeft": false
+    },
+    {
+      "sibling": "9fd5d67d2b09058676e8e56505aa8fe12d808c851a2a88d7d47e6200e4946e1e",
+      "goesLeft": true
+    }
+  ],
+  "cohortRoot": "f02d63b2c130f1d28a2ba1094d542ed04d8f7f395c05b77ad1476c4153b3ba35",
+  "contractAddress": "c3b82a86c2b4fe3b2414caef250008731c79b45e93ec0edcca7faf2867325d92",
+  "l2Proofs": []
+}

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Issuer Console — CredVault</title><link rel="stylesheet" href="/style.css"></head>
+<body><div class="wrap">
+<div class="brand"><span class="moon">🌙</span><h1>Issuer Console</h1></div>
+<p class="sub">Registrar view: anchor a cohort on-chain, hand out packages, revoke. (Demo — no login yet.)</p>
+
+<div class="card">
+  <h2>1. Upload cohort CSV</h2>
+  <p class="mut">Format: <span class="mono">studentId,fullName,degree,gpa,courseCode,courseTitle,credits,grade</span> — one row per course; rows group by studentId. GPA ×100 (385 = 3.85).</p>
+  <input type="file" id="csvFile" accept=".csv">
+  <div style="height:10px"></div>
+  <select id="mode"><option value="granular">granular (per-course subsets allowed)</option><option value="monolithic">monolithic (whole-document only)</option></select>
+  <div id="preview" class="tablewrap"></div>
+</div>
+
+<div class="card">
+  <h2>2. Anchor on-chain</h2>
+  <button id="batchBtn" disabled>Run batch (deploy + anchor)</button>
+  <p class="mut" id="batchMsg"></p>
+  <div class="log hidden" id="jobLog"></div>
+</div>
+
+<div class="card">
+  <h2>3. Students &amp; packages</h2>
+  <input type="text" id="filter" placeholder="filter by ID, name, or degree…" style="margin-bottom:10px">
+  <div id="students"><p class="mut">Not loaded yet — <a href="#" id="loadLink">load packages</a> (they also load automatically after a batch completes).</p></div>
+</div>
+<p class="mut"><a href="/">← CredVault home</a></p>
+</div>
+<script>
+window.cvCopy = async function(text, btn) {
+  const done = () => { if (btn) { const t = btn.textContent; btn.textContent = 'copied ✓'; setTimeout(() => btn.textContent = t, 1500); } };
+  try { await navigator.clipboard.writeText(text); return done(); }
+  catch {
+    const ta = document.createElement('textarea');
+    ta.value = text; ta.style.position = 'fixed'; ta.style.opacity = '0';
+    document.body.appendChild(ta); ta.select();
+    try { document.execCommand('copy'); } catch {}
+    document.body.removeChild(ta); done();
+  }
+};
+const $ = (id) => document.getElementById(id);
+let cohort = null;
+function esc(s){ return String(s).replace(/[&<>"]/g, c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c])); }
+
+$('csvFile').addEventListener('change', async (e) => {
+  const file = e.target.files[0];
+  $('preview').innerHTML = ''; $('batchBtn').disabled = true;
+
+  // ── guard rails: this ingests CSV DATA, never PDFs (PDFs are renderings) ──
+  if (!/\.csv$/i.test(file.name)) {
+    $('preview').innerHTML = '<p class="pill bad">not a CSV file</p><p class="mut">' +
+      'The console ingests <b>CSV data exports</b> from the student information system ' +
+      '(Banner, PeopleSoft, Workday, PowerSchool…), not PDF transcripts — a PDF is a ' +
+      'rendering, not data. Export the cohort as CSV from the SIS and upload that instead.</p>';
+    return;
+  }
+  const text = await file.text();
+  if (text.slice(0, 5) === '%PDF-' || /[^\x09\x0A\x0D\x20-\x7EÀ-ÿ]/.test(text.slice(0, 400))) {
+    $('preview').innerHTML = '<p class="pill bad">this file is not text/CSV</p><p class="mut">' +
+      'It looks like a binary document (PDF?). Export the cohort as CSV from the SIS instead.</p>';
+    return;
+  }
+  const rows = text.trim().split(/\r?\n/).map(r => r.split(',').map(x => x.trim()));
+  const students = new Map();
+  for (const r of rows) {
+    if (r[0].toLowerCase() === 'studentid') continue;
+    const [id, name, degree, gpa, code, title, credits, grade] = r;
+    if (!students.has(id)) students.set(id, { id, fullName: name, degree, gpa: Number(gpa), courses: [] });
+    students.get(id).courses.push({ code, title, credits: Number(credits), grade });
+  }
+  // ── sanity: every data row must have 8 columns and numeric gpa/credits ──
+  const dataRows = rows.filter(r => r[0] && r[0].toLowerCase() !== 'studentid');
+  const bad = dataRows.filter(r => r.length < 8 || isNaN(Number(r[3])) || isNaN(Number(r[6])));
+  if (!dataRows.length || bad.length > dataRows.length * 0.1) {
+    $('preview').innerHTML = '<p class="pill bad">doesn\'t look like a cohort CSV</p><p class="mut">' +
+      'Expected 8 columns per row: <span class="mono">studentId,fullName,degree,gpa,courseCode,courseTitle,credits,grade</span> ' +
+      '(' + bad.length + ' of ' + dataRows.length + ' rows failed). Download the sample format ' +
+      'from the guide and match it.</p>';
+    return;
+  }
+  cohort = { issuer: 'Penn State University (mock)', cohort: 'console-upload-' + new Date().toISOString().slice(0,10), transcriptMode: $('mode').value, students: [...students.values()] };
+  // NO auto-population: just a quiet ready pill. Nothing parses onto the
+  // page — the user decides what happens next.
+  $('preview').innerHTML = '<p><span class="pill ok">✓ file ready</span> <span class="mut">click Run batch when you\'re ready to anchor this cohort.</span></p>';
+  $('batchBtn').disabled = false;
+});
+
+$('batchBtn').addEventListener('click', async () => {
+  $('batchBtn').disabled = true; $('batchMsg').textContent = 'anchoring… (deploy + prove + submit ≈ 60-90s)';
+  $('jobLog').classList.remove('hidden');
+  cohort.transcriptMode = $('mode').value;   // read the mode at CLICK time,
+  // not CSV-parse time (user may change the dropdown after picking the file)
+  const r = await fetch('/api/issuer/batch', { method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify({ cohort }) });
+  const { jobId } = await r.json();
+  const t = setInterval(async () => {
+    const j = await (await fetch('/api/issuer/jobs/' + jobId)).json();
+    $('jobLog').textContent = j.log.join('\n');
+    $('jobLog').scrollTop = 1e9;
+    if (j.status !== 'running') {
+      clearInterval(t);
+      if (j.status === 'done') {
+        const n = cohort.students.length;
+        $('batchMsg').textContent = '✅ cohort anchored on-chain — ' + n + ' students, one transaction';
+        // surface the JUST-ANCHORED cohort: filter the table to its ID prefix
+        const prefix = cohort.students[0]?.id?.split('-')[0];
+        if (prefix) { $('filter').value = prefix; }
+        allStudents = [];   // force refetch (new packages exist)
+        loadStudents();
+      } else {
+        $('batchMsg').textContent = '✗ batch ' + j.status;
+      }
+    }
+  }, 3000);
+});
+
+async function revoke(id) {
+  if (!confirm('Revoke ' + id + ' on-chain? (cannot be undone)')) return;
+  const r = await fetch('/api/issuer/revoke', { method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify({ studentId: id }) });
+  const { jobId } = await r.json();
+  const t = setInterval(async () => {
+    const j = await (await fetch('/api/issuer/jobs/' + jobId)).json();
+    if (j.status !== 'running') { clearInterval(t); alert(j.status === 'done' ? id + ' revoked on-chain' : 'revoke ' + j.status); }
+  }, 3000);
+}
+window.revoke = revoke;
+
+let allStudents = [];
+$('filter').addEventListener('input', loadStudents);
+$('loadLink').addEventListener('click', (e) => { e.preventDefault(); allStudents = []; loadStudents(); });
+async function loadStudents() {
+  if (!allStudents.length) { const r = await (await fetch('/api/issuer/students')).json(); allStudents = r.students; }
+  const q = ($('filter').value || '').toLowerCase();
+  const students = q ? allStudents.filter(s => (s.studentId + ' ' + s.fullName + ' ' + s.degree).toLowerCase().includes(q)) : allStudents;
+  if (!students.length) { $('students').innerHTML = '<p class="mut" style="padding:12px">no packages found</p>'; return; }
+  $('students').classList.add('tablewrap');
+  $('students').innerHTML = '<table><tr><th class="id">ID</th><th>Name</th><th>Degree</th><th class="num">GPA</th><th>Package</th><th></th></tr>' +
+    students.map(s => '<tr><td class="id">'+esc(s.studentId)+'</td><td>'+esc(s.fullName)+'</td><td>'+esc(s.degree)+'</td><td class="num">'+(s.gpa/100).toFixed(2)+'</td>' +
+      '<td class="linkcell"><a href="/api/packages/'+esc(s.studentId)+'.json" target="_blank">package</a> <button class="ghost" style="width:auto;padding:2px 8px;margin:0" onclick="cvCopy(location.origin+\'/api/packages/\'+esc(s.studentId)+\'.json\', this)">copy</button></td>' +
+      '<td><button class="danger" style="width:auto;padding:4px 10px;margin:0" onclick="revoke(\''+esc(s.studentId)+'\')">revoke</button></td></tr>').join('') + '</table>';
+}
+</script></body></html>

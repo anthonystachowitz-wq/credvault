@@ -1,0 +1,137 @@
+// ============================================
+// CredVault Transcript Verification Contract
+// With Merkle proof verification and ZK range proofs
+// ============================================
+
+pragma language_version >= 0.20;
+
+import CompactStandardLibrary;
+
+// ============================================
+// LEDGER: On-chain state (public)
+// ============================================
+
+// The Merkle root of the transcript
+export ledger merkleRoot: Bytes<32>;
+
+// SOT attestation signature
+export ledger sotAttestation: Bytes<32>;
+
+// Issue timestamp
+export ledger issuedAt: Uint<64>;
+
+// ============================================
+// CONSTRUCTOR
+// ============================================
+
+constructor(root: Bytes<32>, attestation: Bytes<32>) {
+  merkleRoot = disclose(root);
+  sotAttestation = disclose(attestation);
+  issuedAt = 0;
+}
+
+// ============================================
+// HELPER CIRCUITS
+// ============================================
+
+// Hash two bytes<32> values together
+// Used for Merkle tree operations
+circuit hashPair(left: Bytes<32>, right: Bytes<32>): Bytes<32> {
+  return persistentHash<[Bytes<32>, Bytes<32>]>([left, right]);
+}
+
+// ============================================
+// MERKLE PROOF VERIFICATION
+// ============================================
+
+// Verify a Merkle proof with 4 siblings (fixed size for simplicity)
+// leafHash: the hash of the credential being verified
+// siblings: array of sibling hashes along the path
+// isRight: array indicating if node is right child at each level
+// Returns: true if proof is valid
+export circuit verifyMerkleProof4(
+  leafHash: Bytes<32>,
+  siblings: Vector<4, Bytes<32>>,
+  isRight: Vector<4, Boolean>
+): Boolean {
+  // Level 0
+  const sibling0 = siblings[0];
+  const isRight0 = isRight[0];
+  const left0 = isRight0 ? sibling0 : leafHash;
+  const right0 = isRight0 ? leafHash : sibling0;
+  const hash0 = hashPair(left0, right0);
+  
+  // Level 1
+  const sibling1 = siblings[1];
+  const isRight1 = isRight[1];
+  const left1 = isRight1 ? sibling1 : hash0;
+  const right1 = isRight1 ? hash0 : sibling1;
+  const hash1 = hashPair(left1, right1);
+  
+  // Level 2
+  const sibling2 = siblings[2];
+  const isRight2 = isRight[2];
+  const left2 = isRight2 ? sibling2 : hash1;
+  const right2 = isRight2 ? hash1 : sibling2;
+  const hash2 = hashPair(left2, right2);
+  
+  // Level 3
+  const sibling3 = siblings[3];
+  const isRight3 = isRight[3];
+  const left3 = isRight3 ? sibling3 : hash2;
+  const right3 = isRight3 ? hash2 : sibling3;
+  const hash3 = hashPair(left3, right3);
+  
+  // Verify against stored root
+  return hash3 == merkleRoot;
+}
+
+// ============================================
+// ZK RANGE PROOFS
+// ============================================
+
+// Witness: the actual GPA value (kept private, not revealed on-chain)
+// GPA is represented as an integer (e.g., 350 = 3.50 GPA)
+// This is provided by the user locally and kept confidential
+witness gpaValue(): Uint<32>;
+
+// Verify that a user's GPA is >= minGpa without revealing the actual GPA
+// minGpa: minimum required GPA (as integer, e.g., 300 = 3.00)
+// 
+// The proof succeeds if and only if the witness GPA >= minGpa
+// No information about the actual GPA is revealed
+export circuit verifyMinGPA(minGpa: Uint<32>): Boolean {
+  // Get the private GPA value from witness
+  const actualGpa = gpaValue();
+  
+  // The ZK circuit enforces this constraint:
+  // actualGpa must be >= minGpa for the proof to be valid
+  // If this assert fails, proof generation fails and no transaction is submitted
+  assert(actualGpa >= minGpa, "GPA below minimum");
+  return true;
+}
+
+// Alternative: Prove GPA is within a specific range [minGpa, maxGpa]
+// Useful for "honors" verification (e.g., GPA between 3.5 and 4.0)
+export circuit verifyGpaRange(minGpa: Uint<32>, maxGpa: Uint<32>): Boolean {
+  const actualGpa = gpaValue();
+  
+  // Assert both bounds - proof fails if either is violated
+  assert(actualGpa >= minGpa, "GPA below minimum");
+  assert(actualGpa <= maxGpa, "GPA above maximum");
+  return true;
+}
+
+// ============================================
+// BASIC CIRCUITS
+// ============================================
+
+// Update the Merkle root (for amendments)
+export circuit updateRoot(newRoot: Bytes<32>): [] {
+  merkleRoot = disclose(newRoot);
+}
+
+// Get current Merkle root
+export circuit getRoot(): Bytes<32> {
+  return merkleRoot;
+}

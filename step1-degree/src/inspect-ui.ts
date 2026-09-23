@@ -1,0 +1,14 @@
+import { chromium } from 'playwright';
+const browser = await chromium.launch();
+const page = await browser.newPage({ viewport: { width: 900, height: 800 } });
+page.on('pageerror', (e) => console.log('[pageerror]', e.message));
+await page.goto('http://192.168.4.113:4050/issuer.html', { waitUntil: 'networkidle' });
+await page.waitForTimeout(1200);
+console.log('on load — students visible:', (await page.locator('#students table').count()) > 0 ? 'YES (bad)' : 'no (good)');
+await page.setInputFiles('#csvFile', 'data/batch-monolithic-50.csv');
+await page.waitForTimeout(600);
+console.log('after file select — students visible:', (await page.locator('#preview table tr').count()) > 0 ? 'YES (bad)' : 'no (good)');
+console.log('ready pill:', (await page.locator('#preview').textContent())?.slice(0, 40));
+await page.screenshot({ path: '/tmp/issuer-quiet.png' });
+await browser.close();
+process.exit(0);

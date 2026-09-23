@@ -1,0 +1,303 @@
+{
+  "schema": "credvault-degree/0.3",
+  "issuer": "Penn State University (mock)",
+  "cohort": "console-upload-2026-09-05",
+  "studentId": "GRA-049",
+  "values": {
+    "fullName": "Neil Dunn",
+    "degree": "B.S. Biology",
+    "gpa": 294
+  },
+  "transcriptMode": "granular",
+  "courses": [
+    {
+      "code": "BIO210",
+      "title": "Cell Biology",
+      "credits": 3,
+      "grade": "B+",
+      "salt": "e32d0b37dea99a4740ee46cc358b394ec3e77c7415000f871234815cae5f774d",
+      "path": [
+        {
+          "sibling": "eff79bcfd7fe7877628ce38b205f42a0ac8cc3831bc55939c52f17b5de3518d7",
+          "goesLeft": true
+        },
+        {
+          "sibling": "c5fdc19bc9633b693c450be71b3227cc9f70b5efb03a6b5019cecacda7326e67",
+          "goesLeft": true
+        },
+        {
+          "sibling": "73e4477779eb7ffbd58bcb5e84258430de332c8685febbd31d9e6736d4802856",
+          "goesLeft": true
+        },
+        {
+          "sibling": "834324288351c06d9382727cba4f8f4a09dd716801f5ca0849939294308bb44a",
+          "goesLeft": true
+        }
+      ]
+    },
+    {
+      "code": "CHEM110",
+      "title": "General Chemistry",
+      "credits": 4,
+      "grade": "C+",
+      "salt": "cc0c2dd4edc913ae7f3d59b04a1757df3a419c4b26ec16cbd22255af9c10d37a",
+      "path": [
+        {
+          "sibling": "8fdc7441b600c29ed8d20ddc42ab8105070a2c0522a4acd6f1b2caca29a67c79",
+          "goesLeft": false
+        },
+        {
+          "sibling": "c5fdc19bc9633b693c450be71b3227cc9f70b5efb03a6b5019cecacda7326e67",
+          "goesLeft": true
+        },
+        {
+          "sibling": "73e4477779eb7ffbd58bcb5e84258430de332c8685febbd31d9e6736d4802856",
+          "goesLeft": true
+        },
+        {
+          "sibling": "834324288351c06d9382727cba4f8f4a09dd716801f5ca0849939294308bb44a",
+          "goesLeft": true
+        }
+      ]
+    },
+    {
+      "code": "MATH130",
+      "title": "Calculus I",
+      "credits": 4,
+      "grade": "C",
+      "salt": "17f28eef33e867f60d4f9ffaf862c712a2b3006fe5443209e3c619eadbc4ac2d",
+      "path": [
+        {
+          "sibling": "14e96aac5a13b0bde0ab451433e1e3b645c430fe59bcb784bf3d4b40bd71de49",
+          "goesLeft": true
+        },
+        {
+          "sibling": "ec9a4f192b8abdc743feae593000a0da92af081924ef590019c04079223447b5",
+          "goesLeft": false
+        },
+        {
+          "sibling": "73e4477779eb7ffbd58bcb5e84258430de332c8685febbd31d9e6736d4802856",
+          "goesLeft": true
+        },
+        {
+          "sibling": "834324288351c06d9382727cba4f8f4a09dd716801f5ca0849939294308bb44a",
+          "goesLeft": true
+        }
+      ]
+    },
+    {
+      "code": "BIO305",
+      "title": "Genetics",
+      "credits": 3,
+      "grade": "A",
+      "salt": "561275d75124244efc4b2720ca0cbdf7960124c4e8738aaeb01b854c6101e006",
+      "path": [
+        {
+          "sibling": "e4c90c71838c2bb05243f19280438e1565c1d654185c65a93412f54065a3b959",
+          "goesLeft": false
+        },
+        {
+          "sibling": "ec9a4f192b8abdc743feae593000a0da92af081924ef590019c04079223447b5",
+          "goesLeft": false
+        },
+        {
+          "sibling": "73e4477779eb7ffbd58bcb5e84258430de332c8685febbd31d9e6736d4802856",
+          "goesLeft": true
+        },
+        {
+          "sibling": "834324288351c06d9382727cba4f8f4a09dd716801f5ca0849939294308bb44a",
+          "goesLeft": true
+        }
+      ]
+    },
+    {
+      "code": "BCHM310",
+      "title": "Biochemistry",
+      "credits": 4,
+      "grade": "C",
+      "salt": "e5abc7efcbbfc792216daa8580b71f338e5423768019168d760718e363abe270",
+      "path": [
+        {
+          "sibling": "b9ba3bcd6f1893e0be7e1d5ae868b82eaa56cfec114aabbe23aae7ec0fb1acd7",
+          "goesLeft": true
+        },
+        {
+          "sibling": "5480b1bca4efeb739469392d15db65537c96d9997ec4c892d0cda415ff6d55ea",
+          "goesLeft": true
+        },
+        {
+          "sibling": "70eb7623464eec00912ac311a85f1a9a8b07e6a583715c58becf2a4a27f5274c",
+          "goesLeft": false
+        },
+        {
+          "sibling": "834324288351c06d9382727cba4f8f4a09dd716801f5ca0849939294308bb44a",
+          "goesLeft": true
+        }
+      ]
+    },
+    {
+      "code": "BIO101",
+      "title": "General Biology",
+      "credits": 4,
+      "grade": "A-",
+      "salt": "ab04446fe4d61a820748effecfc19694988a80427945990b47cd535b7bae66fd",
+      "path": [
+        {
+          "sibling": "d486e73bf7916ec2cb62bff7dc2713867774b5ef4348d5edb1a2fec38bde10d4",
+          "goesLeft": false
+        },
+        {
+          "sibling": "5480b1bca4efeb739469392d15db65537c96d9997ec4c892d0cda415ff6d55ea",
+          "goesLeft": true
+        },
+        {
+          "sibling": "70eb7623464eec00912ac311a85f1a9a8b07e6a583715c58becf2a4a27f5274c",
+          "goesLeft": false
+        },
+        {
+          "sibling": "834324288351c06d9382727cba4f8f4a09dd716801f5ca0849939294308bb44a",
+          "goesLeft": true
+        }
+      ]
+    },
+    {
+      "code": "BIO320",
+      "title": "Ecology",
+      "credits": 3,
+      "grade": "B",
+      "salt": "367df30bdd310c72d77d38a5ce684a0ae262f464094f4f4530176613984f091c",
+      "path": [
+        {
+          "sibling": "ad224acf0e2024ef5d007e80a58aafd39d42d8ec09b75e8deda07ec56214ab1a",
+          "goesLeft": true
+        },
+        {
+          "sibling": "c1c3ab154c7f94ed1c675e27c24633eb992c7e4728c26c0870f37fe5398ba5d0",
+          "goesLeft": false
+        },
+        {
+          "sibling": "70eb7623464eec00912ac311a85f1a9a8b07e6a583715c58becf2a4a27f5274c",
+          "goesLeft": false
+        },
+        {
+          "sibling": "834324288351c06d9382727cba4f8f4a09dd716801f5ca0849939294308bb44a",
+          "goesLeft": true
+        }
+      ]
+    },
+    {
+      "code": "STAT215",
+      "title": "Biostatistics",
+      "credits": 3,
+      "grade": "A-",
+      "salt": "a8f077d1f3bdac5f48f58890156e3a8b6c8ec7e7e9efb9c218779bcc177440f3",
+      "path": [
+        {
+          "sibling": "b9f35b7ed53800e156835c948a8643ef944bb992033c67605d77ea62805c0052",
+          "goesLeft": false
+        },
+        {
+          "sibling": "c1c3ab154c7f94ed1c675e27c24633eb992c7e4728c26c0870f37fe5398ba5d0",
+          "goesLeft": false
+        },
+        {
+          "sibling": "70eb7623464eec00912ac311a85f1a9a8b07e6a583715c58becf2a4a27f5274c",
+          "goesLeft": false
+        },
+        {
+          "sibling": "834324288351c06d9382727cba4f8f4a09dd716801f5ca0849939294308bb44a",
+          "goesLeft": true
+        }
+      ]
+    },
+    {
+      "code": "CHEM210",
+      "title": "Organic Chemistry",
+      "credits": 3,
+      "grade": "A",
+      "salt": "5f5dcf1d54e36bb1537f86019695ce78a3bf662259678e587d4b7d6f9be79af7",
+      "path": [
+        {
+          "sibling": "f76ab55ea1f8432e2f4d524f21193a9916cfc236142ae80ad10a9e63dbe770e6",
+          "goesLeft": true
+        },
+        {
+          "sibling": "f6e27afafd7da41a755a7cf3b4cc95eb9dd4fb32c0badd18106636788c1c83e6",
+          "goesLeft": true
+        },
+        {
+          "sibling": "1c5f0b2e5d36cf968afe0182363b19c7fbc7b777a17552264394213607a74e2a",
+          "goesLeft": true
+        },
+        {
+          "sibling": "6fa57f0aa6c9c61b86e5f8b5fbb00c43d2ee6d0480db5ea777c1f1bdd58483fc",
+          "goesLeft": false
+        }
+      ]
+    },
+    {
+      "code": "BIO410",
+      "title": "Microbiology",
+      "credits": 4,
+      "grade": "C+",
+      "salt": "1724c557a4962745c78d7c966fbb408f7a30187aba7cff34419afa01667e238f",
+      "path": [
+        {
+          "sibling": "3e41c62cbf408d737b7fac1d2e5f44be1acd69d33638d0cfe0efbbae6386c90e",
+          "goesLeft": false
+        },
+        {
+          "sibling": "f6e27afafd7da41a755a7cf3b4cc95eb9dd4fb32c0badd18106636788c1c83e6",
+          "goesLeft": true
+        },
+        {
+          "sibling": "1c5f0b2e5d36cf968afe0182363b19c7fbc7b777a17552264394213607a74e2a",
+          "goesLeft": true
+        },
+        {
+          "sibling": "6fa57f0aa6c9c61b86e5f8b5fbb00c43d2ee6d0480db5ea777c1f1bdd58483fc",
+          "goesLeft": false
+        }
+      ]
+    }
+  ],
+  "courseSubRoot": "3020800d18c2ab99a1a03e5b2de26ed17f1251f3326cfd4acbe79e59709ea157",
+  "salts": {
+    "fullName": "6d0d5f416a691f5fc3b68bf9257c867d5aee0c753486c2593fbc2746da7b9680",
+    "degree": "eb7ad47df6c9df325aef99c6a5fd74b16aaae579b183f858e7b44a97728d77c3",
+    "gpa": "01a2e5e08093b813c224450ce0a17017139b0b7d00eca9c84a27193a9b5d24d5",
+    "master": "ce4b2ebfe0aa1e2fa05b3592bd7a0ba3332f7c310fd2ddcc57562072f73bbc55"
+  },
+  "gpaCommit": "5b8545d27b3c583c3d0ca32088fbb8809928f77db7cf8a6a207777c249fccff1",
+  "masterLeaf": "78569740d90545345d5451f65e44a0705873a44da44c9ff286bd57386d43ceef",
+  "credId": "e400e924f0890f2512a0f67dd3086c2c13520d815632279e22f168e941227dd5",
+  "path": [
+    {
+      "sibling": "f28e3baac4672a1c17d2e62ce0f6e17fca911c3eed8d5cf3774453a839e8b421",
+      "goesLeft": true
+    },
+    {
+      "sibling": "f6e27afafd7da41a755a7cf3b4cc95eb9dd4fb32c0badd18106636788c1c83e6",
+      "goesLeft": true
+    },
+    {
+      "sibling": "1c5f0b2e5d36cf968afe0182363b19c7fbc7b777a17552264394213607a74e2a",
+      "goesLeft": true
+    },
+    {
+      "sibling": "b0f434174ca2addd21cf61a7e2f6f099d5e9daa50f274aa605b3b119c95c3fd1",
+      "goesLeft": true
+    },
+    {
+      "sibling": "35a70a261054441ee339861ec6c496d6a50177ce3ed2da506171a15fecb3bc05",
+      "goesLeft": false
+    },
+    {
+      "sibling": "1d2d951cad3205e0391745f9c7f2b3628d71b1eea83615ea54f47c4047cdd41b",
+      "goesLeft": false
+    }
+  ],
+  "cohortRoot": "b8fa26806f9587514149167291d00afad9d2f5711599f4ba791668e5811423b2",
+  "contractAddress": "c3b82a86c2b4fe3b2414caef250008731c79b45e93ec0edcca7faf2867325d92",
+  "l2Proofs": []
+}

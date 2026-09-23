@@ -1,0 +1,61 @@
+{
+  "presentationType": "full-reveal",
+  "schema": "credvault-degree/0.3",
+  "issuer": "Monolithic University (mock)",
+  "cohort": "2027-spring",
+  "studentId": "MON-001",
+  "values": {
+    "fullName": "Grace Lee",
+    "degree": "B.S. Biology",
+    "gpa": 368
+  },
+  "transcriptMode": "monolithic",
+  "courses": [
+    {
+      "code": "BIO101",
+      "title": "General Biology",
+      "credits": 4,
+      "grade": "A-"
+    },
+    {
+      "code": "BIO305",
+      "title": "Genetics",
+      "credits": 3,
+      "grade": "B"
+    },
+    {
+      "code": "CHEM110",
+      "title": "General Chemistry",
+      "credits": 4,
+      "grade": "B+"
+    },
+    {
+      "code": "BIO410",
+      "title": "Microbiology",
+      "credits": 3,
+      "grade": "A-"
+    }
+  ],
+  "docSalt": "559b4eb5132e85b68ffc02673dbc4514fab3e3ebb6a1ad730525f0522b9d5f3c",
+  "docCommit": "9a8e08726f9538517b2ada6d35edda2a7a38486ed0e9467a7ffc359d976aae30",
+  "salts": {
+    "fullName": "d7f311500bdcef44a9573e186540d0b5f7f6cdfc4ac982ee2db1288062e43bf3",
+    "degree": "4c5ebc044d1cc04879b63c87c768c4c165572c3c59111b3ac39fcf5de13cfeca",
+    "gpa": "5f89eeab225e9e62aac1d85287fd86a289707aa22226c24ea9cb9e766b08733c",
+    "master": "d09d0614a81fa9a80c04e6792f84f738378090de4c66040236e0fba5c32a8ac4"
+  },
+  "gpaCommit": "3ef21331a2fffbd5df8e49fa1555aa6d04e3b93005e20ed77e6e95ffbbcc5dc1",
+  "masterLeaf": "518632403ca58d5436aaae6892e2b0a43fe3f1811040191818dc9a1b5464d5d4",
+  "credId": "9610173e62b64a339caf7def127a08a00df0f41ab687157efba4c18886dc244f",
+  "path": [
+    {
+      "sibling": "1e636536c1017d80ff7a9e2fb7a21169697b31f6a74711b6eb06599f84fd7150",
+      "goesLeft": true
+    }
+  ],
+  "cohortRoot": "fd0c73cd0caca44dc7f99b55ed9e93b30f8c3145d1da4d147ea2500d554c07b2",
+  "contractAddress": "c3b82a86c2b4fe3b2414caef250008731c79b45e93ec0edcca7faf2867325d92",
+  "l2Proofs": [],
+  "courseCount": 4,
+  "presentedAt": "2026-09-04T05:24:35.987Z"
+}

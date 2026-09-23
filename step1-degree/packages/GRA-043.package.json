@@ -1,0 +1,303 @@
+{
+  "schema": "credvault-degree/0.3",
+  "issuer": "Penn State University (mock)",
+  "cohort": "console-upload-2026-09-05",
+  "studentId": "GRA-043",
+  "values": {
+    "fullName": "Noah Webb",
+    "degree": "B.A. Economics",
+    "gpa": 296
+  },
+  "transcriptMode": "granular",
+  "courses": [
+    {
+      "code": "MATH210",
+      "title": "Linear Algebra",
+      "credits": 4,
+      "grade": "A-",
+      "salt": "0cf9851c61ae5021f248332d21496da2fd125c97110eaf88b9532b8018524199",
+      "path": [
+        {
+          "sibling": "b67551440cdb49199047d76527af9ef0d531fe9ab1fd864eae382055b280fb5c",
+          "goesLeft": true
+        },
+        {
+          "sibling": "7706384b3e9d821def9cc0a4a3d4ef19a6016488444dcf358a740d5d5e679574",
+          "goesLeft": true
+        },
+        {
+          "sibling": "680de2254e2d65de12d0191310049ecae316fb0451c8745747a492d71d221288",
+          "goesLeft": true
+        },
+        {
+          "sibling": "142e2437004460eb4ea9dd6eeeed629b62ab48ee3613fb18920bfda6bf99ae9d",
+          "goesLeft": true
+        }
+      ]
+    },
+    {
+      "code": "ECON210",
+      "title": "Macroeconomics",
+      "credits": 3,
+      "grade": "B+",
+      "salt": "7bfcbb154646658fa4e53a830161f912d616781d7ab1e67e34215aafcb5c5f70",
+      "path": [
+        {
+          "sibling": "e94d2b9448166858459aa1e4fa02579846d0e2d33004d633ea77a08086b97491",
+          "goesLeft": false
+        },
+        {
+          "sibling": "7706384b3e9d821def9cc0a4a3d4ef19a6016488444dcf358a740d5d5e679574",
+          "goesLeft": true
+        },
+        {
+          "sibling": "680de2254e2d65de12d0191310049ecae316fb0451c8745747a492d71d221288",
+          "goesLeft": true
+        },
+        {
+          "sibling": "142e2437004460eb4ea9dd6eeeed629b62ab48ee3613fb18920bfda6bf99ae9d",
+          "goesLeft": true
+        }
+      ]
+    },
+    {
+      "code": "HIST240",
+      "title": "Economic History",
+      "credits": 4,
+      "grade": "B",
+      "salt": "f6fe3af3ce2cf77927a682bdb40537bfa0070959b31677a321972db247ee793f",
+      "path": [
+        {
+          "sibling": "87d0f715c64824bbd9cb7408367bc424597d2f4250a916cc8e8e31f2698c78c4",
+          "goesLeft": true
+        },
+        {
+          "sibling": "149dbb8890e1834cad7ce55f709ee37bd11fcc15671288e64b8f1bce0b361e09",
+          "goesLeft": false
+        },
+        {
+          "sibling": "680de2254e2d65de12d0191310049ecae316fb0451c8745747a492d71d221288",
+          "goesLeft": true
+        },
+        {
+          "sibling": "142e2437004460eb4ea9dd6eeeed629b62ab48ee3613fb18920bfda6bf99ae9d",
+          "goesLeft": true
+        }
+      ]
+    },
+    {
+      "code": "ECON310",
+      "title": "Game Theory",
+      "credits": 4,
+      "grade": "A",
+      "salt": "932b0c243e05dab43a9262e467e678cabd64eb030b4e98321dbd23ce82d665c7",
+      "path": [
+        {
+          "sibling": "688f4b1086bb53a98369ca0f66c43fbe77849ff76a909c8daf717d3be7e3cc24",
+          "goesLeft": false
+        },
+        {
+          "sibling": "149dbb8890e1834cad7ce55f709ee37bd11fcc15671288e64b8f1bce0b361e09",
+          "goesLeft": false
+        },
+        {
+          "sibling": "680de2254e2d65de12d0191310049ecae316fb0451c8745747a492d71d221288",
+          "goesLeft": true
+        },
+        {
+          "sibling": "142e2437004460eb4ea9dd6eeeed629b62ab48ee3613fb18920bfda6bf99ae9d",
+          "goesLeft": true
+        }
+      ]
+    },
+    {
+      "code": "ECON101",
+      "title": "Microeconomics",
+      "credits": 3,
+      "grade": "A-",
+      "salt": "c8e39a92341d47c39eb8a7d1425c194d6eed41c0ae24217e239541c2f317b5aa",
+      "path": [
+        {
+          "sibling": "54e55be80ccdb1e2f0c197e5584c4d1f4dc5a5b1dd33864be778482b46ac5cb1",
+          "goesLeft": true
+        },
+        {
+          "sibling": "456566e634c94d66c87c0be1f22ae44e35f5f08cb186ac858149ea41ab124c94",
+          "goesLeft": true
+        },
+        {
+          "sibling": "d58fca0c7827cf98a93c2f3c6d4f02f373e27342b51817b6f76dd450878daf08",
+          "goesLeft": false
+        },
+        {
+          "sibling": "142e2437004460eb4ea9dd6eeeed629b62ab48ee3613fb18920bfda6bf99ae9d",
+          "goesLeft": true
+        }
+      ]
+    },
+    {
+      "code": "ECON410",
+      "title": "Public Economics",
+      "credits": 3,
+      "grade": "A",
+      "salt": "f1b82b07525cfab00601554198e9bec73a87d89ba3a8541ffb3fb37542df4a75",
+      "path": [
+        {
+          "sibling": "17688834268c0f5c994c91db41275df26c6fc73f2ec5a8a55bb7a03cd91989d8",
+          "goesLeft": false
+        },
+        {
+          "sibling": "456566e634c94d66c87c0be1f22ae44e35f5f08cb186ac858149ea41ab124c94",
+          "goesLeft": true
+        },
+        {
+          "sibling": "d58fca0c7827cf98a93c2f3c6d4f02f373e27342b51817b6f76dd450878daf08",
+          "goesLeft": false
+        },
+        {
+          "sibling": "142e2437004460eb4ea9dd6eeeed629b62ab48ee3613fb18920bfda6bf99ae9d",
+          "goesLeft": true
+        }
+      ]
+    },
+    {
+      "code": "ECON240",
+      "title": "International Trade",
+      "credits": 4,
+      "grade": "C+",
+      "salt": "3441bd0f435d3996016e15e9c07f2b91eea8feb7c4cdc126141637dbda72888f",
+      "path": [
+        {
+          "sibling": "caf96d38377b471a676bb975a9bbf91314afb613f29b01449cf5ac287613fd80",
+          "goesLeft": true
+        },
+        {
+          "sibling": "05ecb00b3a723bffc4476a28134f7299e64826087017c179f05c1c901381a8f3",
+          "goesLeft": false
+        },
+        {
+          "sibling": "d58fca0c7827cf98a93c2f3c6d4f02f373e27342b51817b6f76dd450878daf08",
+          "goesLeft": false
+        },
+        {
+          "sibling": "142e2437004460eb4ea9dd6eeeed629b62ab48ee3613fb18920bfda6bf99ae9d",
+          "goesLeft": true
+        }
+      ]
+    },
+    {
+      "code": "ECON340",
+      "title": "Econometrics",
+      "credits": 3,
+      "grade": "B",
+      "salt": "0f073517cc0a833b7445e9d120c24cbc63cd3f6247fae7f71b61019a947c4ee0",
+      "path": [
+        {
+          "sibling": "74b5654ddca29eb64b3946e320ab13ea723bdb7ad6bc2feb28f147109366f37d",
+          "goesLeft": false
+        },
+        {
+          "sibling": "05ecb00b3a723bffc4476a28134f7299e64826087017c179f05c1c901381a8f3",
+          "goesLeft": false
+        },
+        {
+          "sibling": "d58fca0c7827cf98a93c2f3c6d4f02f373e27342b51817b6f76dd450878daf08",
+          "goesLeft": false
+        },
+        {
+          "sibling": "142e2437004460eb4ea9dd6eeeed629b62ab48ee3613fb18920bfda6bf99ae9d",
+          "goesLeft": true
+        }
+      ]
+    },
+    {
+      "code": "FIN220",
+      "title": "Corporate Finance",
+      "credits": 3,
+      "grade": "C+",
+      "salt": "ec19f02ea9b044f7d29e9d822e9e02be6b196cecddfe808c081f26fa7bf73d87",
+      "path": [
+        {
+          "sibling": "65c527a84cf2cebef71f738a0ed4614a1fd33b5433ba424400b47d05e74808ba",
+          "goesLeft": true
+        },
+        {
+          "sibling": "f6e27afafd7da41a755a7cf3b4cc95eb9dd4fb32c0badd18106636788c1c83e6",
+          "goesLeft": true
+        },
+        {
+          "sibling": "1c5f0b2e5d36cf968afe0182363b19c7fbc7b777a17552264394213607a74e2a",
+          "goesLeft": true
+        },
+        {
+          "sibling": "63b3dba8c8ecb32c86b640033d2c0d27dfbd222e72968cca386931bc6c7f2ddf",
+          "goesLeft": false
+        }
+      ]
+    },
+    {
+      "code": "STAT200",
+      "title": "Statistics",
+      "credits": 4,
+      "grade": "C",
+      "salt": "285204f552899c5c186cae7ba49094c4b9b0197caa8e0c102e7181294ca1e01b",
+      "path": [
+        {
+          "sibling": "a46e25b2ffcdc6da5f053e66dd176b33688353e3fd907f59edf0e46fc3e8b0e6",
+          "goesLeft": false
+        },
+        {
+          "sibling": "f6e27afafd7da41a755a7cf3b4cc95eb9dd4fb32c0badd18106636788c1c83e6",
+          "goesLeft": true
+        },
+        {
+          "sibling": "1c5f0b2e5d36cf968afe0182363b19c7fbc7b777a17552264394213607a74e2a",
+          "goesLeft": true
+        },
+        {
+          "sibling": "63b3dba8c8ecb32c86b640033d2c0d27dfbd222e72968cca386931bc6c7f2ddf",
+          "goesLeft": false
+        }
+      ]
+    }
+  ],
+  "courseSubRoot": "56fbafb0a2b0447681f7bfeb3c99fbaa921303935050334de21e916e649aefd2",
+  "salts": {
+    "fullName": "cb4bb5241f546b46d47784144323b871c179f3182cbb09c21e24784d5cd8654f",
+    "degree": "9361c9b32fa83df7b904bdbf71863abceb4d2084c57266f28715211694e46d27",
+    "gpa": "fa73c335c10995db3295ebef09f8dca8d2a0e699f20251e14a7dae46dae29dfd",
+    "master": "e96c959d38849717255888bfea0decd4d1d5c3df19a41812e95509b611ecd5e2"
+  },
+  "gpaCommit": "00c15a43729d8b98da8439702974821fc510f8085d653df484a80ae608581598",
+  "masterLeaf": "30fe0809356a4208d2e9249eb3e605f0d3ef743e505d34c9a200d0a50a173c51",
+  "credId": "00b81973faca8775ef5e1b5827d86aa1988920d71b8190bd4da981abdf823983",
+  "path": [
+    {
+      "sibling": "783d152ac2ebd789ed55714a76a5e2bd01ba6c075b232d3e5a4bcaf1e429498a",
+      "goesLeft": true
+    },
+    {
+      "sibling": "38375cc8dd4ef462e53a7ebff2fda2f74b86dbde7add5c81878506693b2e640f",
+      "goesLeft": false
+    },
+    {
+      "sibling": "72cad2113dcbb22b2c7e3d77f95cd4e5a27238be0cdcfe9663dd49c60b9ccc84",
+      "goesLeft": true
+    },
+    {
+      "sibling": "026b4392aa529bdb44fad9e8d9ffcacded1923101ff1154ca2afa2d416d66226",
+      "goesLeft": false
+    },
+    {
+      "sibling": "f0efb66caa20b3bc26c7fc64343d0a128c73e385ad2c70dc794d4100ebc8083f",
+      "goesLeft": true
+    },
+    {
+      "sibling": "1d2d951cad3205e0391745f9c7f2b3628d71b1eea83615ea54f47c4047cdd41b",
+      "goesLeft": false
+    }
+  ],
+  "cohortRoot": "b8fa26806f9587514149167291d00afad9d2f5711599f4ba791668e5811423b2",
+  "contractAddress": "c3b82a86c2b4fe3b2414caef250008731c79b45e93ec0edcca7faf2867325d92",
+  "l2Proofs": []
+}

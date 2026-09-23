@@ -1,0 +1,3407 @@
+{
+  "issuer": "Penn State University (mock)",
+  "cohort": "console-upload-2026-09-05",
+  "transcriptMode": "granular",
+  "students": [
+    {
+      "id": "GRA-001",
+      "fullName": "Cody Xu",
+      "degree": "B.S. Biology",
+      "gpa": 312,
+      "courses": [
+        {
+          "code": "BIO101",
+          "title": "General Biology",
+          "credits": 3,
+          "grade": "A-"
+        },
+        {
+          "code": "BIO320",
+          "title": "Ecology",
+          "credits": 4,
+          "grade": "C+"
+        },
+        {
+          "code": "MATH130",
+          "title": "Calculus I",
+          "credits": 3,
+          "grade": "A-"
+        },
+        {
+          "code": "STAT215",
+          "title": "Biostatistics",
+          "credits": 4,
+          "grade": "B-"
+        },
+        {
+          "code": "CHEM110",
+          "title": "General Chemistry",
+          "credits": 4,
+          "grade": "B"
+        },
+        {
+          "code": "BIO210",
+          "title": "Cell Biology",
+          "credits": 3,
+          "grade": "A"
+        },
+        {
+          "code": "CHEM210",
+          "title": "Organic Chemistry",
+          "credits": 3,
+          "grade": "C+"
+        },
+        {
+          "code": "BIO410",
+          "title": "Microbiology",
+          "credits": 3,
+          "grade": "B+"
+        },
+        {
+          "code": "BIO305",
+          "title": "Genetics",
+          "credits": 3,
+          "grade": "B+"
+        },
+        {
+          "code": "BCHM310",
+          "title": "Biochemistry",
+          "credits": 3,
+          "grade": "A"
+        }
+      ]
+    },
+    {
+      "id": "GRA-002",
+      "fullName": "Vera Ali",
+      "degree": "B.A. Economics",
+      "gpa": 313,
+      "courses": [
+        {
+          "code": "MATH210",
+          "title": "Linear Algebra",
+          "credits": 4,
+          "grade": "A-"
+        },
+        {
+          "code": "ECON310",
+          "title": "Game Theory",
+          "credits": 3,
+          "grade": "A-"
+        },
+        {
+          "code": "ECON240",
+          "title": "International Trade",
+          "credits": 3,
+          "grade": "B+"
+        },
+        {
+          "code": "STAT200",
+          "title": "Statistics",
+          "credits": 3,
+          "grade": "B+"
+        },
+        {
+          "code": "HIST240",
+          "title": "Economic History",
+          "credits": 3,
+          "grade": "C+"
+        },
+        {
+          "code": "ECON410",
+          "title": "Public Economics",
+          "credits": 3,
+          "grade": "C+"
+        },
+        {
+          "code": "ECON210",
+          "title": "Macroeconomics",
+          "credits": 3,
+          "grade": "A"
+        },
+        {
+          "code": "ECON101",
+          "title": "Microeconomics",
+          "credits": 3,
+          "grade": "B-"
+        },
+        {
+          "code": "FIN220",
+          "title": "Corporate Finance",
+          "credits": 4,
+          "grade": "C"
+        },
+        {
+          "code": "ECON340",
+          "title": "Econometrics",
+          "credits": 4,
+          "grade": "A-"
+        }
+      ]
+    },
+    {
+      "id": "GRA-003",
+      "fullName": "Hugo Costa",
+      "degree": "B.A. Economics",
+      "gpa": 375,
+      "courses": [
+        {
+          "code": "MATH210",
+          "title": "Linear Algebra",
+          "credits": 3,
+          "grade": "A-"
+        },
+        {
+          "code": "ECON210",
+          "title": "Macroeconomics",
+          "credits": 4,
+          "grade": "B"
+        },
+        {
+          "code": "ECON240",
+          "title": "International Trade",
+          "credits": 3,
+          "grade": "A"
+        },
+        {
+          "code": "FIN220",
+          "title": "Corporate Finance",
+          "credits": 3,
+          "grade": "A-"
+        },
+        {
+          "code": "STAT200",
+          "title": "Statistics",
+          "credits": 4,
+          "grade": "B+"
+        },
+        {
+          "code": "ECON410",
+          "title": "Public Economics",
+          "credits": 3,
+          "grade": "B-"
+        },
+        {
+          "code": "ECON340",
+          "title": "Econometrics",
+          "credits": 3,
+          "grade": "A"
+        },
+        {
+          "code": "ECON310",
+          "title": "Game Theory",
+          "credits": 4,
+          "grade": "A"
+        },
+        {
+          "code": "HIST240",
+          "title": "Economic History",
+          "credits": 3,
+          "grade": "B+"
+        },
+        {
+          "code": "ECON101",
+          "title": "Microeconomics",
+          "credits": 3,
+          "grade": "A"
+        }
+      ]
+    },
+    {
+      "id": "GRA-004",
+      "fullName": "Nora Zimmer",
+      "degree": "B.S. Mechanical Engineering",
+      "gpa": 317,
+      "courses": [
+        {
+          "code": "ME310",
+          "title": "Fluid Mechanics",
+          "credits": 3,
+          "grade": "B"
+        },
+        {
+          "code": "PHYS121",
+          "title": "Physics I",
+          "credits": 3,
+          "grade": "C+"
+        },
+        {
+          "code": "ENGR300",
+          "title": "Engineering Ethics",
+          "credits": 3,
+          "grade": "B-"
+        },
+        {
+          "code": "ME420",
+          "title": "Control Systems",
+          "credits": 3,
+          "grade": "A"
+        },
+        {
+          "code": "ME410",
+          "title": "Heat Transfer",
+          "credits": 4,
+          "grade": "A-"
+        },
+        {
+          "code": "ME330",
+          "title": "Machine Design",
+          "credits": 3,
+          "grade": "A-"
+        },
+        {
+          "code": "ME101",
+          "title": "Engineering Mechanics",
+          "credits": 4,
+          "grade": "C+"
+        },
+        {
+          "code": "ME230",
+          "title": "Materials Science",
+          "credits": 4,
+          "grade": "A-"
+        },
+        {
+          "code": "MATH251",
+          "title": "Differential Equations",
+          "credits": 3,
+          "grade": "A-"
+        },
+        {
+          "code": "ME210",
+          "title": "Thermodynamics",
+          "credits": 3,
+          "grade": "A-"
+        }
+      ]
+    },
+    {
+      "id": "GRA-005",
+      "fullName": "Nora Uribe",
+      "degree": "B.S. Mechanical Engineering",
+      "gpa": 321,
+      "courses": [
+        {
+          "code": "ME330",
+          "title": "Machine Design",
+          "credits": 4,
+          "grade": "C"
+        },
+        {
+          "code": "ME101",
+          "title": "Engineering Mechanics",
+          "credits": 3,
+          "grade": "A-"
+        },
+        {
+          "code": "ME210",
+          "title": "Thermodynamics",
+          "credits": 3,
+          "grade": "B"
+        },
+        {
+          "code": "ME230",
+          "title": "Materials Science",
+          "credits": 3,
+          "grade": "A"
+        },
+        {
+          "code": "ENGR300",
+          "title": "Engineering Ethics",
+          "credits": 3,
+          "grade": "A"
+        },
+        {
+          "code": "ME310",
+          "title": "Fluid Mechanics",
+          "credits": 4,
+          "grade": "A-"
+        },
+        {
+          "code": "ME410",
+          "title": "Heat Transfer",
+          "credits": 3,
+          "grade": "A"
+        },
+        {
+          "code": "ME420",
+          "title": "Control Systems",
+          "credits": 3,
+          "grade": "B+"
+        },
+        {
+          "code": "PHYS121",
+          "title": "Physics I",
+          "credits": 3,
+          "grade": "A"
+        },
+        {
+          "code": "MATH251",
+          "title": "Differential Equations",
+          "credits": 3,
+          "grade": "B-"
+        }
+      ]
+    },
+    {
+      "id": "GRA-006",
+      "fullName": "Finn Klein",
+      "degree": "B.A. Psychology",
+      "gpa": 340,
+      "courses": [
+        {
+          "code": "PSY410",
+          "title": "Research Methods",
+          "credits": 3,
+          "grade": "A-"
+        },
+        {
+          "code": "SOC210",
+          "title": "Sociology",
+          "credits": 3,
+          "grade": "B"
+        },
+        {
+          "code": "PSY330",
+          "title": "Social Psychology",
+          "credits": 3,
+          "grade": "A"
+        },
+        {
+          "code": "PHIL220",
+          "title": "Ethics",
+          "credits": 3,
+          "grade": "A"
+        },
+        {
+          "code": "PSY101",
+          "title": "Intro to Psychology",
+          "credits": 4,
+          "grade": "A"
+        },
+        {
+          "code": "PSY210",
+          "title": "Cognitive Psychology",
+          "credits": 3,
+          "grade": "A"
+        },
+        {
+          "code": "PSY310",
+          "title": "Abnormal Psychology",
+          "credits": 3,
+          "grade": "A-"
+        },
+        {
+          "code": "STAT205",
+          "title": "Behavioral Statistics",
+          "credits": 3,
+          "grade": "A-"
+        },
+        {
+          "code": "BIO150",
+          "title": "Neuroscience",
+          "credits": 3,
+          "grade": "A"
+        },
+        {
+          "code": "PSY230",
+          "title": "Developmental Psychology",
+          "credits": 3,
+          "grade": "B+"
+        }
+      ]
+    },
+    {
+      "id": "GRA-007",
+      "fullName": "Jade Ingram",
+      "degree": "B.S. Mechanical Engineering",
+      "gpa": 346,
+      "courses": [
+        {
+          "code": "ME230",
+          "title": "Materials Science",
+          "credits": 3,
+          "grade": "B+"
+        },
+        {
+          "code": "ME310",
+          "title": "Fluid Mechanics",
+          "credits": 4,
+          "grade": "A"
+        },
+        {
+          "code": "ME101",
+          "title": "Engineering Mechanics",
+          "credits": 3,
+          "grade": "C"
+        },
+        {
+          "code": "ME420",
+          "title": "Control Systems",
+          "credits": 3,
+          "grade": "A-"
+        },
+        {
+          "code": "ME330",
+          "title": "Machine Design",
+          "credits": 3,
+          "grade": "A-"
+        },
+        {
+          "code": "PHYS121",
+          "title": "Physics I",
+          "credits": 3,
+          "grade": "A-"
+        },
+        {
+          "code": "ME210",
+          "title": "Thermodynamics",
+          "credits": 3,
+          "grade": "B"
+        },
+        {
+          "code": "ME410",
+          "title": "Heat Transfer",
+          "credits": 3,
+          "grade": "A-"
+        },
+        {
+          "code": "MATH251",
+          "title": "Differential Equations",
+          "credits": 3,
+          "grade": "A-"
+        },
+        {
+          "code": "ENGR300",
+          "title": "Engineering Ethics",
+          "credits": 3,
+          "grade": "A-"
+        }
+      ]
+    },
+    {
+      "id": "GRA-008",
+      "fullName": "Luna Yates",
+      "degree": "B.S. Mechanical Engineering",
+      "gpa": 294,
+      "courses": [
+        {
+          "code": "ME420",
+          "title": "Control Systems",
+          "credits": 3,
+          "grade": "A-"
+        },
+        {
+          "code": "ME210",
+          "title": "Thermodynamics",
+          "credits": 4,
+          "grade": "C"
+        },
+        {
+          "code": "ME101",
+          "title": "Engineering Mechanics",
+          "credits": 3,
+          "grade": "A"
+        },
+        {
+          "code": "ME330",
+          "title": "Machine Design",
+          "credits": 3,
+          "grade": "A"
+        },
+        {
+          "code": "PHYS121",
+          "title": "Physics I",
+          "credits": 3,
+          "grade": "A-"
+        },
+        {
+          "code": "ENGR300",
+          "title": "Engineering Ethics",
+          "credits": 3,
+          "grade": "B+"
+        },
+        {
+          "code": "ME230",
+          "title": "Materials Science",
+          "credits": 4,
+          "grade": "B"
+        },
+        {
+          "code": "ME310",
+          "title": "Fluid Mechanics",
+          "credits": 3,
+          "grade": "C"
+        },
+        {
+          "code": "MATH251",
+          "title": "Differential Equations",
+          "credits": 3,
+          "grade": "B-"
+        },
+        {
+          "code": "ME410",
+          "title": "Heat Transfer",
+          "credits": 3,
+          "grade": "B+"
+        }
+      ]
+    },
+    {
+      "id": "GRA-009",
+      "fullName": "Neil Ali",
+      "degree": "B.S. Mechanical Engineering",
+      "gpa": 340,
+      "courses": [
+        {
+          "code": "ME410",
+          "title": "Heat Transfer",
+          "credits": 3,
+          "grade": "A"
+        },
+        {
+          "code": "ME330",
+          "title": "Machine Design",
+          "credits": 4,
+          "grade": "B-"
+        },
+        {
+          "code": "ENGR300",
+          "title": "Engineering Ethics",
+          "credits": 4,
+          "grade": "A"
+        },
+        {
+          "code": "ME101",
+          "title": "Engineering Mechanics",
+          "credits": 3,
+          "grade": "B+"
+        },
+        {
+          "code": "ME210",
+          "title": "Thermodynamics",
+          "credits": 3,
+          "grade": "A-"
+        },
+        {
+          "code": "PHYS121",
+          "title": "Physics I",
+          "credits": 3,
+          "grade": "C"
+        },
+        {
+          "code": "ME230",
+          "title": "Materials Science",
+          "credits": 3,
+          "grade": "A"
+        },
+        {
+          "code": "MATH251",
+          "title": "Differential Equations",
+          "credits": 3,
+          "grade": "A-"
+        },
+        {
+          "code": "ME310",
+          "title": "Fluid Mechanics",
+          "credits": 3,
+          "grade": "C"
+        },
+        {
+          "code": "ME420",
+          "title": "Control Systems",
+          "credits": 3,
+          "grade": "B+"
+        }
+      ]
+    },
+    {
+      "id": "GRA-010",
+      "fullName": "Yale Baker",
+      "degree": "B.A. Psychology",
+      "gpa": 354,
+      "courses": [
+        {
+          "code": "PSY310",
+          "title": "Abnormal Psychology",
+          "credits": 3,
+          "grade": "C"
+        },
+        {
+          "code": "STAT205",
+          "title": "Behavioral Statistics",
+          "credits": 3,
+          "grade": "B+"
+        },
+        {
+          "code": "PHIL220",
+          "title": "Ethics",
+          "credits": 4,
+          "grade": "B"
+        },
+        {
+          "code": "SOC210",
+          "title": "Sociology",
+          "credits": 3,
+          "grade": "C+"
+        },
+        {
+          "code": "PSY210",
+          "title": "Cognitive Psychology",
+          "credits": 4,
+          "grade": "B-"
+        },
+        {
+          "code": "PSY330",
+          "title": "Social Psychology",
+          "credits": 3,
+          "grade": "B+"
+        },
+        {
+          "code": "PSY101",
+          "title": "Intro to Psychology",
+          "credits": 3,
+          "grade": "A"
+        },
+        {
+          "code": "BIO150",
+          "title": "Neuroscience",
+          "credits": 4,
+          "grade": "B"
+        },
+        {
+          "code": "PSY410",
+          "title": "Research Methods",
+          "credits": 3,
+          "grade": "B+"
+        },
+        {
+          "code": "PSY230",
+          "title": "Developmental Psychology",
+          "credits": 3,
+          "grade": "A"
+        }
+      ]
+    },
+    {
+      "id": "GRA-011",
+      "fullName": "Jade Ellis",
+      "degree": "B.S. Biology",
+      "gpa": 354,
+      "courses": [
+        {
+          "code": "BIO101",
+          "title": "General Biology",
+          "credits": 4,
+          "grade": "B-"
+        },
+        {
+          "code": "CHEM210",
+          "title": "Organic Chemistry",
+          "credits": 3,
+          "grade": "C+"
+        },
+        {
+          "code": "BCHM310",
+          "title": "Biochemistry",
+          "credits": 3,
+          "grade": "B-"
+        },
+        {
+          "code": "BIO210",
+          "title": "Cell Biology",
+          "credits": 3,
+          "grade": "A"
+        },
+        {
+          "code": "CHEM110",
+          "title": "General Chemistry",
+          "credits": 3,
+          "grade": "A"
+        },
+        {
+          "code": "MATH130",
+          "title": "Calculus I",
+          "credits": 3,
+          "grade": "B+"
+        },
+        {
+          "code": "BIO305",
+          "title": "Genetics",
+          "credits": 4,
+          "grade": "B-"
+        },
+        {
+          "code": "BIO320",
+          "title": "Ecology",
+          "credits": 3,
+          "grade": "B+"
+        },
+        {
+          "code": "STAT215",
+          "title": "Biostatistics",
+          "credits": 3,
+          "grade": "C+"
+        },
+        {
+          "code": "BIO410",
+          "title": "Microbiology",
+          "credits": 3,
+          "grade": "C"
+        }
+      ]
+    },
+    {
+      "id": "GRA-012",
+      "fullName": "Finn Farrell",
+      "degree": "B.S. Biology",
+      "gpa": 373,
+      "courses": [
+        {
+          "code": "BIO101",
+          "title": "General Biology",
+          "credits": 3,
+          "grade": "A-"
+        },
+        {
+          "code": "BIO210",
+          "title": "Cell Biology",
+          "credits": 3,
+          "grade": "B+"
+        },
+        {
+          "code": "BIO305",
+          "title": "Genetics",
+          "credits": 3,
+          "grade": "B+"
+        },
+        {
+          "code": "MATH130",
+          "title": "Calculus I",
+          "credits": 3,
+          "grade": "B"
+        },
+        {
+          "code": "STAT215",
+          "title": "Biostatistics",
+          "credits": 4,
+          "grade": "A"
+        },
+        {
+          "code": "BIO320",
+          "title": "Ecology",
+          "credits": 3,
+          "grade": "B+"
+        },
+        {
+          "code": "BIO410",
+          "title": "Microbiology",
+          "credits": 3,
+          "grade": "B"
+        },
+        {
+          "code": "CHEM110",
+          "title": "General Chemistry",
+          "credits": 3,
+          "grade": "B+"
+        },
+        {
+          "code": "CHEM210",
+          "title": "Organic Chemistry",
+          "credits": 3,
+          "grade": "A"
+        },
+        {
+          "code": "BCHM310",
+          "title": "Biochemistry",
+          "credits": 4,
+          "grade": "A"
+        }
+      ]
+    },
+    {
+      "id": "GRA-013",
+      "fullName": "Kent Tanaka",
+      "degree": "B.A. Economics",
+      "gpa": 397,
+      "courses": [
+        {
+          "code": "ECON101",
+          "title": "Microeconomics",
+          "credits": 3,
+          "grade": "C"
+        },
+        {
+          "code": "ECON310",
+          "title": "Game Theory",
+          "credits": 4,
+          "grade": "C+"
+        },
+        {
+          "code": "FIN220",
+          "title": "Corporate Finance",
+          "credits": 3,
+          "grade": "C"
+        },
+        {
+          "code": "HIST240",
+          "title": "Economic History",
+          "credits": 4,
+          "grade": "A"
+        },
+        {
+          "code": "MATH210",
+          "title": "Linear Algebra",
+          "credits": 3,
+          "grade": "A"
+        },
+        {
+          "code": "ECON410",
+          "title": "Public Economics",
+          "credits": 3,
+          "grade": "B+"
+        },
+        {
+          "code": "ECON210",
+          "title": "Macroeconomics",
+          "credits": 3,
+          "grade": "A"
+        },
+        {
+          "code": "ECON340",
+          "title": "Econometrics",
+          "credits": 3,
+          "grade": "A"
+        },
+        {
+          "code": "STAT200",
+          "title": "Statistics",
+          "credits": 4,
+          "grade": "C"
+        },
+        {
+          "code": "ECON240",
+          "title": "International Trade",
+          "credits": 3,
+          "grade": "B-"
+        }
+      ]
+    },
+    {
+      "id": "GRA-014",
+      "fullName": "Tara Singh",
+      "degree": "B.S. Computer Science",
+      "gpa": 341,
+      "courses": [
+        {
+          "code": "CS101",
+          "title": "Intro to Computer Science",
+          "credits": 4,
+          "grade": "B+"
+        },
+        {
+          "code": "CS201",
+          "title": "Programming Languages",
+          "credits": 3,
+          "grade": "B"
+        },
+        {
+          "code": "CS410",
+          "title": "Databases",
+          "credits": 4,
+          "grade": "C+"
+        },
+        {
+          "code": "CS470",
+          "title": "Software Engineering",
+          "credits": 4,
+          "grade": "A"
+        },
+        {
+          "code": "CS420",
+          "title": "Networks",
+          "credits": 3,
+          "grade": "C"
+        },
+        {
+          "code": "CS460",
+          "title": "Machine Learning",
+          "credits": 4,
+          "grade": "B+"
+        },
+        {
+          "code": "CS360",
+          "title": "Operating Systems",
+          "credits": 4,
+          "grade": "B+"
+        },
+        {
+          "code": "CS240",
+          "title": "Data Structures",
+          "credits": 4,
+          "grade": "B"
+        },
+        {
+          "code": "STAT310",
+          "title": "Probability",
+          "credits": 3,
+          "grade": "B"
+        },
+        {
+          "code": "CS320",
+          "title": "Algorithms",
+          "credits": 3,
+          "grade": "B+"
+        }
+      ]
+    },
+    {
+      "id": "GRA-015",
+      "fullName": "Zane Gray",
+      "degree": "B.A. Economics",
+      "gpa": 319,
+      "courses": [
+        {
+          "code": "ECON240",
+          "title": "International Trade",
+          "credits": 3,
+          "grade": "A-"
+        },
+        {
+          "code": "ECON101",
+          "title": "Microeconomics",
+          "credits": 3,
+          "grade": "B+"
+        },
+        {
+          "code": "ECON210",
+          "title": "Macroeconomics",
+          "credits": 3,
+          "grade": "B-"
+        },
+        {
+          "code": "HIST240",
+          "title": "Economic History",
+          "credits": 3,
+          "grade": "A-"
+        },
+        {
+          "code": "MATH210",
+          "title": "Linear Algebra",
+          "credits": 4,
+          "grade": "B+"
+        },
+        {
+          "code": "ECON310",
+          "title": "Game Theory",
+          "credits": 3,
+          "grade": "C"
+        },
+        {
+          "code": "ECON410",
+          "title": "Public Economics",
+          "credits": 3,
+          "grade": "B"
+        },
+        {
+          "code": "ECON340",
+          "title": "Econometrics",
+          "credits": 3,
+          "grade": "B-"
+        },
+        {
+          "code": "STAT200",
+          "title": "Statistics",
+          "credits": 4,
+          "grade": "A"
+        },
+        {
+          "code": "FIN220",
+          "title": "Corporate Finance",
+          "credits": 3,
+          "grade": "B"
+        }
+      ]
+    },
+    {
+      "id": "GRA-016",
+      "fullName": "Wade Stewart",
+      "degree": "B.S. Biology",
+      "gpa": 388,
+      "courses": [
+        {
+          "code": "BIO305",
+          "title": "Genetics",
+          "credits": 4,
+          "grade": "A"
+        },
+        {
+          "code": "CHEM110",
+          "title": "General Chemistry",
+          "credits": 3,
+          "grade": "B+"
+        },
+        {
+          "code": "BIO210",
+          "title": "Cell Biology",
+          "credits": 3,
+          "grade": "A"
+        },
+        {
+          "code": "BIO101",
+          "title": "General Biology",
+          "credits": 3,
+          "grade": "B-"
+        },
+        {
+          "code": "CHEM210",
+          "title": "Organic Chemistry",
+          "credits": 3,
+          "grade": "B"
+        },
+        {
+          "code": "BCHM310",
+          "title": "Biochemistry",
+          "credits": 3,
+          "grade": "C"
+        },
+        {
+          "code": "BIO410",
+          "title": "Microbiology",
+          "credits": 4,
+          "grade": "A-"
+        },
+        {
+          "code": "BIO320",
+          "title": "Ecology",
+          "credits": 3,
+          "grade": "C+"
+        },
+        {
+          "code": "MATH130",
+          "title": "Calculus I",
+          "credits": 3,
+          "grade": "C+"
+        },
+        {
+          "code": "STAT215",
+          "title": "Biostatistics",
+          "credits": 4,
+          "grade": "C+"
+        }
+      ]
+    },
+    {
+      "id": "GRA-017",
+      "fullName": "Tess Zimmer",
+      "degree": "B.A. Economics",
+      "gpa": 350,
+      "courses": [
+        {
+          "code": "STAT200",
+          "title": "Statistics",
+          "credits": 3,
+          "grade": "A-"
+        },
+        {
+          "code": "FIN220",
+          "title": "Corporate Finance",
+          "credits": 4,
+          "grade": "B"
+        },
+        {
+          "code": "ECON340",
+          "title": "Econometrics",
+          "credits": 3,
+          "grade": "B+"
+        },
+        {
+          "code": "HIST240",
+          "title": "Economic History",
+          "credits": 3,
+          "grade": "A"
+        },
+        {
+          "code": "ECON310",
+          "title": "Game Theory",
+          "credits": 3,
+          "grade": "A"
+        },
+        {
+          "code": "MATH210",
+          "title": "Linear Algebra",
+          "credits": 3,
+          "grade": "A-"
+        },
+        {
+          "code": "ECON240",
+          "title": "International Trade",
+          "credits": 3,
+          "grade": "A-"
+        },
+        {
+          "code": "ECON210",
+          "title": "Macroeconomics",
+          "credits": 3,
+          "grade": "B+"
+        },
+        {
+          "code": "ECON410",
+          "title": "Public Economics",
+          "credits": 3,
+          "grade": "B-"
+        },
+        {
+          "code": "ECON101",
+          "title": "Microeconomics",
+          "credits": 3,
+          "grade": "B"
+        }
+      ]
+    },
+    {
+      "id": "GRA-018",
+      "fullName": "Mia Uribe",
+      "degree": "B.S. Mechanical Engineering",
+      "gpa": 307,
+      "courses": [
+        {
+          "code": "ME230",
+          "title": "Materials Science",
+          "credits": 3,
+          "grade": "A"
+        },
+        {
+          "code": "ME330",
+          "title": "Machine Design",
+          "credits": 4,
+          "grade": "C"
+        },
+        {
+          "code": "ME210",
+          "title": "Thermodynamics",
+          "credits": 3,
+          "grade": "A"
+        },
+        {
+          "code": "MATH251",
+          "title": "Differential Equations",
+          "credits": 3,
+          "grade": "C"
+        },
+        {
+          "code": "ME310",
+          "title": "Fluid Mechanics",
+          "credits": 4,
+          "grade": "A"
+        },
+        {
+          "code": "PHYS121",
+          "title": "Physics I",
+          "credits": 4,
+          "grade": "B+"
+        },
+        {
+          "code": "ME101",
+          "title": "Engineering Mechanics",
+          "credits": 3,
+          "grade": "B"
+        },
+        {
+          "code": "ME410",
+          "title": "Heat Transfer",
+          "credits": 3,
+          "grade": "B+"
+        },
+        {
+          "code": "ME420",
+          "title": "Control Systems",
+          "credits": 4,
+          "grade": "B+"
+        },
+        {
+          "code": "ENGR300",
+          "title": "Engineering Ethics",
+          "credits": 3,
+          "grade": "B+"
+        }
+      ]
+    },
+    {
+      "id": "GRA-019",
+      "fullName": "Liam Park",
+      "degree": "B.S. Computer Science",
+      "gpa": 353,
+      "courses": [
+        {
+          "code": "CS330",
+          "title": "Computer Architecture",
+          "credits": 3,
+          "grade": "B-"
+        },
+        {
+          "code": "CS101",
+          "title": "Intro to Computer Science",
+          "credits": 3,
+          "grade": "B"
+        },
+        {
+          "code": "STAT310",
+          "title": "Probability",
+          "credits": 3,
+          "grade": "A"
+        },
+        {
+          "code": "MATH420",
+          "title": "Cryptography",
+          "credits": 3,
+          "grade": "C"
+        },
+        {
+          "code": "CS360",
+          "title": "Operating Systems",
+          "credits": 3,
+          "grade": "C"
+        },
+        {
+          "code": "CS470",
+          "title": "Software Engineering",
+          "credits": 4,
+          "grade": "A-"
+        },
+        {
+          "code": "CS201",
+          "title": "Programming Languages",
+          "credits": 3,
+          "grade": "A"
+        },
+        {
+          "code": "CS240",
+          "title": "Data Structures",
+          "credits": 3,
+          "grade": "B-"
+        },
+        {
+          "code": "CS320",
+          "title": "Algorithms",
+          "credits": 3,
+          "grade": "B-"
+        },
+        {
+          "code": "CS420",
+          "title": "Networks",
+          "credits": 3,
+          "grade": "B+"
+        }
+      ]
+    },
+    {
+      "id": "GRA-020",
+      "fullName": "Yale Wang",
+      "degree": "B.S. Biology",
+      "gpa": 375,
+      "courses": [
+        {
+          "code": "MATH130",
+          "title": "Calculus I",
+          "credits": 3,
+          "grade": "A"
+        },
+        {
+          "code": "BCHM310",
+          "title": "Biochemistry",
+          "credits": 3,
+          "grade": "B-"
+        },
+        {
+          "code": "BIO320",
+          "title": "Ecology",
+          "credits": 3,
+          "grade": "C"
+        },
+        {
+          "code": "BIO101",
+          "title": "General Biology",
+          "credits": 3,
+          "grade": "B"
+        },
+        {
+          "code": "BIO305",
+          "title": "Genetics",
+          "credits": 4,
+          "grade": "A-"
+        },
+        {
+          "code": "STAT215",
+          "title": "Biostatistics",
+          "credits": 4,
+          "grade": "C"
+        },
+        {
+          "code": "CHEM210",
+          "title": "Organic Chemistry",
+          "credits": 3,
+          "grade": "B"
+        },
+        {
+          "code": "BIO410",
+          "title": "Microbiology",
+          "credits": 3,
+          "grade": "B+"
+        },
+        {
+          "code": "CHEM110",
+          "title": "General Chemistry",
+          "credits": 3,
+          "grade": "B-"
+        },
+        {
+          "code": "BIO210",
+          "title": "Cell Biology",
+          "credits": 3,
+          "grade": "B+"
+        }
+      ]
+    },
+    {
+      "id": "GRA-021",
+      "fullName": "Kent Singh",
+      "degree": "B.S. Computer Science",
+      "gpa": 396,
+      "courses": [
+        {
+          "code": "STAT310",
+          "title": "Probability",
+          "credits": 3,
+          "grade": "A"
+        },
+        {
+          "code": "CS101",
+          "title": "Intro to Computer Science",
+          "credits": 4,
+          "grade": "A-"
+        },
+        {
+          "code": "CS201",
+          "title": "Programming Languages",
+          "credits": 3,
+          "grade": "A-"
+        },
+        {
+          "code": "MATH420",
+          "title": "Cryptography",
+          "credits": 3,
+          "grade": "B+"
+        },
+        {
+          "code": "CS240",
+          "title": "Data Structures",
+          "credits": 3,
+          "grade": "A"
+        },
+        {
+          "code": "CS320",
+          "title": "Algorithms",
+          "credits": 4,
+          "grade": "A-"
+        },
+        {
+          "code": "CS330",
+          "title": "Computer Architecture",
+          "credits": 3,
+          "grade": "B+"
+        },
+        {
+          "code": "CS360",
+          "title": "Operating Systems",
+          "credits": 3,
+          "grade": "C"
+        },
+        {
+          "code": "CS470",
+          "title": "Software Engineering",
+          "credits": 3,
+          "grade": "A-"
+        },
+        {
+          "code": "CS410",
+          "title": "Databases",
+          "credits": 4,
+          "grade": "C"
+        }
+      ]
+    },
+    {
+      "id": "GRA-022",
+      "fullName": "Gail Ali",
+      "degree": "B.S. Biology",
+      "gpa": 303,
+      "courses": [
+        {
+          "code": "BIO210",
+          "title": "Cell Biology",
+          "credits": 3,
+          "grade": "A-"
+        },
+        {
+          "code": "BCHM310",
+          "title": "Biochemistry",
+          "credits": 3,
+          "grade": "B+"
+        },
+        {
+          "code": "MATH130",
+          "title": "Calculus I",
+          "credits": 4,
+          "grade": "C"
+        },
+        {
+          "code": "CHEM110",
+          "title": "General Chemistry",
+          "credits": 3,
+          "grade": "B"
+        },
+        {
+          "code": "BIO320",
+          "title": "Ecology",
+          "credits": 3,
+          "grade": "B+"
+        },
+        {
+          "code": "CHEM210",
+          "title": "Organic Chemistry",
+          "credits": 4,
+          "grade": "B+"
+        },
+        {
+          "code": "BIO101",
+          "title": "General Biology",
+          "credits": 3,
+          "grade": "B"
+        },
+        {
+          "code": "BIO305",
+          "title": "Genetics",
+          "credits": 4,
+          "grade": "A-"
+        },
+        {
+          "code": "BIO410",
+          "title": "Microbiology",
+          "credits": 3,
+          "grade": "B-"
+        },
+        {
+          "code": "STAT215",
+          "title": "Biostatistics",
+          "credits": 3,
+          "grade": "B"
+        }
+      ]
+    },
+    {
+      "id": "GRA-023",
+      "fullName": "Kai Young",
+      "degree": "B.S. Mechanical Engineering",
+      "gpa": 397,
+      "courses": [
+        {
+          "code": "ME330",
+          "title": "Machine Design",
+          "credits": 3,
+          "grade": "A"
+        },
+        {
+          "code": "MATH251",
+          "title": "Differential Equations",
+          "credits": 4,
+          "grade": "A"
+        },
+        {
+          "code": "PHYS121",
+          "title": "Physics I",
+          "credits": 3,
+          "grade": "A"
+        },
+        {
+          "code": "ME101",
+          "title": "Engineering Mechanics",
+          "credits": 3,
+          "grade": "B+"
+        },
+        {
+          "code": "ME210",
+          "title": "Thermodynamics",
+          "credits": 4,
+          "grade": "B-"
+        },
+        {
+          "code": "ME230",
+          "title": "Materials Science",
+          "credits": 3,
+          "grade": "B+"
+        },
+        {
+          "code": "ME420",
+          "title": "Control Systems",
+          "credits": 3,
+          "grade": "A"
+        },
+        {
+          "code": "ME410",
+          "title": "Heat Transfer",
+          "credits": 4,
+          "grade": "B+"
+        },
+        {
+          "code": "ME310",
+          "title": "Fluid Mechanics",
+          "credits": 3,
+          "grade": "A-"
+        },
+        {
+          "code": "ENGR300",
+          "title": "Engineering Ethics",
+          "credits": 4,
+          "grade": "A"
+        }
+      ]
+    },
+    {
+      "id": "GRA-024",
+      "fullName": "Umar Tran",
+      "degree": "B.S. Computer Science",
+      "gpa": 305,
+      "courses": [
+        {
+          "code": "CS201",
+          "title": "Programming Languages",
+          "credits": 3,
+          "grade": "B+"
+        },
+        {
+          "code": "STAT310",
+          "title": "Probability",
+          "credits": 4,
+          "grade": "B+"
+        },
+        {
+          "code": "CS410",
+          "title": "Databases",
+          "credits": 3,
+          "grade": "A-"
+        },
+        {
+          "code": "CS320",
+          "title": "Algorithms",
+          "credits": 3,
+          "grade": "B+"
+        },
+        {
+          "code": "CS101",
+          "title": "Intro to Computer Science",
+          "credits": 4,
+          "grade": "B"
+        },
+        {
+          "code": "CS240",
+          "title": "Data Structures",
+          "credits": 3,
+          "grade": "A-"
+        },
+        {
+          "code": "CS360",
+          "title": "Operating Systems",
+          "credits": 4,
+          "grade": "B+"
+        },
+        {
+          "code": "CS330",
+          "title": "Computer Architecture",
+          "credits": 3,
+          "grade": "A-"
+        },
+        {
+          "code": "CS420",
+          "title": "Networks",
+          "credits": 3,
+          "grade": "A-"
+        },
+        {
+          "code": "MATH420",
+          "title": "Cryptography",
+          "credits": 4,
+          "grade": "A-"
+        }
+      ]
+    },
+    {
+      "id": "GRA-025",
+      "fullName": "Umar Jensen",
+      "degree": "B.A. Psychology",
+      "gpa": 284,
+      "courses": [
+        {
+          "code": "PSY330",
+          "title": "Social Psychology",
+          "credits": 3,
+          "grade": "B"
+        },
+        {
+          "code": "PSY310",
+          "title": "Abnormal Psychology",
+          "credits": 3,
+          "grade": "C"
+        },
+        {
+          "code": "PSY410",
+          "title": "Research Methods",
+          "credits": 4,
+          "grade": "B+"
+        },
+        {
+          "code": "PHIL220",
+          "title": "Ethics",
+          "credits": 3,
+          "grade": "A"
+        },
+        {
+          "code": "PSY230",
+          "title": "Developmental Psychology",
+          "credits": 3,
+          "grade": "B+"
+        },
+        {
+          "code": "SOC210",
+          "title": "Sociology",
+          "credits": 4,
+          "grade": "A-"
+        },
+        {
+          "code": "PSY210",
+          "title": "Cognitive Psychology",
+          "credits": 3,
+          "grade": "B-"
+        },
+        {
+          "code": "STAT205",
+          "title": "Behavioral Statistics",
+          "credits": 3,
+          "grade": "C+"
+        },
+        {
+          "code": "BIO150",
+          "title": "Neuroscience",
+          "credits": 3,
+          "grade": "B+"
+        },
+        {
+          "code": "PSY101",
+          "title": "Intro to Psychology",
+          "credits": 3,
+          "grade": "B-"
+        }
+      ]
+    },
+    {
+      "id": "GRA-026",
+      "fullName": "Kai Yates",
+      "degree": "B.S. Mechanical Engineering",
+      "gpa": 332,
+      "courses": [
+        {
+          "code": "ENGR300",
+          "title": "Engineering Ethics",
+          "credits": 4,
+          "grade": "A-"
+        },
+        {
+          "code": "ME420",
+          "title": "Control Systems",
+          "credits": 3,
+          "grade": "B-"
+        },
+        {
+          "code": "ME210",
+          "title": "Thermodynamics",
+          "credits": 3,
+          "grade": "B+"
+        },
+        {
+          "code": "PHYS121",
+          "title": "Physics I",
+          "credits": 4,
+          "grade": "A-"
+        },
+        {
+          "code": "MATH251",
+          "title": "Differential Equations",
+          "credits": 3,
+          "grade": "A-"
+        },
+        {
+          "code": "ME101",
+          "title": "Engineering Mechanics",
+          "credits": 3,
+          "grade": "C"
+        },
+        {
+          "code": "ME330",
+          "title": "Machine Design",
+          "credits": 3,
+          "grade": "C"
+        },
+        {
+          "code": "ME410",
+          "title": "Heat Transfer",
+          "credits": 3,
+          "grade": "B+"
+        },
+        {
+          "code": "ME310",
+          "title": "Fluid Mechanics",
+          "credits": 3,
+          "grade": "B+"
+        },
+        {
+          "code": "ME230",
+          "title": "Materials Science",
+          "credits": 3,
+          "grade": "B-"
+        }
+      ]
+    },
+    {
+      "id": "GRA-027",
+      "fullName": "Ruby Zhao",
+      "degree": "B.A. Economics",
+      "gpa": 339,
+      "courses": [
+        {
+          "code": "ECON340",
+          "title": "Econometrics",
+          "credits": 4,
+          "grade": "C"
+        },
+        {
+          "code": "FIN220",
+          "title": "Corporate Finance",
+          "credits": 3,
+          "grade": "B+"
+        },
+        {
+          "code": "ECON310",
+          "title": "Game Theory",
+          "credits": 3,
+          "grade": "B+"
+        },
+        {
+          "code": "ECON240",
+          "title": "International Trade",
+          "credits": 4,
+          "grade": "A"
+        },
+        {
+          "code": "HIST240",
+          "title": "Economic History",
+          "credits": 4,
+          "grade": "C"
+        },
+        {
+          "code": "MATH210",
+          "title": "Linear Algebra",
+          "credits": 3,
+          "grade": "A-"
+        },
+        {
+          "code": "STAT200",
+          "title": "Statistics",
+          "credits": 3,
+          "grade": "B+"
+        },
+        {
+          "code": "ECON410",
+          "title": "Public Economics",
+          "credits": 4,
+          "grade": "B-"
+        },
+        {
+          "code": "ECON210",
+          "title": "Macroeconomics",
+          "credits": 3,
+          "grade": "B+"
+        },
+        {
+          "code": "ECON101",
+          "title": "Microeconomics",
+          "credits": 3,
+          "grade": "A-"
+        }
+      ]
+    },
+    {
+      "id": "GRA-028",
+      "fullName": "Sam Vega",
+      "degree": "B.S. Biology",
+      "gpa": 317,
+      "courses": [
+        {
+          "code": "BIO410",
+          "title": "Microbiology",
+          "credits": 3,
+          "grade": "A-"
+        },
+        {
+          "code": "CHEM110",
+          "title": "General Chemistry",
+          "credits": 3,
+          "grade": "B+"
+        },
+        {
+          "code": "BCHM310",
+          "title": "Biochemistry",
+          "credits": 4,
+          "grade": "C+"
+        },
+        {
+          "code": "BIO101",
+          "title": "General Biology",
+          "credits": 3,
+          "grade": "B+"
+        },
+        {
+          "code": "BIO210",
+          "title": "Cell Biology",
+          "credits": 3,
+          "grade": "A"
+        },
+        {
+          "code": "MATH130",
+          "title": "Calculus I",
+          "credits": 3,
+          "grade": "A-"
+        },
+        {
+          "code": "BIO305",
+          "title": "Genetics",
+          "credits": 3,
+          "grade": "A"
+        },
+        {
+          "code": "BIO320",
+          "title": "Ecology",
+          "credits": 4,
+          "grade": "A"
+        },
+        {
+          "code": "CHEM210",
+          "title": "Organic Chemistry",
+          "credits": 3,
+          "grade": "A"
+        },
+        {
+          "code": "STAT215",
+          "title": "Biostatistics",
+          "credits": 3,
+          "grade": "B-"
+        }
+      ]
+    },
+    {
+      "id": "GRA-029",
+      "fullName": "Nina Ford",
+      "degree": "B.A. Psychology",
+      "gpa": 288,
+      "courses": [
+        {
+          "code": "BIO150",
+          "title": "Neuroscience",
+          "credits": 3,
+          "grade": "B+"
+        },
+        {
+          "code": "PSY410",
+          "title": "Research Methods",
+          "credits": 3,
+          "grade": "B+"
+        },
+        {
+          "code": "PSY230",
+          "title": "Developmental Psychology",
+          "credits": 3,
+          "grade": "B-"
+        },
+        {
+          "code": "PHIL220",
+          "title": "Ethics",
+          "credits": 3,
+          "grade": "A-"
+        },
+        {
+          "code": "PSY310",
+          "title": "Abnormal Psychology",
+          "credits": 4,
+          "grade": "C"
+        },
+        {
+          "code": "STAT205",
+          "title": "Behavioral Statistics",
+          "credits": 3,
+          "grade": "B+"
+        },
+        {
+          "code": "SOC210",
+          "title": "Sociology",
+          "credits": 4,
+          "grade": "C"
+        },
+        {
+          "code": "PSY101",
+          "title": "Intro to Psychology",
+          "credits": 3,
+          "grade": "B+"
+        },
+        {
+          "code": "PSY330",
+          "title": "Social Psychology",
+          "credits": 3,
+          "grade": "B+"
+        },
+        {
+          "code": "PSY210",
+          "title": "Cognitive Psychology",
+          "credits": 3,
+          "grade": "C"
+        }
+      ]
+    },
+    {
+      "id": "GRA-030",
+      "fullName": "Yale Uribe",
+      "degree": "B.S. Biology",
+      "gpa": 300,
+      "courses": [
+        {
+          "code": "BIO320",
+          "title": "Ecology",
+          "credits": 4,
+          "grade": "B-"
+        },
+        {
+          "code": "CHEM210",
+          "title": "Organic Chemistry",
+          "credits": 3,
+          "grade": "B+"
+        },
+        {
+          "code": "BIO305",
+          "title": "Genetics",
+          "credits": 4,
+          "grade": "C+"
+        },
+        {
+          "code": "BIO210",
+          "title": "Cell Biology",
+          "credits": 3,
+          "grade": "B-"
+        },
+        {
+          "code": "CHEM110",
+          "title": "General Chemistry",
+          "credits": 3,
+          "grade": "A-"
+        },
+        {
+          "code": "BCHM310",
+          "title": "Biochemistry",
+          "credits": 4,
+          "grade": "C+"
+        },
+        {
+          "code": "BIO101",
+          "title": "General Biology",
+          "credits": 4,
+          "grade": "B+"
+        },
+        {
+          "code": "MATH130",
+          "title": "Calculus I",
+          "credits": 3,
+          "grade": "A"
+        },
+        {
+          "code": "BIO410",
+          "title": "Microbiology",
+          "credits": 3,
+          "grade": "A"
+        },
+        {
+          "code": "STAT215",
+          "title": "Biostatistics",
+          "credits": 3,
+          "grade": "C+"
+        }
+      ]
+    },
+    {
+      "id": "GRA-031",
+      "fullName": "Owen Zimmer",
+      "degree": "B.S. Biology",
+      "gpa": 390,
+      "courses": [
+        {
+          "code": "STAT215",
+          "title": "Biostatistics",
+          "credits": 4,
+          "grade": "A"
+        },
+        {
+          "code": "CHEM110",
+          "title": "General Chemistry",
+          "credits": 3,
+          "grade": "B+"
+        },
+        {
+          "code": "BIO320",
+          "title": "Ecology",
+          "credits": 3,
+          "grade": "C+"
+        },
+        {
+          "code": "CHEM210",
+          "title": "Organic Chemistry",
+          "credits": 4,
+          "grade": "A-"
+        },
+        {
+          "code": "BIO410",
+          "title": "Microbiology",
+          "credits": 4,
+          "grade": "B+"
+        },
+        {
+          "code": "MATH130",
+          "title": "Calculus I",
+          "credits": 3,
+          "grade": "B"
+        },
+        {
+          "code": "BIO305",
+          "title": "Genetics",
+          "credits": 4,
+          "grade": "C+"
+        },
+        {
+          "code": "BIO101",
+          "title": "General Biology",
+          "credits": 3,
+          "grade": "A"
+        },
+        {
+          "code": "BIO210",
+          "title": "Cell Biology",
+          "credits": 4,
+          "grade": "B+"
+        },
+        {
+          "code": "BCHM310",
+          "title": "Biochemistry",
+          "credits": 4,
+          "grade": "A-"
+        }
+      ]
+    },
+    {
+      "id": "GRA-032",
+      "fullName": "Luna Ross",
+      "degree": "B.A. Economics",
+      "gpa": 399,
+      "courses": [
+        {
+          "code": "ECON310",
+          "title": "Game Theory",
+          "credits": 3,
+          "grade": "B"
+        },
+        {
+          "code": "FIN220",
+          "title": "Corporate Finance",
+          "credits": 4,
+          "grade": "A-"
+        },
+        {
+          "code": "ECON340",
+          "title": "Econometrics",
+          "credits": 3,
+          "grade": "A-"
+        },
+        {
+          "code": "STAT200",
+          "title": "Statistics",
+          "credits": 4,
+          "grade": "B"
+        },
+        {
+          "code": "ECON240",
+          "title": "International Trade",
+          "credits": 3,
+          "grade": "C"
+        },
+        {
+          "code": "HIST240",
+          "title": "Economic History",
+          "credits": 3,
+          "grade": "B"
+        },
+        {
+          "code": "MATH210",
+          "title": "Linear Algebra",
+          "credits": 3,
+          "grade": "C"
+        },
+        {
+          "code": "ECON410",
+          "title": "Public Economics",
+          "credits": 3,
+          "grade": "A"
+        },
+        {
+          "code": "ECON210",
+          "title": "Macroeconomics",
+          "credits": 4,
+          "grade": "A"
+        },
+        {
+          "code": "ECON101",
+          "title": "Microeconomics",
+          "credits": 3,
+          "grade": "B-"
+        }
+      ]
+    },
+    {
+      "id": "GRA-033",
+      "fullName": "Kent Ford",
+      "degree": "B.S. Biology",
+      "gpa": 329,
+      "courses": [
+        {
+          "code": "BIO101",
+          "title": "General Biology",
+          "credits": 3,
+          "grade": "C"
+        },
+        {
+          "code": "BIO210",
+          "title": "Cell Biology",
+          "credits": 3,
+          "grade": "B"
+        },
+        {
+          "code": "STAT215",
+          "title": "Biostatistics",
+          "credits": 3,
+          "grade": "B+"
+        },
+        {
+          "code": "CHEM210",
+          "title": "Organic Chemistry",
+          "credits": 4,
+          "grade": "A"
+        },
+        {
+          "code": "BIO305",
+          "title": "Genetics",
+          "credits": 4,
+          "grade": "B"
+        },
+        {
+          "code": "MATH130",
+          "title": "Calculus I",
+          "credits": 3,
+          "grade": "A"
+        },
+        {
+          "code": "BIO320",
+          "title": "Ecology",
+          "credits": 4,
+          "grade": "C+"
+        },
+        {
+          "code": "BIO410",
+          "title": "Microbiology",
+          "credits": 4,
+          "grade": "A-"
+        },
+        {
+          "code": "CHEM110",
+          "title": "General Chemistry",
+          "credits": 4,
+          "grade": "B+"
+        },
+        {
+          "code": "BCHM310",
+          "title": "Biochemistry",
+          "credits": 4,
+          "grade": "B+"
+        }
+      ]
+    },
+    {
+      "id": "GRA-034",
+      "fullName": "Seth Underwood",
+      "degree": "B.S. Mechanical Engineering",
+      "gpa": 283,
+      "courses": [
+        {
+          "code": "PHYS121",
+          "title": "Physics I",
+          "credits": 3,
+          "grade": "B+"
+        },
+        {
+          "code": "ME101",
+          "title": "Engineering Mechanics",
+          "credits": 3,
+          "grade": "A"
+        },
+        {
+          "code": "ME230",
+          "title": "Materials Science",
+          "credits": 3,
+          "grade": "B+"
+        },
+        {
+          "code": "ME420",
+          "title": "Control Systems",
+          "credits": 3,
+          "grade": "C+"
+        },
+        {
+          "code": "ME310",
+          "title": "Fluid Mechanics",
+          "credits": 3,
+          "grade": "B+"
+        },
+        {
+          "code": "MATH251",
+          "title": "Differential Equations",
+          "credits": 3,
+          "grade": "C"
+        },
+        {
+          "code": "ME210",
+          "title": "Thermodynamics",
+          "credits": 3,
+          "grade": "C"
+        },
+        {
+          "code": "ENGR300",
+          "title": "Engineering Ethics",
+          "credits": 3,
+          "grade": "A"
+        },
+        {
+          "code": "ME330",
+          "title": "Machine Design",
+          "credits": 3,
+          "grade": "B+"
+        },
+        {
+          "code": "ME410",
+          "title": "Heat Transfer",
+          "credits": 3,
+          "grade": "A"
+        }
+      ]
+    },
+    {
+      "id": "GRA-035",
+      "fullName": "Yale Park",
+      "degree": "B.A. Economics",
+      "gpa": 359,
+      "courses": [
+        {
+          "code": "ECON210",
+          "title": "Macroeconomics",
+          "credits": 3,
+          "grade": "A-"
+        },
+        {
+          "code": "FIN220",
+          "title": "Corporate Finance",
+          "credits": 3,
+          "grade": "A-"
+        },
+        {
+          "code": "ECON410",
+          "title": "Public Economics",
+          "credits": 4,
+          "grade": "B+"
+        },
+        {
+          "code": "ECON310",
+          "title": "Game Theory",
+          "credits": 4,
+          "grade": "C+"
+        },
+        {
+          "code": "HIST240",
+          "title": "Economic History",
+          "credits": 3,
+          "grade": "A-"
+        },
+        {
+          "code": "ECON340",
+          "title": "Econometrics",
+          "credits": 3,
+          "grade": "A-"
+        },
+        {
+          "code": "ECON101",
+          "title": "Microeconomics",
+          "credits": 3,
+          "grade": "C+"
+        },
+        {
+          "code": "ECON240",
+          "title": "International Trade",
+          "credits": 3,
+          "grade": "C"
+        },
+        {
+          "code": "MATH210",
+          "title": "Linear Algebra",
+          "credits": 3,
+          "grade": "B+"
+        },
+        {
+          "code": "STAT200",
+          "title": "Statistics",
+          "credits": 3,
+          "grade": "A"
+        }
+      ]
+    },
+    {
+      "id": "GRA-036",
+      "fullName": "Ruby Khan",
+      "degree": "B.S. Biology",
+      "gpa": 366,
+      "courses": [
+        {
+          "code": "STAT215",
+          "title": "Biostatistics",
+          "credits": 3,
+          "grade": "B+"
+        },
+        {
+          "code": "BIO320",
+          "title": "Ecology",
+          "credits": 3,
+          "grade": "A"
+        },
+        {
+          "code": "BIO305",
+          "title": "Genetics",
+          "credits": 3,
+          "grade": "B+"
+        },
+        {
+          "code": "MATH130",
+          "title": "Calculus I",
+          "credits": 3,
+          "grade": "A-"
+        },
+        {
+          "code": "BCHM310",
+          "title": "Biochemistry",
+          "credits": 4,
+          "grade": "B+"
+        },
+        {
+          "code": "BIO410",
+          "title": "Microbiology",
+          "credits": 3,
+          "grade": "B"
+        },
+        {
+          "code": "CHEM210",
+          "title": "Organic Chemistry",
+          "credits": 4,
+          "grade": "B-"
+        },
+        {
+          "code": "BIO210",
+          "title": "Cell Biology",
+          "credits": 3,
+          "grade": "B-"
+        },
+        {
+          "code": "BIO101",
+          "title": "General Biology",
+          "credits": 3,
+          "grade": "C+"
+        },
+        {
+          "code": "CHEM110",
+          "title": "General Chemistry",
+          "credits": 3,
+          "grade": "A-"
+        }
+      ]
+    },
+    {
+      "id": "GRA-037",
+      "fullName": "Max Ortiz",
+      "degree": "B.S. Biology",
+      "gpa": 358,
+      "courses": [
+        {
+          "code": "CHEM110",
+          "title": "General Chemistry",
+          "credits": 3,
+          "grade": "B-"
+        },
+        {
+          "code": "BIO101",
+          "title": "General Biology",
+          "credits": 3,
+          "grade": "B+"
+        },
+        {
+          "code": "BCHM310",
+          "title": "Biochemistry",
+          "credits": 4,
+          "grade": "A-"
+        },
+        {
+          "code": "BIO320",
+          "title": "Ecology",
+          "credits": 3,
+          "grade": "A"
+        },
+        {
+          "code": "MATH130",
+          "title": "Calculus I",
+          "credits": 3,
+          "grade": "A"
+        },
+        {
+          "code": "CHEM210",
+          "title": "Organic Chemistry",
+          "credits": 3,
+          "grade": "B-"
+        },
+        {
+          "code": "BIO210",
+          "title": "Cell Biology",
+          "credits": 3,
+          "grade": "A-"
+        },
+        {
+          "code": "BIO305",
+          "title": "Genetics",
+          "credits": 3,
+          "grade": "B"
+        },
+        {
+          "code": "BIO410",
+          "title": "Microbiology",
+          "credits": 4,
+          "grade": "B+"
+        },
+        {
+          "code": "STAT215",
+          "title": "Biostatistics",
+          "credits": 3,
+          "grade": "A-"
+        }
+      ]
+    },
+    {
+      "id": "GRA-038",
+      "fullName": "Mia Underwood",
+      "degree": "B.A. Psychology",
+      "gpa": 346,
+      "courses": [
+        {
+          "code": "PSY310",
+          "title": "Abnormal Psychology",
+          "credits": 3,
+          "grade": "B"
+        },
+        {
+          "code": "PSY330",
+          "title": "Social Psychology",
+          "credits": 3,
+          "grade": "B+"
+        },
+        {
+          "code": "PSY101",
+          "title": "Intro to Psychology",
+          "credits": 3,
+          "grade": "A-"
+        },
+        {
+          "code": "PHIL220",
+          "title": "Ethics",
+          "credits": 4,
+          "grade": "A-"
+        },
+        {
+          "code": "STAT205",
+          "title": "Behavioral Statistics",
+          "credits": 3,
+          "grade": "C"
+        },
+        {
+          "code": "PSY410",
+          "title": "Research Methods",
+          "credits": 3,
+          "grade": "C"
+        },
+        {
+          "code": "PSY210",
+          "title": "Cognitive Psychology",
+          "credits": 3,
+          "grade": "C+"
+        },
+        {
+          "code": "BIO150",
+          "title": "Neuroscience",
+          "credits": 3,
+          "grade": "B+"
+        },
+        {
+          "code": "PSY230",
+          "title": "Developmental Psychology",
+          "credits": 3,
+          "grade": "B"
+        },
+        {
+          "code": "SOC210",
+          "title": "Sociology",
+          "credits": 3,
+          "grade": "B+"
+        }
+      ]
+    },
+    {
+      "id": "GRA-039",
+      "fullName": "Ethan Underwood",
+      "degree": "B.A. Economics",
+      "gpa": 332,
+      "courses": [
+        {
+          "code": "HIST240",
+          "title": "Economic History",
+          "credits": 3,
+          "grade": "B+"
+        },
+        {
+          "code": "STAT200",
+          "title": "Statistics",
+          "credits": 3,
+          "grade": "B+"
+        },
+        {
+          "code": "ECON101",
+          "title": "Microeconomics",
+          "credits": 3,
+          "grade": "A"
+        },
+        {
+          "code": "ECON210",
+          "title": "Macroeconomics",
+          "credits": 3,
+          "grade": "A-"
+        },
+        {
+          "code": "ECON410",
+          "title": "Public Economics",
+          "credits": 3,
+          "grade": "B+"
+        },
+        {
+          "code": "MATH210",
+          "title": "Linear Algebra",
+          "credits": 4,
+          "grade": "C"
+        },
+        {
+          "code": "ECON340",
+          "title": "Econometrics",
+          "credits": 4,
+          "grade": "B"
+        },
+        {
+          "code": "ECON240",
+          "title": "International Trade",
+          "credits": 3,
+          "grade": "B-"
+        },
+        {
+          "code": "ECON310",
+          "title": "Game Theory",
+          "credits": 3,
+          "grade": "A-"
+        },
+        {
+          "code": "FIN220",
+          "title": "Corporate Finance",
+          "credits": 3,
+          "grade": "A-"
+        }
+      ]
+    },
+    {
+      "id": "GRA-040",
+      "fullName": "Ruby Price",
+      "degree": "B.A. Economics",
+      "gpa": 357,
+      "courses": [
+        {
+          "code": "FIN220",
+          "title": "Corporate Finance",
+          "credits": 3,
+          "grade": "C"
+        },
+        {
+          "code": "ECON310",
+          "title": "Game Theory",
+          "credits": 4,
+          "grade": "B+"
+        },
+        {
+          "code": "STAT200",
+          "title": "Statistics",
+          "credits": 4,
+          "grade": "B+"
+        },
+        {
+          "code": "HIST240",
+          "title": "Economic History",
+          "credits": 4,
+          "grade": "B"
+        },
+        {
+          "code": "ECON101",
+          "title": "Microeconomics",
+          "credits": 3,
+          "grade": "B+"
+        },
+        {
+          "code": "MATH210",
+          "title": "Linear Algebra",
+          "credits": 3,
+          "grade": "B+"
+        },
+        {
+          "code": "ECON340",
+          "title": "Econometrics",
+          "credits": 3,
+          "grade": "A-"
+        },
+        {
+          "code": "ECON210",
+          "title": "Macroeconomics",
+          "credits": 3,
+          "grade": "B-"
+        },
+        {
+          "code": "ECON240",
+          "title": "International Trade",
+          "credits": 3,
+          "grade": "A-"
+        },
+        {
+          "code": "ECON410",
+          "title": "Public Economics",
+          "credits": 3,
+          "grade": "A-"
+        }
+      ]
+    },
+    {
+      "id": "GRA-041",
+      "fullName": "Tara Tanaka",
+      "degree": "B.S. Mechanical Engineering",
+      "gpa": 348,
+      "courses": [
+        {
+          "code": "MATH251",
+          "title": "Differential Equations",
+          "credits": 3,
+          "grade": "C"
+        },
+        {
+          "code": "ME310",
+          "title": "Fluid Mechanics",
+          "credits": 3,
+          "grade": "C+"
+        },
+        {
+          "code": "ME420",
+          "title": "Control Systems",
+          "credits": 3,
+          "grade": "B+"
+        },
+        {
+          "code": "PHYS121",
+          "title": "Physics I",
+          "credits": 3,
+          "grade": "A"
+        },
+        {
+          "code": "ME230",
+          "title": "Materials Science",
+          "credits": 4,
+          "grade": "A"
+        },
+        {
+          "code": "ME410",
+          "title": "Heat Transfer",
+          "credits": 3,
+          "grade": "A-"
+        },
+        {
+          "code": "ME101",
+          "title": "Engineering Mechanics",
+          "credits": 3,
+          "grade": "C"
+        },
+        {
+          "code": "ME210",
+          "title": "Thermodynamics",
+          "credits": 3,
+          "grade": "C+"
+        },
+        {
+          "code": "ME330",
+          "title": "Machine Design",
+          "credits": 3,
+          "grade": "A"
+        },
+        {
+          "code": "ENGR300",
+          "title": "Engineering Ethics",
+          "credits": 3,
+          "grade": "B-"
+        }
+      ]
+    },
+    {
+      "id": "GRA-042",
+      "fullName": "Abby Yates",
+      "degree": "B.A. Psychology",
+      "gpa": 326,
+      "courses": [
+        {
+          "code": "SOC210",
+          "title": "Sociology",
+          "credits": 3,
+          "grade": "A"
+        },
+        {
+          "code": "PSY410",
+          "title": "Research Methods",
+          "credits": 3,
+          "grade": "B-"
+        },
+        {
+          "code": "PSY101",
+          "title": "Intro to Psychology",
+          "credits": 3,
+          "grade": "A-"
+        },
+        {
+          "code": "PSY210",
+          "title": "Cognitive Psychology",
+          "credits": 3,
+          "grade": "A"
+        },
+        {
+          "code": "BIO150",
+          "title": "Neuroscience",
+          "credits": 3,
+          "grade": "B-"
+        },
+        {
+          "code": "PSY310",
+          "title": "Abnormal Psychology",
+          "credits": 3,
+          "grade": "A-"
+        },
+        {
+          "code": "PSY230",
+          "title": "Developmental Psychology",
+          "credits": 4,
+          "grade": "C+"
+        },
+        {
+          "code": "PSY330",
+          "title": "Social Psychology",
+          "credits": 3,
+          "grade": "B+"
+        },
+        {
+          "code": "STAT205",
+          "title": "Behavioral Statistics",
+          "credits": 3,
+          "grade": "A-"
+        },
+        {
+          "code": "PHIL220",
+          "title": "Ethics",
+          "credits": 3,
+          "grade": "A"
+        }
+      ]
+    },
+    {
+      "id": "GRA-043",
+      "fullName": "Noah Webb",
+      "degree": "B.A. Economics",
+      "gpa": 296,
+      "courses": [
+        {
+          "code": "MATH210",
+          "title": "Linear Algebra",
+          "credits": 4,
+          "grade": "A-"
+        },
+        {
+          "code": "ECON210",
+          "title": "Macroeconomics",
+          "credits": 3,
+          "grade": "B+"
+        },
+        {
+          "code": "HIST240",
+          "title": "Economic History",
+          "credits": 4,
+          "grade": "B"
+        },
+        {
+          "code": "ECON310",
+          "title": "Game Theory",
+          "credits": 4,
+          "grade": "A"
+        },
+        {
+          "code": "ECON101",
+          "title": "Microeconomics",
+          "credits": 3,
+          "grade": "A-"
+        },
+        {
+          "code": "ECON410",
+          "title": "Public Economics",
+          "credits": 3,
+          "grade": "A"
+        },
+        {
+          "code": "ECON240",
+          "title": "International Trade",
+          "credits": 4,
+          "grade": "C+"
+        },
+        {
+          "code": "ECON340",
+          "title": "Econometrics",
+          "credits": 3,
+          "grade": "B"
+        },
+        {
+          "code": "FIN220",
+          "title": "Corporate Finance",
+          "credits": 3,
+          "grade": "C+"
+        },
+        {
+          "code": "STAT200",
+          "title": "Statistics",
+          "credits": 4,
+          "grade": "C"
+        }
+      ]
+    },
+    {
+      "id": "GRA-044",
+      "fullName": "Bret Young",
+      "degree": "B.A. Economics",
+      "gpa": 285,
+      "courses": [
+        {
+          "code": "ECON240",
+          "title": "International Trade",
+          "credits": 3,
+          "grade": "C"
+        },
+        {
+          "code": "HIST240",
+          "title": "Economic History",
+          "credits": 3,
+          "grade": "B+"
+        },
+        {
+          "code": "ECON210",
+          "title": "Macroeconomics",
+          "credits": 3,
+          "grade": "B+"
+        },
+        {
+          "code": "ECON101",
+          "title": "Microeconomics",
+          "credits": 3,
+          "grade": "A"
+        },
+        {
+          "code": "ECON410",
+          "title": "Public Economics",
+          "credits": 3,
+          "grade": "B+"
+        },
+        {
+          "code": "ECON310",
+          "title": "Game Theory",
+          "credits": 3,
+          "grade": "A-"
+        },
+        {
+          "code": "STAT200",
+          "title": "Statistics",
+          "credits": 3,
+          "grade": "B"
+        },
+        {
+          "code": "ECON340",
+          "title": "Econometrics",
+          "credits": 3,
+          "grade": "A-"
+        },
+        {
+          "code": "FIN220",
+          "title": "Corporate Finance",
+          "credits": 3,
+          "grade": "C"
+        },
+        {
+          "code": "MATH210",
+          "title": "Linear Algebra",
+          "credits": 3,
+          "grade": "A-"
+        }
+      ]
+    },
+    {
+      "id": "GRA-045",
+      "fullName": "Liam Gupta",
+      "degree": "B.A. Economics",
+      "gpa": 376,
+      "courses": [
+        {
+          "code": "MATH210",
+          "title": "Linear Algebra",
+          "credits": 4,
+          "grade": "B"
+        },
+        {
+          "code": "ECON210",
+          "title": "Macroeconomics",
+          "credits": 3,
+          "grade": "A"
+        },
+        {
+          "code": "ECON340",
+          "title": "Econometrics",
+          "credits": 4,
+          "grade": "A"
+        },
+        {
+          "code": "ECON410",
+          "title": "Public Economics",
+          "credits": 3,
+          "grade": "A"
+        },
+        {
+          "code": "HIST240",
+          "title": "Economic History",
+          "credits": 3,
+          "grade": "B+"
+        },
+        {
+          "code": "FIN220",
+          "title": "Corporate Finance",
+          "credits": 3,
+          "grade": "A-"
+        },
+        {
+          "code": "STAT200",
+          "title": "Statistics",
+          "credits": 4,
+          "grade": "C+"
+        },
+        {
+          "code": "ECON310",
+          "title": "Game Theory",
+          "credits": 3,
+          "grade": "A-"
+        },
+        {
+          "code": "ECON240",
+          "title": "International Trade",
+          "credits": 3,
+          "grade": "A-"
+        },
+        {
+          "code": "ECON101",
+          "title": "Microeconomics",
+          "credits": 3,
+          "grade": "B-"
+        }
+      ]
+    },
+    {
+      "id": "GRA-046",
+      "fullName": "Bret Lopez",
+      "degree": "B.A. Economics",
+      "gpa": 384,
+      "courses": [
+        {
+          "code": "ECON240",
+          "title": "International Trade",
+          "credits": 3,
+          "grade": "A-"
+        },
+        {
+          "code": "ECON310",
+          "title": "Game Theory",
+          "credits": 3,
+          "grade": "C+"
+        },
+        {
+          "code": "MATH210",
+          "title": "Linear Algebra",
+          "credits": 3,
+          "grade": "A-"
+        },
+        {
+          "code": "STAT200",
+          "title": "Statistics",
+          "credits": 4,
+          "grade": "B"
+        },
+        {
+          "code": "FIN220",
+          "title": "Corporate Finance",
+          "credits": 4,
+          "grade": "A-"
+        },
+        {
+          "code": "ECON210",
+          "title": "Macroeconomics",
+          "credits": 4,
+          "grade": "B+"
+        },
+        {
+          "code": "ECON101",
+          "title": "Microeconomics",
+          "credits": 3,
+          "grade": "B-"
+        },
+        {
+          "code": "HIST240",
+          "title": "Economic History",
+          "credits": 3,
+          "grade": "A-"
+        },
+        {
+          "code": "ECON340",
+          "title": "Econometrics",
+          "credits": 4,
+          "grade": "B+"
+        },
+        {
+          "code": "ECON410",
+          "title": "Public Economics",
+          "credits": 4,
+          "grade": "B+"
+        }
+      ]
+    },
+    {
+      "id": "GRA-047",
+      "fullName": "Cody Tran",
+      "degree": "B.A. Psychology",
+      "gpa": 323,
+      "courses": [
+        {
+          "code": "PSY101",
+          "title": "Intro to Psychology",
+          "credits": 4,
+          "grade": "B"
+        },
+        {
+          "code": "PSY210",
+          "title": "Cognitive Psychology",
+          "credits": 3,
+          "grade": "A-"
+        },
+        {
+          "code": "PSY230",
+          "title": "Developmental Psychology",
+          "credits": 3,
+          "grade": "B+"
+        },
+        {
+          "code": "PSY310",
+          "title": "Abnormal Psychology",
+          "credits": 3,
+          "grade": "B"
+        },
+        {
+          "code": "BIO150",
+          "title": "Neuroscience",
+          "credits": 3,
+          "grade": "A"
+        },
+        {
+          "code": "PSY330",
+          "title": "Social Psychology",
+          "credits": 3,
+          "grade": "C"
+        },
+        {
+          "code": "PSY410",
+          "title": "Research Methods",
+          "credits": 4,
+          "grade": "B+"
+        },
+        {
+          "code": "SOC210",
+          "title": "Sociology",
+          "credits": 4,
+          "grade": "C"
+        },
+        {
+          "code": "PHIL220",
+          "title": "Ethics",
+          "credits": 3,
+          "grade": "C+"
+        },
+        {
+          "code": "STAT205",
+          "title": "Behavioral Statistics",
+          "credits": 4,
+          "grade": "B-"
+        }
+      ]
+    },
+    {
+      "id": "GRA-048",
+      "fullName": "Ethan Reyes",
+      "degree": "B.A. Economics",
+      "gpa": 331,
+      "courses": [
+        {
+          "code": "ECON310",
+          "title": "Game Theory",
+          "credits": 3,
+          "grade": "B"
+        },
+        {
+          "code": "FIN220",
+          "title": "Corporate Finance",
+          "credits": 3,
+          "grade": "B-"
+        },
+        {
+          "code": "ECON410",
+          "title": "Public Economics",
+          "credits": 3,
+          "grade": "A"
+        },
+        {
+          "code": "ECON240",
+          "title": "International Trade",
+          "credits": 3,
+          "grade": "A"
+        },
+        {
+          "code": "ECON210",
+          "title": "Macroeconomics",
+          "credits": 3,
+          "grade": "B+"
+        },
+        {
+          "code": "MATH210",
+          "title": "Linear Algebra",
+          "credits": 4,
+          "grade": "C+"
+        },
+        {
+          "code": "ECON101",
+          "title": "Microeconomics",
+          "credits": 3,
+          "grade": "A"
+        },
+        {
+          "code": "HIST240",
+          "title": "Economic History",
+          "credits": 3,
+          "grade": "A-"
+        },
+        {
+          "code": "ECON340",
+          "title": "Econometrics",
+          "credits": 4,
+          "grade": "C+"
+        },
+        {
+          "code": "STAT200",
+          "title": "Statistics",
+          "credits": 3,
+          "grade": "C+"
+        }
+      ]
+    },
+    {
+      "id": "GRA-049",
+      "fullName": "Neil Dunn",
+      "degree": "B.S. Biology",
+      "gpa": 294,
+      "courses": [
+        {
+          "code": "BIO210",
+          "title": "Cell Biology",
+          "credits": 3,
+          "grade": "B+"
+        },
+        {
+          "code": "CHEM110",
+          "title": "General Chemistry",
+          "credits": 4,
+          "grade": "C+"
+        },
+        {
+          "code": "MATH130",
+          "title": "Calculus I",
+          "credits": 4,
+          "grade": "C"
+        },
+        {
+          "code": "BIO305",
+          "title": "Genetics",
+          "credits": 3,
+          "grade": "A"
+        },
+        {
+          "code": "BCHM310",
+          "title": "Biochemistry",
+          "credits": 4,
+          "grade": "C"
+        },
+        {
+          "code": "BIO101",
+          "title": "General Biology",
+          "credits": 4,
+          "grade": "A-"
+        },
+        {
+          "code": "BIO320",
+          "title": "Ecology",
+          "credits": 3,
+          "grade": "B"
+        },
+        {
+          "code": "STAT215",
+          "title": "Biostatistics",
+          "credits": 3,
+          "grade": "A-"
+        },
+        {
+          "code": "CHEM210",
+          "title": "Organic Chemistry",
+          "credits": 3,
+          "grade": "A"
+        },
+        {
+          "code": "BIO410",
+          "title": "Microbiology",
+          "credits": 4,
+          "grade": "C+"
+        }
+      ]
+    },
+    {
+      "id": "GRA-050",
+      "fullName": "Neil Price",
+      "degree": "B.S. Computer Science",
+      "gpa": 350,
+      "courses": [
+        {
+          "code": "STAT310",
+          "title": "Probability",
+          "credits": 3,
+          "grade": "A-"
+        },
+        {
+          "code": "CS460",
+          "title": "Machine Learning",
+          "credits": 3,
+          "grade": "A-"
+        },
+        {
+          "code": "CS360",
+          "title": "Operating Systems",
+          "credits": 3,
+          "grade": "B+"
+        },
+        {
+          "code": "CS320",
+          "title": "Algorithms",
+          "credits": 4,
+          "grade": "A"
+        },
+        {
+          "code": "CS410",
+          "title": "Databases",
+          "credits": 4,
+          "grade": "B+"
+        },
+        {
+          "code": "MATH420",
+          "title": "Cryptography",
+          "credits": 3,
+          "grade": "A-"
+        },
+        {
+          "code": "CS101",
+          "title": "Intro to Computer Science",
+          "credits": 3,
+          "grade": "A-"
+        },
+        {
+          "code": "CS470",
+          "title": "Software Engineering",
+          "credits": 3,
+          "grade": "A-"
+        },
+        {
+          "code": "CS420",
+          "title": "Networks",
+          "credits": 4,
+          "grade": "C+"
+        },
+        {
+          "code": "CS201",
+          "title": "Programming Languages",
+          "credits": 3,
+          "grade": "B"
+        }
+      ]
+    }
+  ]
+}

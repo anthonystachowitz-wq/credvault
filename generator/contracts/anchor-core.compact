@@ -1,0 +1,67 @@
+// ═══════════════════════════════════════════════════════════════════════════
+// CredVault Anchor Core v1 — universal per-issuer template.
+//
+// ONE audited contract serves every issuer schema in generator v1. Per-issuer
+// customization happens at deployment (authority sealed) and in the descriptor/
+// runtime twin; the on-chain code is fixed.
+//
+//   • Opaque anchors only: sealed authority + validRoots Set + revoked Set.
+//   • Holders and verifiers generate ZERO transactions.
+//   • One generic verifyRange circuit proves any Uint<64> predicate via
+//     public [min,max] bounds.
+// ═══════════════════════════════════════════════════════════════════════════
+
+pragma language_version >= 0.18;
+
+import CompactStandardLibrary;
+
+// Issuer authority key — sealed at construction, never changes.
+export sealed ledger authority: Bytes<32>;
+
+// All valid cohort roots (one per batch). Historic roots are never removed.
+export ledger validRoots: Set<Bytes<32>>;
+
+// Revoked credential IDs.
+export ledger revoked: Set<Bytes<32>>;
+
+// The issuer's secret, supplied by the issuer runtime at call time.
+witness issuerSecretKey(): Bytes<32>;
+
+// Authority derived IN-CIRCUIT; constructor and guard always agree.
+circuit authorityKey(): Bytes<32> {
+  return disclose(persistentHash<Vector<2, Bytes<32>>>([pad(32, "credvault:authority:"), issuerSecretKey()]));
+}
+
+constructor() {
+  authority = authorityKey();
+}
+
+circuit assertAuthority(): [] {
+  assert(authorityKey() == authority, "Caller is not the issuer");
+}
+
+// Anchor a new cohort root (one call per batch, any cohort size).
+export circuit addCohortRoot(root: Bytes<32>): [] {
+  assertAuthority();
+  validRoots.insert(disclose(root));
+}
+
+// Revoke a credential by its credential ID.
+export circuit revokeCredential(credId: Bytes<32>): [] {
+  assertAuthority();
+  revoked.insert(disclose(credId));
+}
+
+// ═══ L2: universal range predicate — prove ANY Uint<64> field is in [min,max]
+// without revealing the value. Bound is a PUBLIC circuit parameter; one circuit
+// serves every metric of every schema of every issuer.
+witness fieldValue(): Uint<64>;
+witness fieldSalt(): Bytes<32>;
+
+export circuit verifyRange(credId: Bytes<32>, fieldCommit: Bytes<32>, min: Uint<64>, max: Uint<64>): [] {
+  const v = fieldValue();
+  assert(persistentCommit<Uint<64>>(v, fieldSalt()) == fieldCommit, "Field/salt do not match the credential commitment");
+  assert(v >= min, "Field below the required minimum");
+  assert(v <= max, "Field above the allowed maximum");
+  assert(!revoked.member(disclose(credId)), "credential is revoked");
+}

@@ -1,0 +1,15 @@
+// Probe: expose persistentCommit layouts for JS byte-matching (Step 2.2)
+pragma language_version >= 0.18;
+import CompactStandardLibrary;
+
+export circuit pcUint(x: Uint<64>, rand: Bytes<32>): Bytes<32> {
+  return persistentCommit<Uint<64>>(x, rand);
+}
+
+export circuit pcBytes(b: Bytes<32>, rand: Bytes<32>): Bytes<32> {
+  return persistentCommit<Bytes<32>>(b, rand);
+}
+
+export circuit phPair(l: Bytes<32>, r: Bytes<32>): Bytes<32> {
+  return persistentHash<Vector<2, Bytes<32>>>([l, r]);
+}

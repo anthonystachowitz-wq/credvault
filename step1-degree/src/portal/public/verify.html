@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Verify — CredVault</title><link rel="stylesheet" href="/style.css"></head>
+<body><div class="wrap">
+<div class="brand"><span class="moon">🌙</span><h1>CredVault <span class="mut" style="font-size:14px">verifier portal</span></h1></div>
+<p class="sub">Paste a share link or presentation a holder gave you. Free, instant, no account.</p>
+
+<div class="card" id="inputCard">
+  <h2>Verify a credential</h2>
+  <input type="text" id="linkInput" placeholder="Share link (…/verify.html?t=TOKEN) or leave blank and paste JSON below">
+  <div style="height:10px"></div>
+  <textarea id="jsonInput" placeholder="…or paste the presentation JSON the holder sent you"></textarea>
+  <div class="row">
+    <div><select id="minGpa"><option value="">Degree check only</option><option value="300">+ GPA ≥ 3.00</option><option value="350">+ GPA ≥ 3.50</option></select></div>
+    <div><input type="file" id="fileInput" accept=".json"></div>
+  </div>
+  <button id="go">Verify</button>
+</div>
+
+<div id="result"></div>
+<p class="mut"><a href="/">← CredVault home</a></p>
+</div>
+<script>
+const $ = (id) => document.getElementById(id);
+const qp = new URLSearchParams(location.search);
+if (qp.get('t')) { $('linkInput').value = location.href; verify(); }
+$('fileInput').addEventListener('change', async (e) => {
+  const f = e.target.files[0]; if (!f) return;
+  $('jsonInput').value = await f.text();
+});
+$('go').addEventListener('click', verify);
+
+async function verify() {
+  $('go').disabled = true; $('go').textContent = 'Verifying…';
+  $('result').innerHTML = '';
+  try {
+    let presentation;
+    const link = $('linkInput').value.trim();
+    if (link) {
+      const m = link.match(/[?&]t=([0-9a-f]+)/);
+      if (!m) throw new Error('could not find a token in that link');
+      const r = await fetch('/api/presentations/' + m[1]);
+      if (!r.ok) throw new Error((await r.json()).error || 'link fetch failed');
+      presentation = await r.json();
+    } else {
+      presentation = JSON.parse($('jsonInput').value);
+    }
+    const minGpa = $('minGpa').value ? Number($('minGpa').value) : undefined;
+    const vr = await fetch('/api/verify', { method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify(minGpa ? {presentation, minGpa} : {presentation}) });
+    show(await vr.json(), vr.status);
+  } catch (e) {
+    $('result').innerHTML = '<div class="verdict bad"><h2>✗ Error</h2><p>' + (e.message||e) + '</p></div>';
+  } finally { $('go').disabled = false; $('go').textContent = 'Verify'; }
+}
+
+function esc(s){ return String(s).replace(/[&<>"]/g, c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c])); }
+
+function show(r, status) {
+  if (r.verdict !== 'VERIFIED') {
+    $('result').innerHTML = '<div class="verdict bad"><h2>✗ ' + esc(r.verdict) + '</h2><p>' + esc(r.detail) + '</p></div>';
+    return;
+  }
+  const p = r.values;
+  let courses = '';
+  // note: courses list comes from the presentation, fetched below if needed
+  $('result').innerHTML =
+    '<div class="verdict ok"><h2>✓ VERIFIED</h2><p>' + esc(r.detail) + '</p></div>' +
+    '<div class="card"><h2>Credential</h2><table>' +
+    '<tr><th>Name</th><td>' + esc(p.fullName) + '</td></tr>' +
+    '<tr><th>Degree</th><td>' + esc(p.degree) + '</td></tr>' +
+    (p.gpa !== undefined && p.gpa !== null
+      ? '<tr><th>GPA</th><td>' + (p.gpa/100).toFixed(2) + '</td></tr>'
+      : '<tr><th>GPA</th><td><span class="pill warn">SEALED by holder</span></td></tr>') +
+    (r.l2 && r.l2.ok ? '<tr><th>ZK proof</th><td><span class="pill ok">GPA ≥ ' + (r.l2.minGpa/100).toFixed(2) + ' — proven without revealing GPA</span></td></tr>' : '') +
+    '</table></div>' +
+    (r.courses && r.courses.length ? '<div class="card"><h2>Courses (revealed ' + r.courses.length + ' of ' + (r.courseCount ?? r.courses.length) + ')</h2><table><tr><th>Code</th><th>Grade</th><th>Title</th><th>Cr</th></tr>' +
+      r.courses.map(c => '<tr><td>' + esc(c.code) + '</td><td><b>' + esc(c.grade) + '</b></td><td>' + esc(c.title) + '</td><td>' + esc(c.credits) + '</td></tr>').join('') + '</table>' +
+      ((r.courseCount ?? 0) > r.courses.length ? '<p class="mut">… ' + (r.courseCount - r.courses.length) + ' more course(s) SEALED by the holder</p>' : '') + '</div>' : '') +
+    '<div class="card"><h2>Trust</h2><p class="mut">Verified cryptographically against the issuer\'s on-chain anchor in ' + r.ms + ' ms. No account, no phone call to the registrar, no trust in this website required.</p></div>';
+}
+</script></body></html>

@@ -1,0 +1,128 @@
+{
+  "packageType": "credvault-package/1.0",
+  "schemaRef": {
+    "id": "college-degree",
+    "version": "0.3",
+    "hash": "8843596ae7b461e5fd5c2ca5d25e4de6d1f41c22948af6190ab579affdc6a89a"
+  },
+  "issuer": {
+    "id": "college-degree",
+    "displayName": "Penn State University"
+  },
+  "cohort": "2027-spring",
+  "holderRef": "STU-002",
+  "values": {
+    "fullName": "Brian Smith",
+    "degree": "B.A. Economics",
+    "gpa": 3.42
+  },
+  "salts": {
+    "fullName": "2ae22588cb33e468b808896f3d228b59cb06f89360a8826b72910eb4700d6730",
+    "degree": "6fc3a5a7caacc847f6f78b596c970ed3df59c102d5a94cb24906a0e95e0bfc14",
+    "gpa": "7e8bdcc885f9e1cb2775ec6dc058b3613bd6ad23e6cb572952e71b6dd59c6ce5",
+    "master": "2cc7d649956307777e621e9b12b28e53457bf90273467166b48e75265e031580"
+  },
+  "commitments": {
+    "fullName": "f38131c0b906bae8e6d58d758f76eba2e2352776516bd6c47071504d02b9e0ca",
+    "degree": "0d0a3f138c93c91e8739f1637f86821ea57ad4452d17e6547137e68954ec5e7b",
+    "gpa": "47d3c46e4d5739320ef59b7d97badc9645a38a9b6ca5712dd9cfc0ed14f523f6",
+    "courseGrades": "6b17c63331ed2369e231191557ddd10b2c0f6827f93fd1c09e27896a4a4ec793"
+  },
+  "sets": {
+    "courseGrades": {
+      "mode": "granular",
+      "itemCount": 4,
+      "subRoot": "6b17c63331ed2369e231191557ddd10b2c0f6827f93fd1c09e27896a4a4ec793",
+      "items": [
+        {
+          "code": "ECON101",
+          "title": "Microeconomics",
+          "credits": 3,
+          "grade": "B+",
+          "salt": "982f7dd3030ed9b534765e1a27c9cd558a3ab60faa2445eafea3bde003827de7",
+          "path": [
+            {
+              "sibling": "ef240f208f6b5c9690fded75818fba98fd740743e7c02d84971c25a418296faf",
+              "goesLeft": true
+            },
+            {
+              "sibling": "80df3b1879ef7b0f94466160c759bdefb83a263592097ec045e8db0a35febfce",
+              "goesLeft": true
+            }
+          ]
+        },
+        {
+          "code": "ECON210",
+          "title": "Macroeconomics",
+          "credits": 3,
+          "grade": "A-",
+          "salt": "5c6b38f981be07f27d2956a285e8f504b3e411582d7d24b4057fcb45d2448014",
+          "path": [
+            {
+              "sibling": "f9a5d201f12ccd395c253d0ddf25c93ae512cdeca310c53d84ab6d1b0b75adbf",
+              "goesLeft": false
+            },
+            {
+              "sibling": "80df3b1879ef7b0f94466160c759bdefb83a263592097ec045e8db0a35febfce",
+              "goesLeft": true
+            }
+          ]
+        },
+        {
+          "code": "STAT200",
+          "title": "Statistics",
+          "credits": 4,
+          "grade": "B",
+          "salt": "7a7472fe971114ec04f56dc203a197baf7cdb5263ee05b133f6d8e1de9795813",
+          "path": [
+            {
+              "sibling": "689605c642a2a8bfdaae7badff88bcf19b4d0083e4099170addd2b90e50b0a4b",
+              "goesLeft": true
+            },
+            {
+              "sibling": "3c406155dd75fced6e30afe57a250fe29b361028ad45d386e28606608aa63556",
+              "goesLeft": false
+            }
+          ]
+        },
+        {
+          "code": "ECON340",
+          "title": "Econometrics",
+          "credits": 3,
+          "grade": "B+",
+          "salt": "6db8f59a2eb5b2757be957f3d22ecbdd33725ba5b2ad781999d875bc58be2f82",
+          "path": [
+            {
+              "sibling": "60153e031f16eca859305901e2a75cbeba2e188f0f17b5757f2d8faea4e5f29c",
+              "goesLeft": false
+            },
+            {
+              "sibling": "3c406155dd75fced6e30afe57a250fe29b361028ad45d386e28606608aa63556",
+              "goesLeft": false
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "masterLeaf": "669ce0c993f406193443d2967f9aec3b088aebe958d20f176ba4395218834524",
+  "credId": "376be8c233b4f840723bfcb83222041feb11fcbb722b29b2f23e4d4a8459a0af",
+  "path": [
+    {
+      "sibling": "ba8d29a952e0eb40d44f61795aa7b8ca25f96c9774331b23f65f8e647beed485",
+      "goesLeft": false
+    },
+    {
+      "sibling": "eb3765038247d8a945e81aebf7ee63ac3c0c7b638b7ed132402af2f13a1a1b9f",
+      "goesLeft": true
+    },
+    {
+      "sibling": "d3255e3f3a8ed2189811fa87c68f303324ac6e4797d4c6e81ddb2cfaae9094c5",
+      "goesLeft": true
+    }
+  ],
+  "cohortRoot": "ef5ecbe47f36421872dce598471f0bccbea476731bfb76cb0c33b69daee29414",
+  "contractAddress": "c3b82a86c2b4fe3b2414caef250008731c79b45e93ec0edcca7faf2867325d92",
+  "network": "undeployed",
+  "predicateProofs": []
+}

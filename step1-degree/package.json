@@ -1,0 +1,45 @@
+{
+  "name": "step1-degree",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "CredVault Step 1: degree + revocation contract (membership AND non-membership)",
+  "license": "MIT",
+  "scripts": {
+    "compile": "compact compile contracts/degree.compact contracts/managed/degree",
+    "issuer": "npx tsx src/issuer.ts",
+    "runtime": "npx tsx src/runtime.ts",
+    "premint": "npx tsx src/premint-l2.ts",
+    "service": "npx tsx src/service.ts",
+    "portal": "npx tsx src/portal/server.ts",
+    "holder": "npx tsx src/holder.ts",
+    "verifier": "npx tsx src/verifier.ts"
+  },
+  "dependencies": {
+    "@midnight-ntwrk/compact-runtime": "0.16.0",
+    "@midnight-ntwrk/midnight-js-contracts": "4.1.1",
+    "@midnight-ntwrk/midnight-js-http-client-proof-provider": "4.1.1",
+    "@midnight-ntwrk/midnight-js-indexer-public-data-provider": "4.1.1",
+    "@midnight-ntwrk/midnight-js-level-private-state-provider": "4.1.1",
+    "@midnight-ntwrk/midnight-js-network-id": "4.1.1",
+    "@midnight-ntwrk/midnight-js-node-zk-config-provider": "4.1.1",
+    "@midnight-ntwrk/midnight-js-protocol": "4.1.1",
+    "@midnight-ntwrk/midnight-js-types": "4.1.1",
+    "@midnight-ntwrk/midnight-js-utils": "4.1.1",
+    "@midnight-ntwrk/wallet-sdk": "1.2.0",
+    "@scure/bip39": "2.2.0",
+    "rxjs": "^7.8.2",
+    "ws": "^8.21.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@types/ws": "^8.18.1",
+    "tsx": "^4.23.1",
+    "typescript": "^6.0.3"
+  },
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "overrides": {
+    "@midnight-ntwrk/onchain-runtime-v3": "3.0.0"
+  }
+}

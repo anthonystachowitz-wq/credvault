@@ -1,0 +1,303 @@
+{
+  "schema": "credvault-degree/0.3",
+  "issuer": "Penn State University (mock)",
+  "cohort": "console-upload-2026-09-05",
+  "studentId": "GRA-029",
+  "values": {
+    "fullName": "Nina Ford",
+    "degree": "B.A. Psychology",
+    "gpa": 288
+  },
+  "transcriptMode": "granular",
+  "courses": [
+    {
+      "code": "BIO150",
+      "title": "Neuroscience",
+      "credits": 3,
+      "grade": "B+",
+      "salt": "d1323b3afcff68f4429cf4262de701cf96cd614a3e6705f6bb4b2d08b373016e",
+      "path": [
+        {
+          "sibling": "7a66e056be0e76c23393d5129412d1632b19f1448d517eb7325e5aab5ca80db9",
+          "goesLeft": true
+        },
+        {
+          "sibling": "5f414cbe5520e9900ca7c6fea311a89d67fa948470175bc05edac91aa24ba87a",
+          "goesLeft": true
+        },
+        {
+          "sibling": "820584b0031a5780afddee1de6461b4879ce1b9f075fb3f3b7151bae7f884942",
+          "goesLeft": true
+        },
+        {
+          "sibling": "3717bcecc58787c34f5c43967b9cf460ca7aaf00c551219e7de170798c396e84",
+          "goesLeft": true
+        }
+      ]
+    },
+    {
+      "code": "PSY410",
+      "title": "Research Methods",
+      "credits": 3,
+      "grade": "B+",
+      "salt": "c21d64fffa57b2e2eda0f755a5419ade3f9e910a22121d57aa095aeaf5e3c235",
+      "path": [
+        {
+          "sibling": "e02bbfe0dc1373e794cce5a09d404ff5265b83c7a95379df7edcd0bd24f42ba6",
+          "goesLeft": false
+        },
+        {
+          "sibling": "5f414cbe5520e9900ca7c6fea311a89d67fa948470175bc05edac91aa24ba87a",
+          "goesLeft": true
+        },
+        {
+          "sibling": "820584b0031a5780afddee1de6461b4879ce1b9f075fb3f3b7151bae7f884942",
+          "goesLeft": true
+        },
+        {
+          "sibling": "3717bcecc58787c34f5c43967b9cf460ca7aaf00c551219e7de170798c396e84",
+          "goesLeft": true
+        }
+      ]
+    },
+    {
+      "code": "PSY230",
+      "title": "Developmental Psychology",
+      "credits": 3,
+      "grade": "B-",
+      "salt": "7eed831d2073f1f61d1036d794904a8b67ee2959646887e3ba5f66f5a21570df",
+      "path": [
+        {
+          "sibling": "ec0b6eda1f827a8533a72378a8f2fc246ab0b88385cc024ccc664f8334994915",
+          "goesLeft": true
+        },
+        {
+          "sibling": "1adb938bb351c1aaf3ff1c0b67d172f0c012c51880015c2c63c472aba153a88d",
+          "goesLeft": false
+        },
+        {
+          "sibling": "820584b0031a5780afddee1de6461b4879ce1b9f075fb3f3b7151bae7f884942",
+          "goesLeft": true
+        },
+        {
+          "sibling": "3717bcecc58787c34f5c43967b9cf460ca7aaf00c551219e7de170798c396e84",
+          "goesLeft": true
+        }
+      ]
+    },
+    {
+      "code": "PHIL220",
+      "title": "Ethics",
+      "credits": 3,
+      "grade": "A-",
+      "salt": "627c42ec5078a8351fa96a104fb3f99519b06b58496d64f53f7a473cb7fc6197",
+      "path": [
+        {
+          "sibling": "1d1d9b8e246461d6989858e0e84f832dbe217dfe81d48ad2581727ade43f910c",
+          "goesLeft": false
+        },
+        {
+          "sibling": "1adb938bb351c1aaf3ff1c0b67d172f0c012c51880015c2c63c472aba153a88d",
+          "goesLeft": false
+        },
+        {
+          "sibling": "820584b0031a5780afddee1de6461b4879ce1b9f075fb3f3b7151bae7f884942",
+          "goesLeft": true
+        },
+        {
+          "sibling": "3717bcecc58787c34f5c43967b9cf460ca7aaf00c551219e7de170798c396e84",
+          "goesLeft": true
+        }
+      ]
+    },
+    {
+      "code": "PSY310",
+      "title": "Abnormal Psychology",
+      "credits": 4,
+      "grade": "C",
+      "salt": "52746e088c072c2974a8673962baaf761e8c98c2c01d3c85afbe6b08069e7f2b",
+      "path": [
+        {
+          "sibling": "82231d5835e18d3e8126d8560d9815b61af5548e2e95bd2a9b37dd3ebb23f939",
+          "goesLeft": true
+        },
+        {
+          "sibling": "cea5ee2a9ee7c7288e14ca56530a98909acb58d992efa83ea8da67207fa4b21b",
+          "goesLeft": true
+        },
+        {
+          "sibling": "d8bf0cb26947b1c340dc1f1c27da30256b278b836fb7aa08b00f28d9d277c5b0",
+          "goesLeft": false
+        },
+        {
+          "sibling": "3717bcecc58787c34f5c43967b9cf460ca7aaf00c551219e7de170798c396e84",
+          "goesLeft": true
+        }
+      ]
+    },
+    {
+      "code": "STAT205",
+      "title": "Behavioral Statistics",
+      "credits": 3,
+      "grade": "B+",
+      "salt": "a771c21460967be1fd7876c0e3201e4bea22b312b23752cd9882b38660636d97",
+      "path": [
+        {
+          "sibling": "a2d2deca0e9483a3002d64930b91fa6a95f5a21cd075f1e671c6d65f2bfac57a",
+          "goesLeft": false
+        },
+        {
+          "sibling": "cea5ee2a9ee7c7288e14ca56530a98909acb58d992efa83ea8da67207fa4b21b",
+          "goesLeft": true
+        },
+        {
+          "sibling": "d8bf0cb26947b1c340dc1f1c27da30256b278b836fb7aa08b00f28d9d277c5b0",
+          "goesLeft": false
+        },
+        {
+          "sibling": "3717bcecc58787c34f5c43967b9cf460ca7aaf00c551219e7de170798c396e84",
+          "goesLeft": true
+        }
+      ]
+    },
+    {
+      "code": "SOC210",
+      "title": "Sociology",
+      "credits": 4,
+      "grade": "C",
+      "salt": "7c6eb55c68a58fa1e7262e672aa6c10bb4445832b562433ed0b37f3d8984224c",
+      "path": [
+        {
+          "sibling": "8f90edc4c1e8ad2554e3a5e5e6aa392572b6bfe5bfe09beadbbe0d1cd0663698",
+          "goesLeft": true
+        },
+        {
+          "sibling": "5d5db9cfaad3c8beb54c1d57270e6474e0b87623eb1585fc57bcc7f46ca82bae",
+          "goesLeft": false
+        },
+        {
+          "sibling": "d8bf0cb26947b1c340dc1f1c27da30256b278b836fb7aa08b00f28d9d277c5b0",
+          "goesLeft": false
+        },
+        {
+          "sibling": "3717bcecc58787c34f5c43967b9cf460ca7aaf00c551219e7de170798c396e84",
+          "goesLeft": true
+        }
+      ]
+    },
+    {
+      "code": "PSY101",
+      "title": "Intro to Psychology",
+      "credits": 3,
+      "grade": "B+",
+      "salt": "8ddb617e214399eb2580159e646b77cf1def0bf0787f376675ea4d0a9ed5b5e1",
+      "path": [
+        {
+          "sibling": "dfec14b4444398c19cbfd411f9988565cc6ee089d29581a440671a7863037bad",
+          "goesLeft": false
+        },
+        {
+          "sibling": "5d5db9cfaad3c8beb54c1d57270e6474e0b87623eb1585fc57bcc7f46ca82bae",
+          "goesLeft": false
+        },
+        {
+          "sibling": "d8bf0cb26947b1c340dc1f1c27da30256b278b836fb7aa08b00f28d9d277c5b0",
+          "goesLeft": false
+        },
+        {
+          "sibling": "3717bcecc58787c34f5c43967b9cf460ca7aaf00c551219e7de170798c396e84",
+          "goesLeft": true
+        }
+      ]
+    },
+    {
+      "code": "PSY330",
+      "title": "Social Psychology",
+      "credits": 3,
+      "grade": "B+",
+      "salt": "6e9ee8c4390f9fda77f0c74d60c654efd74bac3686be13ea23bf0d1c70f84390",
+      "path": [
+        {
+          "sibling": "537ea9c69ffff3310aa41f9f769ad00bb92939784bc94eabc0ecd25ccea46da6",
+          "goesLeft": true
+        },
+        {
+          "sibling": "f6e27afafd7da41a755a7cf3b4cc95eb9dd4fb32c0badd18106636788c1c83e6",
+          "goesLeft": true
+        },
+        {
+          "sibling": "1c5f0b2e5d36cf968afe0182363b19c7fbc7b777a17552264394213607a74e2a",
+          "goesLeft": true
+        },
+        {
+          "sibling": "d5722346fdb4df57b48ec4d99a7a69d9f14fb4d45047fa056d1d9ce4592c40c2",
+          "goesLeft": false
+        }
+      ]
+    },
+    {
+      "code": "PSY210",
+      "title": "Cognitive Psychology",
+      "credits": 3,
+      "grade": "C",
+      "salt": "722f4fc21a72d16b40d3dbea5778a7aff13138d0739601e67da45631905949f4",
+      "path": [
+        {
+          "sibling": "4d4fd5e628dd6e2c584c2b0b9cf29069e4c65e7942c758da101a0f861caadd98",
+          "goesLeft": false
+        },
+        {
+          "sibling": "f6e27afafd7da41a755a7cf3b4cc95eb9dd4fb32c0badd18106636788c1c83e6",
+          "goesLeft": true
+        },
+        {
+          "sibling": "1c5f0b2e5d36cf968afe0182363b19c7fbc7b777a17552264394213607a74e2a",
+          "goesLeft": true
+        },
+        {
+          "sibling": "d5722346fdb4df57b48ec4d99a7a69d9f14fb4d45047fa056d1d9ce4592c40c2",
+          "goesLeft": false
+        }
+      ]
+    }
+  ],
+  "courseSubRoot": "dc8d0def2af0480c8f15350ef534b1ae1e784d6bd43ed6f4f9dcb73818815aed",
+  "salts": {
+    "fullName": "1b47807a3bd2a49f3d430f8479baeef6b23a6a3d45f5843267971ac1d697ca89",
+    "degree": "64d9ef6b16afc2f856f8fbae4914d9ed4e1a92e3ca910b85fb291e38a8c32257",
+    "gpa": "0e328b9de44cd29dccfccbea8a182518e47eab9ca547be2c13bea9a5fe8663c4",
+    "master": "796a70e01b434b553eab3b39df6313897979a042efcdbd53d074cf73b4217384"
+  },
+  "gpaCommit": "62b9326cb76081e58f588bca2372ee865165231d6b23332a8d1879fc9216635d",
+  "masterLeaf": "bbe2153fd0dc362b3e282fd17684bffc55954775064c074c9735873310251198",
+  "credId": "94bb327db5d24a88ce9a9b147e1b47429c3f3d3b731747bc5214649685eaeb14",
+  "path": [
+    {
+      "sibling": "80130908f8d6cd8a3275cec6e0f12c2b3f8bacf921d44be90483009274c7e08a",
+      "goesLeft": true
+    },
+    {
+      "sibling": "f16bc514502b916fc2964123d98299f0774f2abde7ccda5c8d260d227a0dd682",
+      "goesLeft": true
+    },
+    {
+      "sibling": "ec50c2b592400d9b511045f28cecc45fccdcc477a1b05370ab0dd672350efb4e",
+      "goesLeft": false
+    },
+    {
+      "sibling": "da295df97c1ebde12d8be56f958084cdc7c68957e66628986c22da4f6c1658a9",
+      "goesLeft": false
+    },
+    {
+      "sibling": "88b62e1c9c305d633242c6193a716f10a0067dc172484c767d49e5dadb0efdbf",
+      "goesLeft": false
+    },
+    {
+      "sibling": "b0d77b7017087dfffd04eb0434c380b78c0ec414299aab9c37c660a0b6658aa4",
+      "goesLeft": true
+    }
+  ],
+  "cohortRoot": "b8fa26806f9587514149167291d00afad9d2f5711599f4ba791668e5811423b2",
+  "contractAddress": "c3b82a86c2b4fe3b2414caef250008731c79b45e93ec0edcca7faf2867325d92",
+  "l2Proofs": []
+}

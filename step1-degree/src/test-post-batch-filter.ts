@@ -1,0 +1,18 @@
+import { chromium } from 'playwright';
+const browser = await chromium.launch();
+const page = await browser.newPage();
+await page.route('**/api/issuer/batch', (r) => r.fulfill({ status: 202, contentType: 'application/json', body: JSON.stringify({ jobId: 'j1' }) }));
+await page.route('**/api/issuer/jobs/**', (r) => r.fulfill({ status: 200, contentType: 'application/json', body: JSON.stringify({ status: 'done', log: ['ok'] }) }));
+await page.goto('http://localhost:4050/issuer.html');
+await page.waitForTimeout(1000);
+await page.setInputFiles('#csvFile', 'data/batch-monolithic-50.csv');
+await page.waitForTimeout(400);
+await page.selectOption('#mode', 'monolithic');
+await page.click('#batchBtn');
+await page.waitForTimeout(4500);
+console.log('batchMsg:', await page.locator('#batchMsg').textContent());
+console.log('filter value after batch:', await page.locator('#filter').inputValue());
+const rows = await page.locator('#students tr').count();
+console.log('visible student rows (incl header):', rows);
+await browser.close();
+process.exit(0);
