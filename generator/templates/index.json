@@ -1,0 +1,18 @@
+{
+  "version": "1.0.0",
+  "templates": [
+    {
+      "id": "college-degree",
+      "name": "College Degree Verification",
+      "description": "University degree with GPA thresholds and per-course disclosure.",
+      "issuerType": "university",
+      "path": "templates/college-degree.json",
+      "tags": [
+        "education",
+        "degree",
+        "gpa",
+        "courses"
+      ]
+    }
+  ]
+}

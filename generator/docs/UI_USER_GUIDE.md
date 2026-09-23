@@ -37,6 +37,16 @@ Open http://127.0.0.1:4051 in a browser.
 
 The dev server proxies API calls to the generator server on port 4051.
 
+## Choosing a template
+
+When the UI loads, a **Start from a template** dialog appears. CredVault ships with built-in templates:
+
+| Template | What it demonstrates |
+|---|---|
+| College Degree Verification | Direct fields, GPA threshold proofs, per-course selective disclosure |
+
+Pick a template to pre-fill the builder, or click **Start blank** to build from scratch.
+
 ## Building a schema step by step
 
 ### 1. Fill in the credential settings

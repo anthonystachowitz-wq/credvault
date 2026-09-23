@@ -1,5 +1,15 @@
-import React, { useEffect, useMemo, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import type { VerificationSchema, Field, Operator } from './lib/schema-types';
+
+interface TemplateMeta {
+  id: string;
+  name: string;
+  description: string;
+  issuerType: string;
+  path: string;
+  tags: string[];
+}
+
 
 const DEFAULT_SCHEMA: VerificationSchema = {
   schemaVersion: '0.3',
@@ -53,6 +63,29 @@ export default function App() {
   const [jsonText, setJsonText] = useState(() => JSON.stringify(DEFAULT_SCHEMA, null, 2));
   const [jsonError, setJsonError] = useState<string | null>(null);
   const [dragIndex, setDragIndex] = useState<number | null>(null);
+  const [templates, setTemplates] = useState<TemplateMeta[]>([]);
+  const [showTemplatePicker, setShowTemplatePicker] = useState(true);
+
+  useEffect(() => {
+    fetch('/api/templates')
+      .then((r) => r.json())
+      .then((data) => {
+        if (data.ok) setTemplates(data.templates);
+      })
+      .catch(() => setTemplates([]));
+  }, []);
+
+  const loadTemplate = async (id: string) => {
+    const res = await fetch(`/api/templates/${id}`);
+    const data = await res.json();
+    if (data.ok) {
+      setSchema(data.schema);
+      setShowTemplatePicker(false);
+    }
+  };
+
+  const startBlank = () => setShowTemplatePicker(false);
+
   const [activeTab, setActiveTab] = useState<'builder' | 'json'>('builder');
 
   useEffect(() => {
@@ -186,6 +219,36 @@ export default function App() {
             {jsonError && <p className="mt-2 text-xs text-red-600">{jsonError}</p>}
           </div>
         </section>
+
+      {showTemplatePicker && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 p-4">
+          <div className="w-full max-w-2xl rounded-lg bg-white p-6 shadow-xl">
+            <h2 className="mb-2 text-xl font-bold">Start from a template</h2>
+            <p className="mb-4 text-sm text-slate-500">Choose a pre-built verification template, or start blank.</p>
+            <div className="mb-6 grid grid-cols-1 gap-3 sm:grid-cols-2">
+              {templates.map((t) => (
+                <button
+                  key={t.id}
+                  onClick={() => loadTemplate(t.id)}
+                  className="rounded border border-slate-200 bg-slate-50 p-4 text-left hover:border-blue-400 hover:bg-blue-50"
+                >
+                  <div className="font-semibold">{t.name}</div>
+                  <div className="text-xs text-slate-500">{t.description}</div>
+                  <div className="mt-2 flex flex-wrap gap-1">
+                    {t.tags.map((tag) => (
+                      <span key={tag} className="rounded bg-slate-200 px-1.5 py-0.5 text-xs text-slate-600">{tag}</span>
+                    ))}
+                  </div>
+                </button>
+              ))}
+            </div>
+            <div className="flex justify-end">
+              <button onClick={startBlank} className="rounded bg-slate-100 px-4 py-2 text-sm hover:bg-slate-200">Start blank</button>
+            </div>
+          </div>
+        </div>
+      )}
+
       </div>
     </div>
   );
@@ -319,6 +382,7 @@ function FieldCard({
           </>
         )}
       </div>
+    
     </div>
   );
 }

@@ -16,6 +16,15 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const projectRoot = path.resolve(__dirname, '..', '..');
 const webDist = path.join(projectRoot, 'web', 'dist');
 
+const templatesDir = path.join(projectRoot, 'templates');
+const templateManifest = JSON.parse(fs.readFileSync(path.join(templatesDir, 'index.json'), 'utf8'));
+
+function loadTemplate(id: string) {
+  const entry = templateManifest.templates.find((t: any) => t.id === id);
+  if (!entry) throw new Error(`TEMPLATE_NOT_FOUND:${id}`);
+  return JSON.parse(fs.readFileSync(path.join(projectRoot, entry.path), 'utf8'));
+}
+
 const app = express();
 app.use(express.json({ limit: '5mb' }));
 
@@ -71,6 +80,22 @@ app.post('/api/generate', (req, res) => {
     res.json({ ok: true, outDir, descriptorHash: hash });
   } catch (e: any) {
     res.status(400).json({ ok: false, error: e.message });
+  }
+});
+
+
+// API: list templates
+app.get('/api/templates', (_req, res) => {
+  res.json({ ok: true, templates: templateManifest.templates });
+});
+
+// API: load a template
+app.get('/api/templates/:id', (req, res) => {
+  try {
+    const schema = loadTemplate(req.params.id);
+    res.json({ ok: true, schema });
+  } catch (e: any) {
+    res.status(404).json({ ok: false, error: e.message });
   }
 });
 

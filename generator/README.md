@@ -44,6 +44,15 @@ Expected output:
 
        VERIFIED - anchored on-chain and not revoked ( ~50 ms )
 
+## Templates
+
+Built-in templates live in `templates/` and are listed by the web UI and API:
+
+- `templates/college-degree.json` — Penn State degree verification (direct fields, GPA thresholds, course grades)
+- `templates/index.json` — manifest that drives the template picker
+
+Add a new template by creating a JSON schema AST file and adding it to the manifest.
+
 ## Project layout
 
 | Path | Purpose |

@@ -17,6 +17,7 @@ CredVault lets issuers create privacy-preserving verification contracts from a q
 |---|---|
 | `generator/` | The generator package: parser, descriptor emitter, runtime, CLI, web UI, web server |
 | `step0-hello/` | Toolchain sanity project (external embedded repo, not tracked here) |
+| `generator/templates/` | Built-in verification schema templates |
 | `step1-degree/` | Hand-built reference implementation: degree + revocation contract, portal, issuer runtime |
 | `schemas/` | Human-readable schema templates, e.g. `college-degree.yaml` |
 | `learning/` | Midnight curriculum materials |
@@ -30,6 +31,7 @@ CredVault lets issuers create privacy-preserving verification contracts from a q
 - Compile a universal `anchor-core.compact` contract.
 - Generate per-holder `credvault-package/1.0` files from cohort data.
 - Verify packages against on-chain anchors with a schema-driven engine.
+- Built-in template library starting with the Penn State / college-degree template.
 - No-code web UI for building schemas.
 
 ## Current limitations
